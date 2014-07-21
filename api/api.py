@@ -8,12 +8,14 @@ MATCH_HISTORY_URL = BASE_URL + "/GetMatchHistory/V001/?key=" + API_KEY
 MATCH_DETAILS_URL = BASE_URL + "/GetMatchDetails/V001/?key=" + API_KEY
 
 class API:
-    def __init__(self):
-        self.matches_requested = 25
+    def get_matches(self, league_id, starting_match_id=None, matches_requested=None):
+        url = MATCH_HISTORY_URL + "&league_id=" + str(league_id)
 
+        if(matches_requested != None):
+            url += "&matches_requested=" + str(matches_requested)
 
-    def get_matches(self, league_id, match_id):
-        url = MATCH_HISTORY_URL + "&league_id=" + str(league_id) + "&start_at_match_id=" + str(match_id) + "&matches_requested=" + str(self.matches_requested)
+        if(starting_match_id != None):
+            url += "&start_at_match_id=" + str(starting_match_id)
 
         return requests.get(url).json()
 
