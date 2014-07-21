@@ -11,20 +11,14 @@ class API:
     def __init__(self):
         self.matches_requested = 25
 
+
     def get_matches(self, league_id, match_id):
-        url = MATCH_HISTORY_URL + "&league_id=" + league_id + "&start_at_match_id=" + match_id + "&matches_requested=" + self.matches_requested
+        url = MATCH_HISTORY_URL + "&league_id=" + str(league_id) + "&start_at_match_id=" + str(match_id) + "&matches_requested=" + str(self.matches_requested)
 
         return requests.get(url).json()
 
 
- # "&match_id=765930912"
+    def get_match_details(self, match_id):
+        url = MATCH_DETAILS_URL + "&match_id=" + str(match_id)
 
-
-
-s = requests.get(API)
-r = requests.get(MATCH_API)
-
-
-
-# print s.json()
-# print r.json()\
+        return requests.get(url).json()
