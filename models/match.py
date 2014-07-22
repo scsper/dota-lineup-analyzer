@@ -10,10 +10,15 @@ class Match:
                 self.winner = "radiant"
             else:
                 self.winner = "dire"
+        else:
+            self.id = -1
+            self.winner = ""
 
         numPlayers = len(match["players"])
         if numPlayers != 10:
+            self.invalid = True
             return
+
         dire = []
         radiant = []
         count = 0
@@ -25,11 +30,9 @@ class Match:
             count += 1
         self.radiant = Lineup(radiant)
         self.dire = Lineup(dire)
-        print self.radiant
 
-    # def __str__(self):
-    #     return self.id
-
+    def __str__(self):
+        return self.id
 
     def getDireLineup(self):
         return self.dire.getHeroList()
@@ -37,3 +40,12 @@ class Match:
     def getRadiantLineup(self):
         return self.radiant.getHeroList()
 
+    def get_lineup_with_hero(self,hero_id):
+        if hero_id in self.dire.getHeroList():
+            return self.getDireLineup()
+        if hero_id in self.radiant.getHeroList():
+            return self.getRadiantLineup()
+        return
+
+    def is_valid(self):
+        return not self.invalid

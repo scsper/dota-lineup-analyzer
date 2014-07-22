@@ -22,7 +22,7 @@ class League:
             matches = result['matches']
             remaining_matches = result['results_remaining']
 
-            last_match_id = matches[len(matches) - 1]['match_id']
+            last_match_id = matches[-1]['match_id']
 
             match_ids.extend(self._extract_match_ids(matches))
 
@@ -42,7 +42,9 @@ class League:
         matches = []
 
         for id in match_ids:
-            matches.append(Match(api.get_match_details(id)['result']))
+            match = Match(api.get_match_details(id)['result'])
+            if match.is_valid:
+                matches.append(match)
 
         return matches
 
