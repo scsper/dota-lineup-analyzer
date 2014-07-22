@@ -24,3 +24,11 @@ class API:
         url = MATCH_DETAILS_URL + "&match_id=" + str(match_id)
 
         return requests.get(url).json()
+
+
+    def get_heroes(self):
+        url = "https://api.steampowered.com/IEconDOTA2_570/GetHeroes/v001/?key=" + API_KEY + "&language=en_us"
+
+        return requests.get(url).json()["result"]["heroes"]
+
+
