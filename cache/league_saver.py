@@ -34,8 +34,8 @@ class LeagueSaver:
 
             self.write_field(filehandle, 'match_id', match.id)
             self.write_field(filehandle, 'winner', match.winner)
-            # self.save_lineup(filehandle, 'radiant', match.radiant)
-            # self.save_lineup(filehandle, 'dire', match.dire)
+            self.save_lineup(filehandle, 'radiant', match.radiant)
+            self.save_lineup(filehandle, 'dire', match.dire)
 
             if(match == last_match):
                 bracket_config = BracketConfig('last')
@@ -48,18 +48,29 @@ class LeagueSaver:
 
 
     def save_lineup(self, filehandle, lineup_type, lineup):
-        self.indent()
+        self.indent(filehandle)
         filehandle.write(lineup_type + ': [')
 
-        for hero in lineup:
+        heroes = lineup.heroes
+        last_hero = heroes[-1]
+
+        for hero in heroes:
             self.open_bracket(filehandle)
 
             self.write_field(filehandle, 'hero_id', hero.id)
             self.write_field(filehandle, 'hero_name', hero.name)
 
-            self.close_bracket(filehandle)
+            if(hero == last_hero):
+                bracket_config = BracketConfig('last')
+            else:
+                bracket_config = BracketConfig()
 
-        filehandle.write(']')
+            self.close_bracket(filehandle, bracket_config)
+
+        if(lineup_type == 'radiant'):
+            filehandle.write('],\n')
+        else:
+            filehandle.write(']\n')
 
 
     def write_field(self, filehandle, key, value):
