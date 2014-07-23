@@ -1,5 +1,5 @@
 from league_ids import LeagueIds
-from match import Match
+from services import MatchService
 from api import API
 
 api = API()
@@ -42,8 +42,8 @@ class League:
         matches = []
 
         for id in match_ids:
-            match = Match(api.get_match_details(id)['result'])
-            if match.is_valid:
+            match = MatchService().createMatch(api.get_match_details(id))
+            if match:
                 matches.append(match)
 
         return matches

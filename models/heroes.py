@@ -26,9 +26,9 @@ class Heroes:
         return hero_json
 
 
-    def hero_name(self, hero_id):
+    def get_hero_name(self, hero_id):
         return self.heroByIds[hero_id]
 
 
-    def hero_id(self, hero_name):
+    def get_hero_id(self, hero_name):
         return self.heroesByNames[hero_name]
