@@ -36,8 +36,8 @@ for match in matches:
 
 
 total_sorted_matches = sorted(total_matches)
-for hero_id in  total_matches:
-    print heroes.hero_name(hero_id) + " " + str(total_matches[hero_id])
+for hero in  total_matches:
+    print hero + " " + str(total_matches[hero])
 
 
 
