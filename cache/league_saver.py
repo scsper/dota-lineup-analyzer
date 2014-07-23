@@ -24,27 +24,7 @@ class LeagueSaver:
 
     def save_matches(self, filehandle, league):
         matches = league.matches
-        last_match = matches[-1]
-
-        self.indent(filehandle)
-        filehandle.write('matches: [')
-
-        for match in matches:
-            self.open_bracket(filehandle)
-
-            self.write_field(filehandle, 'match_id', match.id)
-            self.write_field(filehandle, 'winner', match.winner)
-            self.save_lineup(filehandle, 'radiant', match.radiant)
-            self.save_lineup(filehandle, 'dire', match.dire)
-
-            if(match == last_match):
-                bracket_config = BracketConfig('last')
-            else:
-                bracket_config = BracketConfig()
-
-            self.close_bracket(filehandle, bracket_config)
-
-        filehandle.write(']\n')
+        filehandle.write(matches.to_JSON())
 
 
     def save_lineup(self, filehandle, lineup_type, lineup):

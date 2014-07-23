@@ -3,14 +3,20 @@ from cache import LeagueSaver
 from models import Match
 from models import Hero
 from models import Lineup
+from services import MatchService
+
 import os
 import requests
 import json
-league = League("the_international_2014")
+# league = League("the_international_2014")
 # print api.get_matches(600, 677739681)
 url = "https://api.steampowered.com/IDOTA2Match_570/GetMatchDetails/V001/?key=60910F01FE5DEC9EAE9AD28782DFE895&match_id=681491340"
 tempMatch = requests.get(url).json()
-my_match = Match( tempMatch["result"],681491340)
+match_service = MatchService()
+my_Match = match_service.createMatch(tempMatch, 677739681)
+
+print my_Match
+# my_match = Match( tempMatch["result"],681491340)
 
 # my_hero_id = 33
 
@@ -39,6 +45,7 @@ my_match = Match( tempMatch["result"],681491340)
 # leagueSaver = LeagueSaver();
 # leagueSaver.save("the_international_2014")
 
-filename = "league.txt"
+
+filename = "match.txt"
 with open(filename, 'w') as filehandle:
-    filehandle.write(league.to_JSON())
+    filehandle.write(my_Match.to_JSON())

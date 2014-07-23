@@ -42,7 +42,7 @@ class League:
         matches = []
 
         for id in match_ids:
-            match = MatchService().createMatch(api.get_match_details(id))
+            match = MatchService().createMatch(api.get_match_details(id),id)
             if match:
                 matches.append(match)
 
