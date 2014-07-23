@@ -2,7 +2,7 @@ import os
 import requests
 from hero import Hero
 from heroes import Heroes
-
+import json
 
 class Lineup:
     def __init__(self, hero_ids):
@@ -12,9 +12,12 @@ class Lineup:
         hero_utils = Heroes()
         heroes = []
         for hero_id in hero_ids:
-            heroes.append(Hero(hero_id, hero_utils.get_hero_name(hero_id)))
+            heroes.append(hero_utils.get_hero_by_id(hero_id))
         return heroes
 
     def __str__(self):
-        return "[" + self.heroes[0] + ", " + self.heroes[1] + ", " + \
-        self.heroes[2] + ", " + self.heroes[3] + ", " + self.heroes[4] + " ]"
+        return "[" + str(self.heroes[0]) + ", " + str(self.heroes[1]) + ", " + \
+        str(self.heroes[2]) + ", " + str(self.heroes[3]) + ", " + str(self.heroes[4]) + " ]"
+
+    def to_JSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=4)

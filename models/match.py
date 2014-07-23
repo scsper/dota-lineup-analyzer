@@ -1,3 +1,4 @@
+import json
 from heroes import Heroes
 from lineup import Lineup
 
@@ -24,3 +25,6 @@ class Match:
         if hero_id in self.radiant.getHeroList():
             return self.getRadiantLineup()
         return
+
+    def to_JSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=4)

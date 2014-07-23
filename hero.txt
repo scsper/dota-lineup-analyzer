@@ -1,1 +1,52 @@
-{"id": 29, "name": "Tidehunter"}
+{
+    "dire": {
+        "heroes": [
+            {
+                "id": 83, 
+                "name": "Treant Protector"
+            }, 
+            {
+                "id": 78, 
+                "name": "Brewmaster"
+            }, 
+            {
+                "id": 77, 
+                "name": "Lycan"
+            }, 
+            {
+                "id": 13, 
+                "name": "Puck"
+            }, 
+            {
+                "id": 3, 
+                "name": "Bane"
+            }
+        ]
+    }, 
+    "id": 681491340, 
+    "radiant": {
+        "heroes": [
+            {
+                "id": 53, 
+                "name": "Nature's Prophet"
+            }, 
+            {
+                "id": 29, 
+                "name": "Tidehunter"
+            }, 
+            {
+                "id": 95, 
+                "name": "Troll Warlord"
+            }, 
+            {
+                "id": 42, 
+                "name": "Wraith King"
+            }, 
+            {
+                "id": 68, 
+                "name": "Ancient Apparition"
+            }
+        ]
+    }, 
+    "winner": "radiant"
+}
