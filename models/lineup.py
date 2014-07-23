@@ -13,6 +13,7 @@ class Lineup:
         heroes = []
         for hero_id in hero_ids:
             heroes.append(Hero(hero_id, hero_utils.get_hero_name(hero_id)))
+        return heroes
 
     def __str__(self):
         return "[" + self.heroes[0] + ", " + self.heroes[1] + ", " + \
