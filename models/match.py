@@ -18,7 +18,6 @@ class Match:
         self.radiant = lineups['radiant']
         self.dire = lineups['dire']
 
-
     def get_lineup_with_hero(self,hero_id):
         if hero_id in self.dire.getHeroList():
             return self.getDireLineup()
