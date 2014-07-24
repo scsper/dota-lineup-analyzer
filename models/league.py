@@ -22,10 +22,15 @@ class League:
 
             matches = result['matches']
             remaining_matches = result['results_remaining']
+            total_results = result['total_results']
+
+            print str(total_results)
+            print str(remaining_matches) + ' left to fetch...'
 
             last_match_id = matches[-1]['match_id']
 
             match_ids.extend(self._extract_match_ids(matches))
+            print 'outer match ids: ' + str(len(match_ids))
 
         return match_ids
 
@@ -35,17 +40,25 @@ class League:
         for match in matches:
             match_ids.append(match['match_id'])
 
+        print 'inner match ids: ' + str(len(match_ids))
+        print match_ids
+
         return match_ids
 
 
     def _retrieve_matches(self):
         match_ids = self._retrieve_match_ids()
         matches = []
+        count = 0
+        length = str(len(match_ids))
+        print len(match_ids)
 
         for id in match_ids:
             match = MatchService().createMatch(api.get_match_details(id),id)
+            count += 1
             if match:
                 matches.append(match)
+            print 'completed ' + str(count) + ' out of ' + length
 
         return matches
 
