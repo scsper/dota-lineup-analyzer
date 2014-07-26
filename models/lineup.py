@@ -1,7 +1,4 @@
-import os
-import requests
-from hero import Hero
-from heroes import Heroes
+import hero_utils
 import json
 
 class Lineup:
@@ -9,7 +6,6 @@ class Lineup:
         self.heroes = self.generate_heroes(hero_ids)
 
     def generate_heroes(self, hero_ids):
-        hero_utils = Heroes()
         heroes = []
         for hero_id in hero_ids:
             heroes.append(hero_utils.get_hero_by_id(hero_id))

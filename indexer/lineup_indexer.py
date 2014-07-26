@@ -2,8 +2,10 @@ class LineupIndexer:
     def __init__(self):
         self.heroesToLineups = {}
 
-    def index(league):
-        for match in matches:
+    def index(self, league):
+        print league
+        print league.matches
+        for match in league.matches:
             self._add_lineup_to_index(match.radiant)
             self._add_lineup_to_index(match.dire)
 
@@ -18,6 +20,6 @@ class LineupIndexer:
             heroesToLineups[name].append(lineup)
 
 
-    def find_hero(hero_name):
+    def find_hero(self, hero_name):
         for lineup in heroesToLineups[hero_name]:
             print lineup

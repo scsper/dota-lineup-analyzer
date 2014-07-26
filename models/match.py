@@ -1,6 +1,4 @@
 import json
-from heroes import Heroes
-from lineup import Lineup
 
 from services import LineupService
 
