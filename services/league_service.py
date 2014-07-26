@@ -22,9 +22,11 @@ class LeagueService:
         cached_file = self.get_file_in_cache(league_name)
 
         if cached_file:
-            self.cache_retrieve_matches(cached_file)
+            matches = self.cache_retrieve_matches(cached_file)
         else:
-            self.api_retrieve_matches(league_id)
+            matches = self.api_retrieve_matches(league_id)
+
+        return matches
 
 
     def cache_retrieve_matches(self, cached_file):
