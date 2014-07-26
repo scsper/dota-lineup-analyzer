@@ -5,16 +5,25 @@ from models import Match
 
 class LeagueReader:
     def __init__(self):
-        with open('match.txt') as json_file:
+        # with open('match.txt') as json_file:
             self.json_data = json.load(json_file)
             json_file.close()
 
-    def create_matches(self):
-        json_matches = self.json_data["matches"]
-        matches = []
-        for match in json_matches:
-            matches.append(Match(match, match["id"]))
-        return matches
+
+    def get_raw_data(self):
+        return self.json_data
+
+    # def __init__(self):
+    #     with open('match.txt') as json_file:
+    #         self.json_data = json.load(json_file)
+    #         json_file.close()
+
+    # def create_matches(self):
+    #     json_matches = self.json_data["matches"]
+    #     matches = []
+    #     for match in json_matches:
+    #         matches.append(Match(match, match["id"]))
+    #     return matches
 
     # def _extract_match_ids(self, matches):
     #     match_ids = []
