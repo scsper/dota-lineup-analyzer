@@ -1,26 +1,25 @@
+from collection import LineupCollection
+
 class LineupIndexer:
     def __init__(self):
-        self.heroesToLineups = {}
+        self.lineupCollection = LineupCollection()
+
 
     def index(self, league):
         for match in league.matches:
-            self._add_lineup_to_index(match.radiant)
-            self._add_lineup_to_index(match.dire)
+            self.lineupCollection.add(match.radiant)
+            self.lineupCollection.add(match.dire)
 
 
-    def _add_lineup_to_index(self, lineup):
-        for hero in lineup.heroes:
-            name = hero.name
+    # def filter(self, hero_name):
+    #     lineups = self.lineupCollection.get_lineups(hero_name)
+    #     collection = LineupCollection()
 
-            if name not in self.heroesToLineups:
-                self.heroesToLineups[name] = []
+    #     for lineup in lineups:
+    #         collection.add(lineup)
 
-            self.heroesToLineups[name].append(lineup)
+    #     return collection
 
 
-    def find_hero(self, hero_name):
-        for lineup in self.heroesToLineups[hero_name]:
-            print lineup
-
-    def get_lineups(self, hero_name):
-        return self.heroesToLineups[hero_name]
+    def get_lineups(self):
+        return self.lineupCollection
