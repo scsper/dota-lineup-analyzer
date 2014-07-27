@@ -4,3 +4,5 @@ class Hero:
         self.name = name
     def __str__(self):
         return str(self.name)
+    def get_object(self):
+        return { 'id': self.id, 'name': self.name }

@@ -21,3 +21,6 @@ class LineupIndexer:
     def find_hero(self, hero_name):
         for lineup in self.heroesToLineups[hero_name]:
             print lineup
+
+    def get_lineups(self, hero_name):
+        return self.heroesToLineups[hero_name]

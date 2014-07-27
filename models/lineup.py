@@ -16,4 +16,15 @@ class Lineup:
         str(self.heroes[2]) + ", " + str(self.heroes[3]) + ", " + str(self.heroes[4]) + "]"
 
     def to_JSON(self):
-        return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=4)
+        return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True)
+
+    def get_object(self):
+        obj = {'lineup': []}
+
+        for hero in self.heroes:
+            objHero = hero.get_object()
+            obj['lineup'].append(objHero)
+
+        return obj
+
+
