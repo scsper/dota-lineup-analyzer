@@ -2,3 +2,4 @@
 *.pyc
 driver.py
 cache/*.txt
+.vagrant/
