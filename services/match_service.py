@@ -12,10 +12,10 @@ class MatchService:
             if(not self.is_player_count_valid(raw_match)):
                 return None
 
-            if raw_match["radiant_win"]:
-                raw_match.winner = "radiant"
+            if raw_match['radiant_win']:
+                raw_match['winner'] = 'radiant'
             else:
-                raw_match.winner = "dire"
+                raw_match['winner'] = 'dire'
 
         return models.Match(raw_match, match_id)
 
