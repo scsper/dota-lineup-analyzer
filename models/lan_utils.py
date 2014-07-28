@@ -60,5 +60,4 @@ def get_match_ids(league):
 
         match_id_set.update(match_ids)
 
-    print match_id_set
-    print len(match_id_set)
+    return list(match_id_set)
