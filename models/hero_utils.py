@@ -3,16 +3,18 @@ from api import API
 
 api = API()
 
-heroByIds = {}
-heroesByNames = {}
+hero_by_ids = {}
+hero_by_names = {}
+hero_list = []
 
 
 def _build_hero_maps():
     raw_heroes = _get_raw_heroes()
     for raw_hero in raw_heroes:
         hero = Hero(raw_hero['id'], raw_hero['localized_name'])
-        heroByIds[hero.id] = hero
-        heroesByNames[hero.name] = hero
+        hero_by_ids[hero.id] = hero
+        hero_by_names[hero.name] = hero
+        hero_list.append(hero)
 
 
 def _get_raw_heroes():
@@ -21,12 +23,14 @@ def _get_raw_heroes():
 
 
 def get_hero_by_name(hero_name):
-    return heroesByNames[hero_name]
+    return hero_by_names[hero_name]
 
 
 def get_hero_by_id(hero_id):
-    return heroByIds[hero_id]
+    return hero_by_ids[hero_id]
 
+def get_heroes():
+    return hero_list
 
 
 _build_hero_maps()
