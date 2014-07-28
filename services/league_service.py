@@ -1,6 +1,7 @@
 import json
 import models
 import os
+from models import lan_utils
 
 from match_service import MatchService
 from api import API
@@ -24,7 +25,7 @@ class LeagueService:
         if cached_file:
             matches = self.cache_retrieve_matches(cached_file)
         else:
-            matches = self.api_retrieve_matches(league_id)
+            matches = self.api_retrieve_matches(league_id, league_name)
 
         return matches
 
@@ -48,8 +49,12 @@ class LeagueService:
         return matches
 
 
-    def api_retrieve_matches(self, league_id):
-        match_ids = self._retrieve_match_ids(league_id)
+    def api_retrieve_matches(self, league_id, league_name):
+        if(lan_utils.is_lan(league_name)):
+            match_ids = lan_utils.get_match_ids(league_name)
+        else:
+            match_ids = self._retrieve_match_ids(league_id)
+
         matches = []
         count = 0
         length = str(len(match_ids))
