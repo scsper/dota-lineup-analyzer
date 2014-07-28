@@ -43,7 +43,7 @@ class LeagueService:
         for match_json in matches_json:
             match = MatchService().create_match(match_json)
             matches.append(match)
-            print 'completed ' + str(count) + ' out of ' + str(length)
+            # print 'completed ' + str(count) + ' out of ' + str(length)
             count += 1
 
         return matches
