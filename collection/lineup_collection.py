@@ -4,6 +4,7 @@ class LineupCollection:
     def __init__(self):
         self.heroesToLineups = {}
         self.heroCounts = {}
+        self.highestCount = 0
 
 
     def add(self, lineup):
@@ -16,6 +17,9 @@ class LineupCollection:
 
             self.heroesToLineups[name].append(lineup)
             self.heroCounts[name] += 1
+
+            if self.heroCounts[name] > self.highestCount:
+                self.highestCount = self.heroCounts[name]
 
 
     def filter(self, hero_name):
@@ -31,6 +35,32 @@ class LineupCollection:
     def print_hero_counts(self):
         for hero in sorted(self.heroCounts, key=self.heroCounts.get, reverse=True):
             print hero + ': ' + str(self.heroCounts[hero])
+
+
+    def get_highest_count(self):
+        return self.highestCount
+
+
+    def get_hero_combo(self):
+        hero_list = []
+        for hero in self.heroCounts:
+            if self.heroCounts[hero] == self.highestCount:
+                hero_list.append(hero)
+
+        return hero_list
+
+    def print_hero_combo(self):
+        hero_list = self.get_hero_combo()
+        returnStr = '['
+        last_hero = hero_list[-1]
+        for hero in hero_list:
+            returnStr += hero
+            if hero != last_hero:
+                returnStr += ', '
+        returnStr += ']'
+
+        return returnStr
+
 
 
     def get_lineups(self, hero_name):
