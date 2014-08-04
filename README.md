@@ -1,15 +1,16 @@
 dota-lineup-analyzer
 ====================
 
-* Install Vagrant and Virtual Box
-* sudo apt-get install make
+* Install [Vagrant](http://www.vagrantup.com/) and [Virtual Box](https://www.virtualbox.org/)
+
 * vagrant up
 * vagrant ssh
+* sudo apt-get install make
 * sudo make install
 
 * get a steam developer key
 * put that key in your ~/.bash_profile
-    * export DOTA2_API_KEY="<insert key here>"
+    * `export DOTA2_API_KEY="<insert key here>"`
 
 
 * python driver.py
