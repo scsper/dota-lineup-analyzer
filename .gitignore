@@ -1,5 +1,5 @@
 .DS_Store
 *.pyc
-driver.py
+*driver.py
 cache/*.txt
 .vagrant/
