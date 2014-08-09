@@ -9,9 +9,21 @@ from api import API
 api = API()
 
 class LeagueService:
-    def get_file_in_cache(self, league_name):
-        folder = "cache/league_data/"
-        target_filename = league_name + ".txt"
+    def __init__(self, id, name, type):
+        self.type = type
+
+        if self.type == 'league':
+            self.cache_folder = "cache/league_data/"
+        elif self.type == 'player':
+            self.cache_folder = "cache/player_data/"
+
+        self.id = id
+        self.name = name
+
+
+    def get_file_in_cache(self):
+        folder = self.cache_folder
+        target_filename = self.name + ".txt"
         for filename in os.listdir(folder):
             if filename == target_filename:
                 return folder + filename
@@ -19,13 +31,13 @@ class LeagueService:
         return None
 
 
-    def retrieve_matches(self, league_id, league_name):
-        cached_file = self.get_file_in_cache(league_name)
+    def retrieve_matches(self):
+        cached_file = self.get_file_in_cache()
 
         if cached_file:
             matches = self.cache_retrieve_matches(cached_file)
         else:
-            matches = self.api_retrieve_matches(league_id, league_name)
+            matches = self.api_retrieve_matches()
 
         return matches
 
@@ -49,11 +61,11 @@ class LeagueService:
         return matches
 
 
-    def api_retrieve_matches(self, league_id, league_name):
-        if(lan_utils.is_lan(league_name)):
-            match_ids = lan_utils.get_match_ids(league_name)
+    def api_retrieve_matches(self):
+        if(lan_utils.is_lan(self.name)):
+            match_ids = lan_utils.get_match_ids(self.name)
         else:
-            match_ids = self._retrieve_match_ids(league_id)
+            match_ids = self._retrieve_match_ids()
 
         matches = []
         count = 0
@@ -70,14 +82,14 @@ class LeagueService:
         return matches
 
 
-    def _retrieve_match_ids(self, league_id):
+    def _retrieve_match_ids(self):
         remaining_matches = 1
         last_match_id = None
         num_of_matches_to_retrieve = 25
         match_ids = []
 
         while(remaining_matches > 0):
-            result = api.get_matches(league_id, last_match_id, num_of_matches_to_retrieve)['result']
+            result = api.get_matches(self.id, last_match_id, num_of_matches_to_retrieve)['result']
 
             matches = result['matches']
             remaining_matches = result['results_remaining']

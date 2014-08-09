@@ -6,7 +6,7 @@ class League:
     def __init__(self, name):
         self.id = LeagueIds().getLeagueId(name)
         self.name = name
-        self.matches = LeagueService().retrieve_matches(self.id, self.name)
+        self.matches = LeagueService(self.id, self.name, 'league').retrieve_matches()
 
     def get_matches(self):
         return self.matches
