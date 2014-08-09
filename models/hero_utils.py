@@ -27,6 +27,9 @@ def get_hero_by_name(hero_name):
 
 
 def get_hero_by_id(hero_id):
+    if(hero_id not in hero_by_ids):
+        return Hero(hero_id, 'Invalid Hero Id: Hero Not Found')
+
     return hero_by_ids[hero_id]
 
 def get_heroes():
