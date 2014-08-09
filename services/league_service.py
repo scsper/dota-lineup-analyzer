@@ -86,7 +86,7 @@ class LeagueService:
         remaining_matches = 1
         last_match_id = None
         num_of_matches_to_retrieve = 25
-        match_ids = []
+        match_ids = set()
 
         while(remaining_matches > 0):
             if(self.type == 'league'):
@@ -104,8 +104,9 @@ class LeagueService:
 
             last_match_id = matches[-1]['match_id']
 
-            match_ids.extend(self._extract_match_ids(matches))
+            match_ids.update(self._extract_match_ids(matches))
             print 'outer match ids: ' + str(len(match_ids))
+
 
         return match_ids
 
