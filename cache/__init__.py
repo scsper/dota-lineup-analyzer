@@ -1,2 +1,2 @@
-from league_saver import LeagueSaver
+from saver import Saver
 from league_reader import LeagueReader
