@@ -9,9 +9,19 @@ MATCH_DETAILS_URL = BASE_URL + "/GetMatchDetails/V001/?key=" + API_KEY
 PLAYER_STATS_URL =  BASE_URL + '/GetTournamentPlayerStats/v1/?key=' + API_KEY
 
 class API:
-    def get_matches(self, league_id, starting_match_id=None, matches_requested=None):
+    def get_league_matches(self, league_id, starting_match_id=None, matches_requested=None):
         url = MATCH_HISTORY_URL + "&league_id=" + str(league_id)
 
+        return self._get_matches(url, starting_match_id, matches_requested)
+
+
+    def get_player_matches(self, player_id, starting_match_id, matches_requested):
+        url = MATCH_HISTORY_URL + "&account_id=" + str(player_id)
+
+        return self._get_matches(url, starting_match_id, matches_requested)
+
+
+    def _get_matches(self, url, starting_match_id=None, matches_requested=None):
         if(matches_requested != None):
             url += "&matches_requested=" + str(matches_requested)
 

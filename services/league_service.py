@@ -89,7 +89,11 @@ class LeagueService:
         match_ids = []
 
         while(remaining_matches > 0):
-            result = api.get_matches(self.id, last_match_id, num_of_matches_to_retrieve)['result']
+            if(self.type == 'league'):
+                result = api.get_league_matches(self.id, last_match_id, num_of_matches_to_retrieve)['result']
+            elif(self.type == 'player'):
+                result = api.get_player_matches(self.id, last_match_id, num_of_matches_to_retrieve)['result']
+
 
             matches = result['matches']
             remaining_matches = result['results_remaining']
