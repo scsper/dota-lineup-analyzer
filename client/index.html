@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <script src="http://fb.me/react-0.8.0.js"></script>
+    <script src="http://fb.me/JSXTransformer-0.8.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="content">
+        </div>
+        <script type="text/jsx">
+        /**
+        * @jsx React.DOM
+        */
+        var HelloWorld = React.createClass({
+            render: function() {
+                return (
+                    <div>Hello world!</div>
+                );
+            }
+        });
+
+        React.renderComponent(
+            <HelloWorld />,
+            document.getElementById('content')
+        );
+        </script>
+    </div>
+</body>
+</html>
