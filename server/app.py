@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 from flask import render_template
 from flask import jsonify
 
@@ -6,11 +6,11 @@ from flask import jsonify
 from models import League
 from indexer import LineupIndexer
 
-# lineup_indexer = LineupIndexer()
+lineup_indexer = LineupIndexer()
 
-# league = League("the_international_2014")
-# lineup_indexer.index(league)
-# lineups = lineup_indexer.get_lineups('Sand King')
+league = League("the_international_2014")
+lineup_indexer.index(league)
+all_lineups = lineup_indexer.get_lineups()
 
 app = Flask(__name__)
 
@@ -18,19 +18,16 @@ app = Flask(__name__)
 def hello_world():
     return render_template('index.html')
 
-# @app.route('/lineups')
-# def lineups():
-        # lineup_indexer = LineupIndexer()
 
-        # league = League("the_international_2014")
-        # lineup_indexer.index(league)
-        # lineups = lineup_indexer.get_lineups('Sand King')
+@app.route('/lineups')
+def lineups():
+    lineupsDict = {'lineups': []}
+    filtered_lineups = all_lineups.filter('Kunkka').get_unique_lineups()
 
-        # lineupDict = {'lineups': []}
+    for lineup in filtered_lineups:
+        lineupsDict['lineups'].append(lineup.heroNames)
 
-        # for lineup in lineups:
-        #     lineupDict['lineups'].append(lineup.get_object())
+    return jsonify(lineupsDict)
 
-        # return jsonify(lineupDict)
 
 app.run(host='0.0.0.0', debug=True)
