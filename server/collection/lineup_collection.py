@@ -67,18 +67,25 @@ class LineupCollection:
         return self.heroesToLineups[hero_name]
 
 
+    def get_unique_lineups(self):
+        uniqueLineups = set()
+        for key in self.heroesToLineups:
+            for lineup in self.heroesToLineups[key]:
+                uniqueLineups.update([lineup])
+
+        return list(uniqueLineups)
+
+
     def to_JSON(self):
         return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=4)
 
+
     def __str__(self):
         returnStr = ''
-        lineup_set = set()
-        for key in self.heroesToLineups:
-            for lineup in self.heroesToLineups[key]:
-                lineup_set.update([lineup])
+        uniqueLineups = self.get_unique_lineups()
 
-        for key in lineup_set:
-            returnStr += str(key) + '\n'
+        for lineup in uniqueLineups:
+            returnStr += str(lineup) + '\n'
 
         return returnStr
 
