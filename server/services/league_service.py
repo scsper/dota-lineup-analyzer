@@ -13,9 +13,9 @@ class LeagueService:
         self.type = type
 
         if self.type == 'league':
-            self.cache_folder = "cache/league_data/"
+            self.cache_folder = "server/cache/league_data/"
         elif self.type == 'player':
-            self.cache_folder = "cache/player_data/"
+            self.cache_folder = "server/cache/player_data/"
 
         self.id = id
         self.name = name
