@@ -3,3 +3,4 @@
 *driver.py
 cache/*.txt
 .vagrant/
+server/static/
