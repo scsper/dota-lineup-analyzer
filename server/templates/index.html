@@ -4,29 +4,26 @@
     <script src="http://fb.me/react-0.8.0.js"></script>
     <script src="http://fb.me/JSXTransformer-0.8.0.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/app.css" rel="stylesheet">
+
+
+    <script type="text/jsx" src="../static/components/Navigation.jsx"></script>
+    <script type="text/jsx" src="../static/components/Body.jsx"></script>
+
+    <script type="text/jsx" src="../static/components/App.jsx"></script>
+
 </head>
 <body>
-    <div class="container">
-        <div id="content">
-        </div>
-        <script type="text/jsx">
+    <script type="text/jsx">
         /**
         * @jsx React.DOM
         */
-        var HelloWorld = React.createClass({
-            render: function() {
-                return (
-                    <div>Hello world!</div>
-                );
-            }
-        });
 
         React.renderComponent(
-                <HelloWorld />,
-                document.getElementById('content')
+            <App />,
+            document.body
         );
-        </script>
-    </div>
+    </script>
 </body>
 </html>
