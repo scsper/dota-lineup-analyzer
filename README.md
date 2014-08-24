@@ -14,4 +14,6 @@ dota-lineup-analyzer
 
 
 * python driver.py
-* http://localhost:5001 (once we get flask up)
+
+* `make server`
+* http://localhost:5001 in your browser
