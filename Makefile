@@ -1,5 +1,5 @@
 run:
-	python driver.py
+	python server/driver.py
 
 clean:
 	rm *.pyc
