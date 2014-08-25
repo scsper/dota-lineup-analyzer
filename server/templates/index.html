@@ -1,29 +1,31 @@
 <!doctype html>
 <html>
 <head>
-    <script src="http://fb.me/react-0.8.0.js"></script>
-    <script src="http://fb.me/JSXTransformer-0.8.0.js"></script>
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="../static/css/app.css" rel="stylesheet">
 
-    <script type="text/javascript" src="../static/dispatcher/Dispatcher.js"></script>
+    <script src="http://fb.me/react-0.8.0.js"></script>
+    <script src="http://fb.me/JSXTransformer-0.8.0.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+    <script src="../static/lib/bean.min.js"></script>
 
-    <script type="text/jsx" src="../static/components/Search.jsx"></script>
+    <script type="text/javascript" src="../static/dispatcher/Dispatcher.js"></script>
+    <script type="text/javascript" src="../static/constants/LineupConstants.js"></script>
+    <script type="text/javascript" src="../static/actions/LineupActionCreator.js"></script>
+    <script type="text/javascript" src="../static/stores/LineupStore.js"></script>
+
+    <script type="text/jsx" src="../static/components/lineup/LineupSearch.jsx"></script>
+    <script type="text/jsx" src="../static/components/lineup/Lineup.jsx"></script>
 
     <script type="text/jsx" src="../static/components/Navigation.jsx"></script>
     <script type="text/jsx" src="../static/components/Body.jsx"></script>
-
     <script type="text/jsx" src="../static/components/App.jsx"></script>
 
 </head>
 <body>
     <script type="text/jsx">
-        /**
-        * @jsx React.DOM
-        */
-
+        /** @jsx React.DOM */
         React.renderComponent(
             <App />,
             document.body
