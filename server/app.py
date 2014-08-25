@@ -21,8 +21,14 @@ def hello_world():
 
 @app.route('/lineups')
 def lineups():
+    heroes = request.args.getlist('heroes[]')
+    filtered_lineups = all_lineups
+
+    for hero in heroes:
+        filtered_lineups = filtered_lineups.filter(hero)
+
     lineupsDict = {'lineups': []}
-    filtered_lineups = all_lineups.filter('Kunkka').get_unique_lineups()
+    filtered_lineups = filtered_lineups.get_unique_lineups()
 
     for lineup in filtered_lineups:
         lineupsDict['lineups'].append(lineup.heroNames)
