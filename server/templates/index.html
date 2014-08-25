@@ -3,7 +3,7 @@
 <head>
     <script src="http://fb.me/react-0.8.0.js"></script>
     <script src="http://fb.me/JSXTransformer-0.8.0.js"></script>
-    <script src="../static/lib/ajax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="../static/css/app.css" rel="stylesheet">
@@ -26,6 +26,15 @@
             <App />,
             document.body
         );
+    </script>
+
+    <script type="text/javascript">
+    $.ajax('/lineups', {
+        data: { foo: 'bar', baz: 100 },
+        success: function (resp) {
+            console.log('hooray');
+        }
+    });
     </script>
 </body>
 </html>
