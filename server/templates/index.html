@@ -10,13 +10,17 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
     <script src="../static/lib/bean.min.js"></script>
 
+    <script type="text/javascript" src="../static/services/LineupService.js"></script>
+
     <script type="text/javascript" src="../static/dispatcher/Dispatcher.js"></script>
     <script type="text/javascript" src="../static/constants/LineupConstants.js"></script>
     <script type="text/javascript" src="../static/actions/LineupActionCreator.js"></script>
     <script type="text/javascript" src="../static/stores/LineupStore.js"></script>
 
-    <script type="text/jsx" src="../static/components/lineup/LineupSearch.jsx"></script>
     <script type="text/jsx" src="../static/components/lineup/Lineup.jsx"></script>
+    <script type="text/jsx" src="../static/components/lineup/LineupsSearch.jsx"></script>
+    <script type="text/jsx" src="../static/components/lineup/LineupsDisplay.jsx"></script>
+    <script type="text/jsx" src="../static/components/lineup/Lineups.jsx"></script>
 
     <script type="text/jsx" src="../static/components/Navigation.jsx"></script>
     <script type="text/jsx" src="../static/components/Body.jsx"></script>
@@ -30,15 +34,6 @@
             <App />,
             document.body
         );
-    </script>
-
-    <script type="text/javascript">
-    $.ajax('/lineups', {
-        data: { heroes: ['Kunkka', 'Razor'] },
-        success: function (resp) {
-            console.log(resp);
-        }
-    });
     </script>
 </body>
 </html>

@@ -14,9 +14,7 @@ all_lineups = lineup_indexer.get_lineups()
 
 app = Flask(__name__)
 
-@app.route('/')
-def hello_world():
-    return render_template('index.html')
+
 
 
 @app.route('/lineups')
@@ -34,6 +32,11 @@ def lineups():
         lineupsDict['lineups'].append(lineup.heroNames)
 
     return jsonify(lineupsDict)
+
+
+@app.route('/')
+def hello_world():
+    return render_template('index.html')
 
 
 app.run(host='0.0.0.0', debug=True)

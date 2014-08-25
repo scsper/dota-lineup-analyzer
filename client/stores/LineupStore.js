@@ -1,5 +1,9 @@
 var LineupStore = function() {
+    this.lineups = [];
+};
 
+LineupStore.prototype.get = function() {
+    return this.lineups;
 };
 
 LineupStore.prototype.register = function() {
@@ -10,8 +14,8 @@ LineupStore.prototype.register = function() {
         var action = payload.action;
 
         switch(action.actionType) {
-            case LineupConstants.TEST:
-                console.log('action TEST read');
+            case LineupConstants.SEARCH:
+                _this.lineups = action.lineups;
                 break;
 
             default:
