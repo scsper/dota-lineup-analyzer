@@ -10,7 +10,8 @@ var LineupActionCreator = {
             function(data) {
                 Dispatcher.handleServerAction({
                     actionType: LineupConstants.SEARCH,
-                    lineups: data.lineups
+                    lineups: data.lineups,
+                    searchedHeroes: heroes
                 });
             },
 

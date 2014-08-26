@@ -2,17 +2,30 @@
 
 var Lineup = React.createClass({
     render: function() {
-        var lineup = this.props.lineup;
+        var lineup = this.props.lineup,
+            searchedHeroes = this.props.searchedHeroes;
 
-        console.log(this.props);
+        lineup = lineup.filter(function(hero) {
+            for(var i = 0; i < searchedHeroes.length; i++) {
+                if(searchedHeroes[i] === hero) {
+                    return;
+                }
+            }
+
+            return hero;
+        });
 
         return (
             <div>
-                <span>[{lineup[0]}, </span>
-                <span>{lineup[1]}, </span>
-                <span>{lineup[2]}, </span>
-                <span>{lineup[3]}, </span>
-                <span>{lineup[4]}]</span>
+                {
+                    searchedHeroes.map(function(hero) {
+                        return <span>{hero}, </span>;
+                    }, this),
+
+                    lineup.map(function(hero) {
+                        return <span>{hero}, </span>;
+                    }, this)
+                }
             </div>
         );
     }

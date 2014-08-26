@@ -1,9 +1,14 @@
 var LineupStore = function() {
     this.lineups = [];
+    this.searchedHeroes = [];
 };
 
-LineupStore.prototype.get = function() {
+LineupStore.prototype.getLineups = function() {
     return this.lineups;
+};
+
+LineupStore.prototype.getSearchedHeroes = function() {
+    return this.searchedHeroes;
 };
 
 LineupStore.prototype.register = function() {
@@ -16,6 +21,7 @@ LineupStore.prototype.register = function() {
         switch(action.actionType) {
             case LineupConstants.SEARCH:
                 _this.lineups = action.lineups;
+                _this.searchedHeroes = action.searchedHeroes;
                 break;
 
             default:

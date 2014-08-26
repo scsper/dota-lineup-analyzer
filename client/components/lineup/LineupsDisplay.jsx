@@ -20,7 +20,7 @@ var LineupsDisplay = React.createClass({
             <div className="lineups">
                 {
                     this.state.lineups.map(function(lineup) {
-                        return <Lineup lineup={lineup}/>
+                        return <Lineup lineup={lineup} searchedHeroes={this.state.searchedHeroes} />
                     }, this)
                 }
             </div>
@@ -29,7 +29,8 @@ var LineupsDisplay = React.createClass({
 
     _lineupStoreChanged: function() {
         this.setState({
-            lineups: lineupStore.get()
+            lineups: lineupStore.getLineups(),
+            searchedHeroes: lineupStore.getSearchedHeroes()
         });
     }
 });
