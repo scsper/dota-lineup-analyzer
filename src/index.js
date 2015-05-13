@@ -1,3 +1,4 @@
 module.exports = function() {
-    return 1;
+    var one = 1;
+    return one;
 };
