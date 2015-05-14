@@ -13,8 +13,5 @@ deploy:
   application: dota-lineup-analyzer
   deployment_group: ''
   on: *70194565142680
-before_deploy:
-- mkdir -p dpl_cd_upload
-- mv '' dpl_cd_upload/''
 after_deploy:
 - node ./src/run.js
