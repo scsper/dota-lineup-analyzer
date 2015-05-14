@@ -1,17 +1,10 @@
 language: node_js
 node_js:
 - '0.10'
-before_install: npm install -g grunt-cli
-install: npm install
 deploy:
-- provider: codedeploy
-  access_key_id: AKIAIE6NDL3KHYAJ4DZQ
-  secret_access_key: *70194565147560
-  bucket: 'dota-lineup-analyzer'
-  key: 'dota-lineup-analyzer'
-  bundle_type: ''
-  application: dota-lineup-analyzer
-  deployment_group: ''
-  on: *70194565142680
-after_deploy:
-- node ./src/run.js
+  provider: heroku
+  api_key:
+    secure: l9lmz3fkIiFVhoWrRKihts+2Eowqt3mF5u5OpgipuGLek2wkMZmBoWQIXTq57ivVPp4tAUSmemxDmjCuD+Zp58Ui9ED7TaOLCqqg0I8twSVcxTXb3APzOlrdTd71l4UhyGOvzDfiq4yoGa9AnGO8BCvdPW/P3xaVB07zhasZHX0=
+  app: young-springs-8078
+  on:
+    repo: scsper/dota-lineup-analyzer
