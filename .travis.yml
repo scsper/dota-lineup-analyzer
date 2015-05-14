@@ -4,15 +4,6 @@ node_js:
 before_install: npm install -g grunt-cli
 install: npm install
 deploy:
-- provider: s3
-  access_key_id: AKIAIE6NDL3KHYAJ4DZQ
-  secret_access_key: &70194565147560
-    secure: UmXJ+eAj65K+jfef8jFJca6aEWdqdGiHlFsHgHQIJboi2qUQ3PXSxY3DNpNKa7RlqIo7zmxtvpwwOBQY/de4MCj+zul/ywXbVqqAgxGz3Hialq78f+/V8uSBzoAEkqKXuiqGiaLpyLwPRVXyxpqqOTdXwRYdz25+BuVg7KAFRZA=
-  local_dir: dpl_cd_upload
-  skip_cleanup: true
-  on: &70194565142680
-    repo: scsper/dota-lineup-analyzer
-  bucket: ''
 - provider: codedeploy
   access_key_id: AKIAIE6NDL3KHYAJ4DZQ
   secret_access_key: *70194565147560
@@ -25,3 +16,5 @@ deploy:
 before_deploy:
 - mkdir -p dpl_cd_upload
 - mv '' dpl_cd_upload/''
+after_deploy:
+- node ./src/run.js
