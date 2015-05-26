@@ -5,14 +5,8 @@ module.exports = function(grunt) {
                 options: {
                     reporter: 'spec'
                 },
-                require: [
-                    function() {
-                        var unitSetup = require('./test/setup/unit.js');
-
-                        unitSetup();
-                    }
-                ],
-                src: ['src/**/*_test.js']
+                // run setup before everything else runs
+                src: ['test/setup/unit.js', 'src/**/*_test.js']
             }
         }
     });

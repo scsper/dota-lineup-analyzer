@@ -1,9 +1,11 @@
-var express = require('express');
-var app = express();
-var getMessage = require('./middleware/message.js');
+var express = require('express'),
+    app = express(),
+    getFromCache = require('./middleware/get_from_cache.js');
 
-app.get('/', getMessage, function (req, res) {
-    res.send(req.message);
+app.get('/tournaments', function (req, res) {
+    var tournament = getFromCache('the_international_203423235');
+
+    res.send('hello');
 });
 
 module.exports = app;
