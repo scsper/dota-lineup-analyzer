@@ -11,5 +11,4 @@ module.exports = function() {
     afterEach(function() {
         this.sandbox.restore();
     });
-
 };
