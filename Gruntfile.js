@@ -6,7 +6,7 @@ module.exports = function(grunt) {
                     reporter: 'spec'
                 },
                 // run setup before everything else runs
-                src: ['test/setup/unit.js', 'src/**/*_test.js']
+                src: ['test/setup/unit.js', 'src/**/_unit_/*_test.js']
             }
         }
     });
