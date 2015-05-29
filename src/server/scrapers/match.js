@@ -22,8 +22,6 @@ Match = function (matchId, players) {
 
         _this.radiant = new Team(result.radiant_team_id, result.radiant_name, pickBans.radiant);
         _this.dire = new Team(result.dire_team_id, result.dire_name, pickBans.dire);
-
-        console.log(_this.radiant, _this.dire);
     });
 };
 

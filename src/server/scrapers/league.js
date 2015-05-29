@@ -16,15 +16,12 @@ League = function (leagueId) {
         var result = response.body.result,
             rawMatches = result.matches;
 
-        console.log(rawMatches.length);
-
         rawMatches.forEach(function (rawMatch) {
             var id = rawMatch.match_id,
-                players = rawMatch.players;
+                players = rawMatch.players,
+                match = new Match(id, players);
 
-            console.log(rawMatch);
-
-            _this.matches.push(new Match(id, players));
+            _this.matches.push(match);
         });
     });
 };
