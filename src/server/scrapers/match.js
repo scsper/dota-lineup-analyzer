@@ -12,16 +12,51 @@ var _ = require('lodash'),
 Match = function (matchId, players) {
     var _this = this;
 
+    this.id = matchId;
     this.winner = Winner.UNKNOWN;
-    this.radiant = {};
-    this.dire = {};
+    this.radiant = null;
+    this.dire = null;
 
-    API.getMatchDetails(matchId).then(function (response) {
+    this.players = players;
+    this.retries = 0;
+
+    this._getMatchDetails();
+};
+
+Match.prototype.serialize = function() {
+    return {
+        id: this.id,
+        winner: this.winner,
+        radiant: this.radiant,
+        dire: this.dire
+    };
+};
+
+Match.prototype._getMatchDetails = function () {
+    var _this = this,
+        MAX_RETRIES = 3;
+
+    API.getMatchDetails(_this.id).then(function (response) {
         var result = response.body.result,
-            pickBans = _this._getPicksAndBans(players, result.picks_bans);
+            pickBans;
 
-        _this.radiant = new Team(result.radiant_team_id, result.radiant_name, pickBans.radiant);
-        _this.dire = new Team(result.dire_team_id, result.dire_name, pickBans.dire);
+        if (!result.picks_bans) {
+            // check why some matches don't have picks_bans
+            // 1509053112 is an example
+            _this.radiant = {};
+            _this.dire = {};
+        } else {
+            pickBans = _this._getPicksAndBans(_this.players, result.picks_bans);
+            _this.radiant = new Team(result.radiant_team_id, result.radiant_name, pickBans.radiant);
+            _this.dire = new Team(result.dire_team_id, result.dire_name, pickBans.dire);
+        }
+    }).catch(function (error) {
+        if (_this.retries < MAX_RETRIES) {
+            _this.retries++;
+            _this._getMatchDetails();
+        } else {
+            throw new Error('Max number of retries made for match id ' + _this.id);
+        }
     });
 };
 
