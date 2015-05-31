@@ -53,6 +53,9 @@ Match.prototype._getMatchDetails = function () {
             _this.dire = new Team(result.dire_team_id, result.dire_name, pickBans.dire);
         }
     }).catch(function (error) {
+        // this should be moved to the api layer.
+        // but, until i get time to write a proper api layer,
+        // it's too messy to move in.
         if (_this.retries < MAX_RETRIES) {
             _this.retries++;
             _this._getMatchDetails();
@@ -72,7 +75,7 @@ Match.prototype._getWinner = function (result) {
 
 Match.prototype._getPicksAndBans = function (players, picksAndBans) {
     // radiant picks are the first five players
-    var radiantHeroId = players[0].hero_id, // slice uses exclusive ranges
+    var radiantHeroId = players[0].hero_id,
         radiantTeamId = _.filter(picksAndBans, { hero_id: radiantHeroId })[0].team,
         radiantPicksBans = _.filter(picksAndBans, { team: radiantTeamId }),
         direPicksBans = _.filter(picksAndBans, { team: ~~!radiantTeamId });
