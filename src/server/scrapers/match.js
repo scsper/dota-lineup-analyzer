@@ -40,6 +40,8 @@ Match.prototype._getMatchDetails = function () {
         var result = response.body.result,
             pickBans;
 
+        _this.winner = _this._getWinner(result);
+
         if (!result.picks_bans) {
             // check why some matches don't have picks_bans
             // 1509053112 is an example
@@ -58,6 +60,14 @@ Match.prototype._getMatchDetails = function () {
             throw new Error('Max number of retries made for match id ' + _this.id);
         }
     });
+};
+
+Match.prototype._getWinner = function (result) {
+    if (result.radiant_win) {
+        return Winner.RADIANT;
+    } else {
+        return Winner.DIRE;
+    }
 };
 
 Match.prototype._getPicksAndBans = function (players, picksAndBans) {
