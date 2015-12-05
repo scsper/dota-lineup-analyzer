@@ -7,37 +7,35 @@ import Match from './match.js';
  * @param {Number} leagueId The id of the league we want to retrieve.
  */
 var League = function (leagueId) {
-    var _this = this;
-
     this.id = leagueId;
     this.matches = [];
     this.totalMatches = -1;
 
     // TODO: we have to check that there are no "remaining_matches"
-    API.getLeagueMatches(leagueId).then(function (response) {
-        var result = response.body.result,
-            rawMatches = result.matches;
+    getLeagueMatches(leagueId).then(response => {
+        const result = response.body.result;
+        const rawMatches = result.matches;
 
-        _this.totalMatches = rawMatches.length;
+        this.totalMatches = rawMatches.length;
 
-        rawMatches.forEach(function (rawMatch) {
-            var id = rawMatch.match_id,
-                players = rawMatch.players
-                match = new Match(id, players);
+        rawMatches.forEach(rawMatch => {
+            const id = rawMatch.match_id;
+            const players = rawMatch.players;
+            const match = new Match(id, players);
 
-            _this.matches.push(match);
+            this.matches.push(match);
         });
     });
 };
 
 League.prototype.isDoneUpdating = function () {
-    var updatedMatches = 0;
+    let updatedMatches = 0;
 
     // make sure that we have completed the request to get all of the matches
     if (this.totalMatches > 0) {
         // make sure we have all of the matches
         if (this.matches.length === this.totalMatches) {
-            this.matches.forEach(function (match) {
+            this.matches.forEach(match => {
                 if (match.radiant && match.dire) {
                     updatedMatches++;
                 } else {
@@ -57,9 +55,9 @@ League.prototype.isDoneUpdating = function () {
 };
 
 League.prototype.serialize = function () {
-    var matches = [];
+    let matches = [];
 
-    this.matches.forEach(function (match) {
+    this.matches.forEach(match => {
         matches.push(match.serialize());
     });
 
