@@ -1,10 +1,9 @@
-var request = require('superagent'),
-    Promise = require('es6-promise').Promise,
-    API_KEY = process.env.DOTA2_API_KEY,
-    BASE_URL = "https://api.steampowered.com/IDOTA2Match_570",
-    MATCH_HISTORY_URL = BASE_URL + "/GetMatchHistory/V001/?key=" + API_KEY,
-    MATCH_DETAILS_URL = BASE_URL + "/GetMatchDetails/V001/?key=" + API_KEY,
-    PLAYER_STATS_URL =  BASE_URL + '/GetTournamentPlayerStats/v1/?key=' + API_KEY;
+import request from 'superagent';
+const API_KEY = process.env.DOTA2_API_KEY;
+const BASE_URL = "https://api.steampowered.com/IDOTA2Match_570";
+const MATCH_HISTORY_URL = BASE_URL + "/GetMatchHistory/V001/?key=" + API_KEY;
+const MATCH_DETAILS_URL = BASE_URL + "/GetMatchDetails/V001/?key=" + API_KEY;
+const PLAYER_STATS_URL =  BASE_URL + '/GetTournamentPlayerStats/v1/?key=' + API_KEY;
 
 /**
  * Wrapper method for the GetMatchHistory API

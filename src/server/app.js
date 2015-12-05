@@ -1,7 +1,9 @@
-var express = require('express'),
-    app = express(),
-    api = require('./api/index.js'),
-    getFromCache = require('./middleware/get_from_cache.js');
+import express from 'express';
+import api from './api/index.js';
+import getFromCache from './middleware/get_from_cache.js';
+import 'babel-polyfill';
+
+const app = express();
 
 app.get('/tournaments', function (req, res) {
     var tournament = getFromCache('the_international_203423235');

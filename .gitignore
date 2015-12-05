@@ -5,3 +5,4 @@ cache/*.txt
 .vagrant/
 server/static/
 node_modules/
+compiled/
