@@ -1,15 +1,15 @@
-var _ = require('lodash'),
-    API = require('../api'),
-    Winner = require('../constants/winner.js'),
-    Team = require('./team.js'),
-    Match;
+import _ from 'lodash';
+import {getMatchDetails} from '../api';
+import Winner from '../constants/winner';
+import Team from './team';
+
 /**
  * Contains the logic to retrieve and store information associated with a match
  *
  * @param {Number} matchId The id of the match we want to retrieve
  * @param {Array} players <INSERT_DOCUMENTATION_HERE>
  */
-Match = function (matchId, players) {
+var Match = function (matchId, players) {
     var _this = this;
 
     this.id = matchId;

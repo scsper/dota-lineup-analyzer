@@ -1,13 +1,12 @@
-var API = require('../api'),
-    Match = require('./match.js'),
-    League;
+import {getLeagueMatches} from '../api';
+import Match from './match.js';
 
 /**
  * Contains the logic to retrieve and store information associated with a league
  *
  * @param {Number} leagueId The id of the league we want to retrieve.
  */
-League = function (leagueId) {
+var League = function (leagueId) {
     var _this = this;
 
     this.id = leagueId;

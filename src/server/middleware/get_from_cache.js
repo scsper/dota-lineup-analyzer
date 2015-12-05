@@ -1,7 +1,7 @@
 /**
  * Checks the cache for the given tournament
  */
-module.exports = function(tournamentName) {
+export function getFromCache(tournamentName) {
     try {
         var tournament = require('../cache/' + tournamentName + '.json');
         return tournament;
