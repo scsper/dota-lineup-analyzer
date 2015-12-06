@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sourcemaps = require('gulp-sourcemaps');
 var babel = require('gulp-babel');
+var nodemon = require('gulp-nodemon');
 
 var path = require('path');
 
@@ -21,8 +22,15 @@ gulp.task('babel', function () {
         .pipe(gulp.dest(paths.es5));
 });
 
-gulp.task('watch', function() {
-    gulp.watch(paths.es6, ['babel']);
+gulp.task('server', function() {
+    nodemon({
+        script: 'index.js',
+        ext: 'js jsx',
+        ignore: ['compiled/'],
+        tasks: ['babel']
+    }).on('restart', function() {
+        console.log('restarted!')
+    });
 });
 
-gulp.task('default', ['watch']);
+gulp.task('default', ['server']);
