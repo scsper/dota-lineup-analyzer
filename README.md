@@ -16,8 +16,7 @@ Setup
 2. run `npm install` in terminal in the git repo directory
 3. `npm install -g gulp`
 4. `npm install -g gulp-cli`
-5. run `gulp babel` to transpile es6 files to es5
-6. run `node index.js`
+5. run `gulp`
 7. go to [http://localhost:3000/api](http://localhost:3000/api) in your browser and see if data is there
 
 ### Setting up Node
