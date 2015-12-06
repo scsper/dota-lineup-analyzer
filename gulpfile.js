@@ -28,7 +28,7 @@ gulp.task('server', function() {
     nodemon({
         script: 'index.js',
         ext: 'js jsx scss',
-        ignore: ['compiled/', paths.css],
+        ignore: [paths.es5, paths.css],
         tasks: ['babel', 'sass']
     }).on('restart', function() {
         console.log('restarted!')
