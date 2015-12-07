@@ -1,9 +1,19 @@
 import express from 'express';
 import {getLeagueMatches, getMatchDetails} from './api/index.js';
 import {getFromCache} from './middleware/get_from_cache.js';
+import path from 'path';
 import 'babel-polyfill';
 
 const app = express();
+
+app.set('views', 'src/server/views/');
+app.set('view engine', 'jade');
+
+app.use(express.static(path.resolve(__dirname, '../../public')));
+
+app.get('/', (req, res) => {
+    res.render('index');
+});
 
 app.get('/tournaments', (req, res) => {
     let tournament = getFromCache('the_international_203423235');
