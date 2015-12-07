@@ -9,7 +9,6 @@ const app = express();
 app.set('views', 'src/server/views/');
 app.set('view engine', 'jade');
 
-console.log(__dirname);
 app.use(express.static(path.resolve(__dirname, '../public')));
 
 app.get('/', (req, res) => {
@@ -23,7 +22,14 @@ app.get('/tournaments', (req, res) => {
 
 app.get('/api', (req, res) => {
     getLeagueMatches(2733).then(response => {
-        res.send(response);
+        try {
+            const jsonResponse = JSON.parse(response.text);
+            res.send(jsonResponse);
+        } catch {
+            res.send({
+                error: 'ERROR: Failed to parse JSON given by dota2 API.'
+            });
+        }
     });
 });
 
