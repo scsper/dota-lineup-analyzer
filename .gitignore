@@ -6,3 +6,4 @@ cache/*.txt
 server/static/
 node_modules/
 compiled/
+public/
