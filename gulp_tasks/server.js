@@ -25,10 +25,10 @@ gulp.task('babel:server', function () {
 gulp.task('server', function() {
     nodemon({
             script: 'index.js',
-            ext: 'jsx js',
+            ext: 'jsx js scss',
             ignore: ['public', paths.es5],
-            tasks: ['babel:server', 'webpack']
+            tasks: ['babel:server', 'webpack', 'sass']
         }).on('restart', function() {
-            console.log('restarted!')
+            console.log('restarted!');
         });
 });
