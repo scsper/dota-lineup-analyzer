@@ -9,7 +9,8 @@ const app = express();
 app.set('views', 'src/server/views/');
 app.set('view engine', 'jade');
 
-app.use(express.static(path.resolve(__dirname, '../../public')));
+console.log(__dirname);
+app.use(express.static(path.resolve(__dirname, '../public')));
 
 app.get('/', (req, res) => {
     res.render('index');
