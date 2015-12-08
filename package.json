@@ -58,6 +58,7 @@
     "babel-polyfill": "^6.3.14",
     "es6-promise": "^2.1.1",
     "express": "^4.12.3",
+    "fluxxor": "^1.7.3",
     "jade": "^1.11.0",
     "lodash": "^3.9.3",
     "react-dom": "^0.14.3",

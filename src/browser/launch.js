@@ -1,10 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/app.jsx';
+import Fluxxor from 'fluxxor';
+import DotaStore from './stores/dota';
+import DotaActions from './actions/dota';
 
 window.onload = function() {
+    const stores = {
+        DotaStore: new DotaStore()
+    };
+
+    const flux = new Fluxxor.Flux(stores, DotaActions);
+
     ReactDOM.render(
-        <App />,
+        <App flux={flux}/>,
         document.getElementById('container')
     );
 };

@@ -20,12 +20,14 @@ app.get('/tournaments', (req, res) => {
     res.send('hello');
 });
 
-app.get('/api', (req, res) => {
-    getLeagueMatches(2733).then(response => {
+app.get('/matches', (req, res) => {
+    let leagueId = req.query.leagueId;
+
+    getLeagueMatches(leagueId).then(response => {
         try {
             const jsonResponse = JSON.parse(response.text);
             res.send(jsonResponse);
-        } catch {
+        } catch(e) {
             res.send({
                 error: 'ERROR: Failed to parse JSON given by dota2 API.'
             });
