@@ -1,10 +1,12 @@
+require('babel-polyfill');
+
 var fs = require('fs'),
-    LeagueScraper = require('./src/server/scrapers/league.js'),
-    league = new LeagueScraper(2733);
+    LeagueScraper = require('./compiled/scrapers/league.js'),
+    league = new LeagueScraper(3671);
 
 var interval = setInterval(function() {
     if (league.isDoneUpdating()) {
-        fs.writeFile("./src/server/cache/the_international_2015.json",
+        fs.writeFile("./src/server/cache/frankfurt_major_2015.json",
             JSON.stringify(league.serialize(), null, 2),
             function(err) {
                 if (err) {

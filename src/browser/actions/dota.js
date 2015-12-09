@@ -3,7 +3,7 @@ import {League} from '../constants/dota';
 
 const DotaActions = {
     getLeague() {
-        let leagueId = 2733;
+        let leagueId = 3671;
 
         getLeagueService(leagueId).then(response => {
             this.dispatch(League.FETCH_SUCCEEDED, response.result);

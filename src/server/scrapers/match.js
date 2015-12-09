@@ -39,7 +39,13 @@ Match.prototype._getMatchDetails = function () {
 
         this.winner = this._getWinner(result);
 
-        if (!result.picks_bans) {
+        /**
+         * TODO fix this nasty hack
+         * we need to find a better way to determine who is radiant and dire.
+         * this is here because sometimes the api does not contain the hero_id.
+         * i put the check out here because i'm lazy and it's late.
+         */
+        if (!result.picks_bans || !this.players[0].hero_id) {
             // check why some matches don't have picks_bans
             // 1509053112 is an example
             this.radiant = {};
@@ -53,6 +59,9 @@ Match.prototype._getMatchDetails = function () {
         // this should be moved to the api layer.
         // but, until i get time to write a proper api layer,
         // it's too messy to move in.
+        console.log(error);
+        console.log(error.stack);
+
         if (this.retries < MAX_RETRIES) {
             this.retries++;
             this._getMatchDetails();

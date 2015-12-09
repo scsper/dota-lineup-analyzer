@@ -16,8 +16,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/tournaments', (req, res) => {
-    let tournament = getFromCache('the_international_203423235');
-    res.send('hello');
+    let tournament = getFromCache('frankfurt_major_2015');
+    res.send(tournament);
 });
 
 app.get('/matches', (req, res) => {
