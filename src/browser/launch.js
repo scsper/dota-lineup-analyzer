@@ -7,7 +7,9 @@ import DotaActions from './actions';
 
 window.onload = function() {
     const stores = {
-        DotaStore: new DotaStore()
+        DotaStore: new DotaStore({
+            heroes: window.heroes
+        })
     };
 
     const flux = new Fluxxor.Flux(stores, DotaActions);

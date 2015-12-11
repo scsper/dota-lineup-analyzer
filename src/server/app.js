@@ -12,11 +12,16 @@ app.set('view engine', 'jade');
 app.use(express.static(path.resolve(__dirname, '../public')));
 
 app.get('/', (req, res) => {
-    res.render('index');
+    let heroes = getFromCache('heroes');
+    console.log(heroes);
+    res.render('index', {
+        heroes: heroes
+    });
 });
 
 app.get('/tournaments', (req, res) => {
-    let tournament = getFromCache('frankfurt_major_2015');
+    let tournamentName = req.query.tournamentName;
+    let tournament = getFromCache(tournamentName);
     res.send(tournament);
 });
 

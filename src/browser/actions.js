@@ -3,10 +3,10 @@ import {League} from './constants/dota';
 
 const DotaActions = {
     getLeague() {
-        let leagueId = 3671;
+        let tournamentName = 'frankfurt_major_2015';
 
-        getLeagueService(leagueId).then(response => {
-            this.dispatch(League.FETCH_SUCCEEDED, response.result);
+        getLeagueService(tournamentName).then(response => {
+            this.dispatch(League.FETCH_SUCCEEDED, response);
         });
     }
 };

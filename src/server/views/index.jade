@@ -4,5 +4,8 @@ html(lang='en')
         title='Dota Lineup Analyzer'
         script(src='bundle.js' type='text/javascript')
         link(rel='stylesheet', href='styles/index.css', type='text/css')
+
+        script(type='text/javascript').
+            window.heroes = !{JSON.stringify(heroes)};
     body
         #container
