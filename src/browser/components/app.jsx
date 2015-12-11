@@ -1,6 +1,6 @@
 import React from 'react';
 import Fluxxor from 'fluxxor';
-import DotaActions from '../actions/dota';
+import DotaActions from '../actions';
 
 const FluxMixin = Fluxxor.FluxMixin(React);
 

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './components/app.jsx';
 import Fluxxor from 'fluxxor';
 import DotaStore from './stores/dota';
-import DotaActions from './actions/dota';
+import DotaActions from './actions';
 
 window.onload = function() {
     const stores = {

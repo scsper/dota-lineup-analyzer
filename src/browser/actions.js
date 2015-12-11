@@ -1,5 +1,5 @@
-import {getLeague as getLeagueService} from '../services/dota';
-import {League} from '../constants/dota';
+import {getLeague as getLeagueService} from './services/dota';
+import {League} from './constants/dota';
 
 const DotaActions = {
     getLeague() {
