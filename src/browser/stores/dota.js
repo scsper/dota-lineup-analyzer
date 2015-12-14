@@ -15,27 +15,39 @@ const DotaStore = Fluxxor.createStore({
         this.patchCollection = new PatchCollection(patchToLeagues);
     },
 
+    /**
+     * @param {Object} tournaments An object with the form:
+     * {
+     *   <leagueId>: {
+     *     id: <leagueId>
+     *     matches: [<match>]
+     *   }
+     * }
+     * @param {String} patch The patch id, e.g. '6.85b'
+     */
     handleLeagueSuccess(tournaments, patch) {
         Object.keys(tournaments).forEach(leagueId => {
             let matches = tournaments[leagueId].matches;
 
             matches.forEach(match => {
                 if (match.radiant.picks) {
-                    this.lineupCollection.add(match.radiant.picks, match.id);
+                    this.lineupCollection.add(match.radiant.picks, match.id, leagueId, patch);
                 }
 
                 if (match.dire.picks) {
-                    this.lineupCollection.add(match.dire.picks, match.id);
+                    this.lineupCollection.add(match.dire.picks, match.id, leagueId, patch);
                 }
             });
         });
 
-        this.getLineupCombinations();
+        this.getLineupCombinationsForLeague(3781, 5);
     },
 
-    getLineupCombinations() {
+    getLineupCombinationsForLeague(leagueId, heroLength) {
         let _this = this;
-        let sortedCombinations = this.lineupCollection.get(4).sort((a, b) => b.count - a.count);
+        let sortedCombinations = this.lineupCollection.getForLeague(leagueId, heroLength)
+            .sort((a, b) => b.count - a.count);
+
         sortedCombinations.forEach(combo => {
             if (combo.count < 2) return;
             let printStr = '[';

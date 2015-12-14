@@ -2,12 +2,28 @@ const DELIMTER = '_';
 
 export default class LineupCollection {
     constructor() {
-        // key: lineup combination sorted by hero id
-        // value: array of match ids
-        this.lineupCombinations = {};
+        // key: league id
+        // value: Object with:
+            // key: lineup combination sorted by hero id
+            // value: array of match ids
+        this.lineupCombinationsByLeague = {};
+
+        // key: patch
+        // value: Object with:
+            // key: lineup combination sorted by hero id
+            // value: array of match ids
+        this.lineupCombinationsByPatch = {};
     }
 
-    add(lineup, matchId) {
+    add(lineup, matchId, leagueId, patch) {
+        if (!this.lineupCombinationsByLeague[leagueId]) {
+            this.lineupCombinationsByLeague[leagueId] = {};
+        }
+
+        if (!this.lineupCombinationsByPatch[patch]) {
+            this.lineupCombinationsByPatch[patch] = {};
+        }
+
         let lineupCombinations = [];
 
         // sort the lineup by hero id to ensure that we end up with consistent keys
@@ -19,11 +35,17 @@ export default class LineupCollection {
 
         lineupCombinations.forEach(lineupCombination => {
             let key = lineupCombination;
-            if (!this.lineupCombinations.hasOwnProperty(key)) {
-                this.lineupCombinations[key] = [];
+
+            if (!this.lineupCombinationsByPatch[patch].hasOwnProperty(key)) {
+                this.lineupCombinationsByPatch[patch][key] = [];
             }
 
-            this.lineupCombinations[key].push(matchId);
+            if (!this.lineupCombinationsByLeague[leagueId].hasOwnProperty(key)) {
+                this.lineupCombinationsByLeague[leagueId][key] = [];
+            }
+
+            this.lineupCombinationsByPatch[patch][key].push(matchId);
+            this.lineupCombinationsByLeague[leagueId][key].push(matchId);
         });
     }
 
@@ -45,17 +67,33 @@ export default class LineupCollection {
         this._getCombinations(lineup, start + 1, storedValues, combinations);
     }
 
-    get(heroLength) {
+    getForLeague(leagueId, heroLength) {
+        if (!this.lineupCombinationsByLeague.hasOwnProperty(leagueId)) {
+            throw new Error('There are no lineups for league: ' + leagueId);
+        }
+
+        return this._get(this.lineupCombinationsByLeague[leagueId], heroLength);
+    }
+
+    getForPatch(patch, heroLength) {
+        if (!this.lineupCombinationsByPatch.hasOwnProperty(patch)) {
+            throw new Error('There are no lineups for patch: ' + patch);
+        }
+
+        return this._get(this.lineupCombinationsByPatch[patch], heroLength);
+    }
+
+    _get(lineupCombinations, heroLength) {
         let combinationsToReturn = [];
 
-        Object.keys(this.lineupCombinations).forEach(key => {
+        Object.keys(lineupCombinations).forEach(key => {
             let heroIds = key.split(DELIMTER);
 
             if (heroIds.length === heroLength) {
                 combinationsToReturn.push({
                     heroIds: heroIds,
-                    matches: this.lineupCombinations[key],
-                    count: this.lineupCombinations[key].length
+                    matches: lineupCombinations[key],
+                    count: lineupCombinations[key].length
                 });
             }
         });
