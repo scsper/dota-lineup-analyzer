@@ -1,6 +1,7 @@
 import express from 'express';
 import {getLeagueMatches, getMatchDetails} from './api/index.js';
 import {getFromCache} from './middleware/get_from_cache.js';
+import leagueMapper from './enums/league_ids_to_league_names';
 import path from 'path';
 import 'babel-polyfill';
 
@@ -13,16 +14,27 @@ app.use(express.static(path.resolve(__dirname, '../public')));
 
 app.get('/', (req, res) => {
     let heroes = getFromCache('heroes');
-    console.log(heroes);
+    let patchToLeagues = getFromCache('patch_to_leagues');
+
     res.render('index', {
-        heroes: heroes
+        heroes: heroes,
+        patchToLeagues: patchToLeagues
     });
 });
 
 app.get('/tournaments', (req, res) => {
-    let tournamentName = req.query.tournamentName;
-    let tournament = getFromCache(tournamentName);
-    res.send(tournament);
+    let patch = req.query.patch;
+    let patchToLeagues = getFromCache('patch_to_leagues');
+    let leagueIds = patchToLeagues[patch];
+
+    let tournaments = {};
+
+    leagueIds.forEach(leagueId => {
+        let leagueName = leagueMapper[leagueId];
+        tournaments[leagueId] = getFromCache(leagueName);
+    });
+
+    res.send(tournaments);
 });
 
 app.get('/matches', (req, res) => {

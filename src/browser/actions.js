@@ -1,12 +1,14 @@
-import {getLeague as getLeagueService} from './services/dota';
+import {
+    getLeague as getLeagueService
+} from './services/dota';
+
 import {League} from './constants/dota';
 
 const DotaActions = {
-    getLeague() {
-        let tournamentName = 'frankfurt_major_2015';
-
-        getLeagueService(tournamentName).then(response => {
-            this.dispatch(League.FETCH_SUCCEEDED, response);
+    getLeague(patch) {
+        getLeagueService(patch).then(response => {
+            console.log(response);
+            this.dispatch(League.FETCH_SUCCEEDED, response, patch);
         });
     }
 };

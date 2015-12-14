@@ -8,7 +8,8 @@ import DotaActions from './actions';
 window.onload = function() {
     const stores = {
         DotaStore: new DotaStore({
-            heroes: window.heroes
+            heroes: window.heroes,
+            patchToLeagues: window.patchToLeagues
         })
     };
 
