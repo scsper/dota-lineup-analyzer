@@ -5,7 +5,7 @@ import LineupCollection from './collections/lineup';
 import PatchCollection from './collections/patch';
 
 const DotaStore = Fluxxor.createStore({
-    initialize({heroes, patchToLeagues}) {
+    initialize({heroes, patchToLeagues, tournamentsForCurrentPatch, currentPatch}) {
         this.bindActions(
             League.FETCH_SUCCEEDED, this.handleLeagueSuccess
         );
@@ -13,6 +13,9 @@ const DotaStore = Fluxxor.createStore({
         this.heroCollection = new HeroCollection(heroes);
         this.lineupCollection = new LineupCollection();
         this.patchCollection = new PatchCollection(patchToLeagues);
+        this.currentPatch = currentPatch;
+
+        this.handleLeagueSuccess(tournamentsForCurrentPatch, currentPatch);
     },
 
     /**
@@ -44,7 +47,7 @@ const DotaStore = Fluxxor.createStore({
         // console.log('entering league');
         // this.getLineupCombinationsForLeague(2922, 4);
         // this.getLineupCombinationsForLeague(2922, 3);
-        this.getLineupCombinationsForLeague(4088, 5);
+        // this.getLineupCombinationsForLeague(4088, 5);
     },
 
     getLineupCombinationsForLeague(leagueId, heroLength) {
@@ -52,21 +55,22 @@ const DotaStore = Fluxxor.createStore({
         let sortedCombinations = this.lineupCollection.getForLeague(leagueId, heroLength)
             .sort((a, b) => b.count - a.count);
 
+        let sortedCombinationsWithHeroNames = [];
+
         sortedCombinations.forEach(combo => {
-            if (combo.count < 2) return;
-            let printStr = '[';
-            let heroIdsStr = '';
+            if (combo.count < 2) {
+                return;
+            }
 
-            combo.heroIds.forEach(heroId => {
-                heroIdsStr += heroId + '_';
-                printStr += ' ' + _this.heroCollection.get(heroId);
+            let lineupWithHeroNames = combo.heroIds.map(heroId => _this.heroCollection.get(heroId));
+
+            sortedCombinationsWithHeroNames.push({
+                lineup: lineupWithHeroNames,
+                count: combo.count
             });
-
-            printStr += ' ]: ' + combo.count;
-            // console.log(heroIdsStr);
-            console.log(printStr);
-            // console.log(combo.matches);
         });
+
+        return sortedCombinationsWithHeroNames;
     },
 
     getPatchList() {

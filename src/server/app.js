@@ -12,18 +12,8 @@ app.set('view engine', 'jade');
 
 app.use(express.static(path.resolve(__dirname, '../public')));
 
-app.get('/', (req, res) => {
-    let heroes = getFromCache('heroes');
-    let patchToLeagues = getFromCache('patch_to_leagues');
-
-    res.render('index', {
-        heroes: heroes,
-        patchToLeagues: patchToLeagues
-    });
-});
-
-app.get('/tournaments', (req, res) => {
-    let patch = req.query.patch;
+// TODO move this to a more appropriate place
+function getLeagueFromPatch(patch) {
     let patchToLeagues = getFromCache('patch_to_leagues');
     let leagueIds = patchToLeagues[patch];
 
@@ -34,11 +24,32 @@ app.get('/tournaments', (req, res) => {
         tournaments[leagueId] = getFromCache(leagueName);
     });
 
+    return tournaments;
+}
+
+app.get('/', (req, res) => {
+    const heroes = getFromCache('heroes');
+    const patchToLeagues = getFromCache('patch_to_leagues');
+    const currentPatch = '6.86';
+    const tournaments = getLeagueFromPatch(currentPatch);
+
+    res.render('index', {
+        heroes: heroes,
+        patchToLeagues: patchToLeagues,
+        tournaments: tournaments,
+        currentPatch: currentPatch
+    });
+});
+
+app.get('/tournaments', (req, res) => {
+    const patch = req.query.patch;
+    const tournaments = getLeagueFromPatch(patch);
+
     res.send(tournaments);
 });
 
 app.get('/matches', (req, res) => {
-    let leagueId = req.query.leagueId;
+    const leagueId = req.query.leagueId;
 
     getLeagueMatches(leagueId).then(response => {
         try {

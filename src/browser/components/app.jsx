@@ -18,7 +18,8 @@ const App = React.createClass({
         let dotaStore = flux.store('DotaStore');
 
         return {
-            patches: dotaStore.getPatchList()
+            patches: dotaStore.getPatchList(),
+            sortedCombinations: dotaStore.getLineupCombinationsForLeague(4088, 4)
         };
     },
 
@@ -26,9 +27,27 @@ const App = React.createClass({
         this.getFlux().actions.getLeague(this.state.patches[1]);
     },
 
+    renderLineupCombinations() {
+        let renderedLineups = [];
+
+        this.state.sortedCombinations.forEach(combo => {
+            let renderedLineup = (
+                <li>
+                    {`[${combo.lineup}]: ${combo.count}`}
+                </li>
+            );
+
+            renderedLineups.push(renderedLineup);
+        });
+
+        return renderedLineups;
+    },
+
     render() {
         return (
-            <div>Hello world!</div>
+            <ul>
+                {this.renderLineupCombinations()}
+            </ul>
         );
     }
 });

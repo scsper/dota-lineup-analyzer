@@ -9,7 +9,9 @@ window.onload = function() {
     const stores = {
         DotaStore: new DotaStore({
             heroes: window.heroes,
-            patchToLeagues: window.patchToLeagues
+            patchToLeagues: window.patchToLeagues,
+            tournamentsForCurrentPatch: window.tournamentsForCurrentPatch,
+            currentPatch: window.currentPatch
         })
     };
 
