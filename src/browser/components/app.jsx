@@ -23,16 +23,12 @@ const App = React.createClass({
         };
     },
 
-    componentDidMount() {
-        this.getFlux().actions.getLeague(this.state.patches[1]);
-    },
-
     renderLineupCombinations() {
         let renderedLineups = [];
 
         this.state.sortedCombinations.forEach(combo => {
             let renderedLineup = (
-                <li>
+                <li key={combo.lineup}>
                     {`[${combo.lineup}]: ${combo.count}`}
                 </li>
             );
