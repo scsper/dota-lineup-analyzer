@@ -44,7 +44,7 @@ const DotaStore = Fluxxor.createStore({
         // console.log('entering league');
         // this.getLineupCombinationsForLeague(2922, 4);
         // this.getLineupCombinationsForLeague(2922, 3);
-        this.getLineupCombinationsForLeague(2922, 1);
+        this.getLineupCombinationsForLeague(4088, 5);
     },
 
     getLineupCombinationsForLeague(leagueId, heroLength) {
@@ -53,7 +53,7 @@ const DotaStore = Fluxxor.createStore({
             .sort((a, b) => b.count - a.count);
 
         sortedCombinations.forEach(combo => {
-            if (combo.count < 1) return;
+            if (combo.count < 2) return;
             let printStr = '[';
             let heroIdsStr = '';
 

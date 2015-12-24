@@ -59,8 +59,7 @@ Match.prototype._getMatchDetails = function () {
         // this should be moved to the api layer.
         // but, until i get time to write a proper api layer,
         // it's too messy to move in.
-        console.log(error);
-        console.log(error.stack);
+        console.log(`Error fetching match ${this.id}: status code: ${error.statusCode} message: ${error.statusMessage}`);
 
         if (this.retries < MAX_RETRIES) {
             this.retries++;
