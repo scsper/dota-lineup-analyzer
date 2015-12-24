@@ -23,7 +23,7 @@ const App = React.createClass({
     },
 
     componentDidMount() {
-        this.getFlux().actions.getLeague(this.state.patches[0]);
+        this.getFlux().actions.getLeague(this.state.patches[1]);
     },
 
     render() {

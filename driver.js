@@ -3,23 +3,23 @@ var api = require('./compiled/api');
 
 var fs = require('fs');
     LeagueScraper = require('./compiled/scrapers/league.js'),
-    league = new LeagueScraper(3781);
+    league = new LeagueScraper(2922);
 
-var interval = setInterval(function() {
-    if (league.isDoneUpdating()) {
-        fs.writeFile("./src/server/cache/the_summit_4.json",
-            JSON.stringify(league.serialize(), null, 2),
-            function(err) {
-                if (err) {
-                    return console.log(err);
-                }
+// var interval = setInterval(function() {
+//     if (league.isDoneUpdating()) {
+//         fs.writeFile("./src/server/cache/wca_2015.json",
+//             JSON.stringify(league.serialize(), null, 2),
+//             function(err) {
+//                 if (err) {
+//                     return console.log(err);
+//                 }
 
-                console.log("The file was saved!");
-                clearInterval(interval);
-            }
-        );
-    }
-}, 2000);
+//                 console.log("The file was saved!");
+//                 clearInterval(interval);
+//             }
+//         );
+//     }
+// }, 2000);
 
 // Don't want to get locked out of the Dota Api while developing.
 function getHeroes() {
@@ -53,3 +53,5 @@ function _getCombinations(array, start, storedValues, combinations) {
 //
 // console.log(combinations);
 // console.log(combinations.length);
+
+getHeroes();
