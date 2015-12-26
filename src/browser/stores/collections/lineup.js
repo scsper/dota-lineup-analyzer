@@ -91,6 +91,7 @@ export default class LineupCollection {
 
             if (heroIds.length === heroLength) {
                 combinationsToReturn.push({
+                    id: key,
                     heroIds: heroIds,
                     matches: lineupCombinations[key],
                     count: lineupCombinations[key].length

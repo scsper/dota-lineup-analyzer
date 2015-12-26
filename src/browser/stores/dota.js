@@ -2,6 +2,7 @@ import Fluxxor from 'fluxxor';
 import {League} from '../constants/dota';
 import HeroCollection from './collections/hero';
 import LineupCollection from './collections/lineup';
+import MatchCollection from './collections/match';
 import PatchCollection from './collections/patch';
 
 const DotaStore = Fluxxor.createStore({
@@ -13,6 +14,7 @@ const DotaStore = Fluxxor.createStore({
         this.heroCollection = new HeroCollection(heroes);
         this.lineupCollection = new LineupCollection();
         this.patchCollection = new PatchCollection(patchToLeagues);
+        this.matchCollection = new MatchCollection();
         this.currentPatch = currentPatch;
 
         this.handleLeagueSuccess(tournamentsForCurrentPatch, currentPatch);
@@ -40,14 +42,10 @@ const DotaStore = Fluxxor.createStore({
                 if (match.dire.picks) {
                     this.lineupCollection.add(match.dire.picks, match.id, leagueId, patch);
                 }
+
+                this.matchCollection.add(match);
             });
         });
-
-        // this.getLineupCombinationsForLeague(2922, 5);
-        // console.log('entering league');
-        // this.getLineupCombinationsForLeague(2922, 4);
-        // this.getLineupCombinationsForLeague(2922, 3);
-        // this.getLineupCombinationsForLeague(4088, 5);
     },
 
     getLineupCombinationsForLeague(leagueId, heroLength) {
@@ -65,8 +63,10 @@ const DotaStore = Fluxxor.createStore({
             let lineupWithHeroNames = combo.heroIds.map(heroId => _this.heroCollection.get(heroId));
 
             sortedCombinationsWithHeroNames.push({
+                id: combo.id,
                 lineup: lineupWithHeroNames,
-                count: combo.count
+                count: combo.count,
+                matches: combo.matches
             });
         });
 

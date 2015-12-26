@@ -2,6 +2,8 @@ import React from 'react';
 import Fluxxor from 'fluxxor';
 import DotaActions from '../actions';
 
+import Lineup from './lineup.jsx';
+
 const StoreWatchMixin = Fluxxor.StoreWatchMixin;
 const FluxMixin = Fluxxor.FluxMixin(React);
 
@@ -10,7 +12,9 @@ const App = React.createClass({
 
     getInitialState() {
         // for some reason, I have to return an empty object (because of fluxxor)
-        return {};
+        return {
+            activeCombo: null
+        };
     },
 
     getStateFromFlux() {
@@ -27,13 +31,7 @@ const App = React.createClass({
         let renderedLineups = [];
 
         this.state.sortedCombinations.forEach(combo => {
-            let renderedLineup = (
-                <li key={combo.lineup}>
-                    {`[${combo.lineup}]: ${combo.count}`}
-                </li>
-            );
-
-            renderedLineups.push(renderedLineup);
+            renderedLineups.push(<Lineup key={combo.id} combo={combo} />);
         });
 
         return renderedLineups;
@@ -41,9 +39,12 @@ const App = React.createClass({
 
     render() {
         return (
-            <ul>
-                {this.renderLineupCombinations()}
-            </ul>
+            <div>
+                <ul>
+                    {this.renderLineupCombinations()}
+                </ul>
+            </div>
+
         );
     }
 });
