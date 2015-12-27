@@ -70,13 +70,17 @@ const App = React.createClass({
                     heroComboNumber={this.state.heroComboNumber}
                 />
 
-                <ul>
-                    {this.renderLineupCombinations()}
-                </ul>
+                <div className={'combo-results'} >
+                    <ul>
+                        {this.renderLineupCombinations()}
+                    </ul>
+                </div>
 
-                <ul>
-                    {this.renderMatches()}
-                </ul>
+                <div className={'match-results'} >
+                    <ul>
+                        {this.renderMatches()}
+                    </ul>
+                </div>
             </div>
         );
     }
