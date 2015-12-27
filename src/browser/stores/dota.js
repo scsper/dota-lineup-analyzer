@@ -60,12 +60,11 @@ const DotaStore = Fluxxor.createStore({
                 return;
             }
 
-            let lineupWithHeroNames = combo.heroIds.map(heroId => _this.heroCollection.get(heroId));
             let matches = combo.matches.map(match => _this.matchCollection.get(match));
 
             sortedCombinationsWithHeroNames.push({
                 id: combo.id,
-                lineup: lineupWithHeroNames,
+                lineup: combo.heroIds,
                 count: combo.count,
                 matches: matches
             });
