@@ -15,9 +15,9 @@ const Lineup = React.createClass({
         const {combo} = this.props;
 
         return (
-            <li className={'heroList'} onClick={this.props.onClick.bind(null, combo)}>
-                <h3 className={'combo-count'} >{`${combo.count}`}</h3>
-                <ul>
+            <li className={'lineupCombo'} onClick={this.props.onClick.bind(null, combo)}>
+                <h3 className={'combo-count'} >{` # of occurences: ${combo.count}`}</h3>
+                <ul className={'lineup'}>
                     {this.renderHeroes()}
                 </ul>
             </li>

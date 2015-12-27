@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroCache from '../cache/hero';
+import Hero from './hero.jsx';
 
 const Match = React.createClass({
     propTypes: {
@@ -22,6 +23,11 @@ const Match = React.createClass({
         return pickStr;
     },
 
+    renderHeroes(picks) {
+        console.log(picks);
+        return picks.map(hero => <Hero key={hero.hero_id} heroId={ '' + hero.hero_id}/>);
+    },
+
     getWinner() {
         if (this.props.match.winner) {
             return 'Dire won';
@@ -35,13 +41,25 @@ const Match = React.createClass({
         const {radiant, dire} = match;
 
         return (
-            <li>
+            <li  className={'match'}>
                 <h2>{`${radiant.name} (radiant) vs. ${dire.name} (dire)`}</h2>
                 <div>
-                    <div>{`radiant picks: ${this.getPickString(radiant.picks)}`}</div>
-                    <div>{`dire picks: ${this.getPickString(dire.picks)}`}</div>
-                    <div>{`radiant bans: ${this.getPickString(radiant.bans)}`}</div>
-                    <div>{`dire bans: ${this.getPickString(dire.bans)}`}</div>
+                    <h3>{`radiant picks:`}</h3>
+                    <ul className={'lineup'}>
+                        {this.renderHeroes(radiant.picks)}
+                    </ul>
+                    <h3>{`dire picks:`}</h3>
+                    <ul className={'lineup'}>
+                        {this.renderHeroes(dire.picks)}
+                    </ul>
+                    <h3>{`radiant bans:`}</h3>
+                    <ul className={'lineup'}>
+                        {this.renderHeroes(radiant.bans)}
+                    </ul>
+                    <h3>{`dire bans:`}</h3>
+                    <ul className={'lineup'}>
+                        {this.renderHeroes(dire.bans)}
+                    </ul>
                 </div>
                 <h4>{this.getWinner()}</h4>
             </li>
