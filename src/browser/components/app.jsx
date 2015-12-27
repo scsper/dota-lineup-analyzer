@@ -4,9 +4,12 @@ import DotaActions from '../actions';
 
 import Lineup from './lineup.jsx';
 import Match from './match.jsx';
+import HeroComboPicker from './hero_combo_picker.jsx';
 
 const StoreWatchMixin = Fluxxor.StoreWatchMixin;
 const FluxMixin = Fluxxor.FluxMixin(React);
+
+const DEFAULT_HERO_COMBO_NUMBER = 4;
 
 const App = React.createClass({
     mixins: [FluxMixin, StoreWatchMixin('DotaStore')],
@@ -14,23 +17,35 @@ const App = React.createClass({
     getInitialState() {
         // for some reason, I have to return an empty object (because of fluxxor)
         return {
-            activeCombo: null
+            activeCombo: null,
+            heroComboNumber: DEFAULT_HERO_COMBO_NUMBER,
         };
     },
 
     getStateFromFlux() {
         let flux = this.getFlux();
         let dotaStore = flux.store('DotaStore');
+        let heroComboNumber = this.state && this.state.heroComboNumber || DEFAULT_HERO_COMBO_NUMBER;
 
         return {
             patches: dotaStore.getPatchList(),
-            sortedCombinations: dotaStore.getLineupCombinationsForLeague(4088, 4)
+            sortedCombinations: dotaStore.getLineupCombinationsForLeague(4088, heroComboNumber)
         };
     },
 
     handleLineupClick(combo, event) {
         this.setState({
             activeCombo: combo
+        });
+    },
+
+    handleHeroComboNumberChange(event) {
+        let heroComboNumber = parseInt(event.target.value, 10);
+
+        // we want to get a new set of combinations every time the combo number is changed.
+        this.setState({
+            heroComboNumber,
+            sortedCombinations: this.getFlux().store('DotaStore').getLineupCombinationsForLeague(4088, heroComboNumber)
         });
     },
 
@@ -50,6 +65,11 @@ const App = React.createClass({
     render() {
         return (
             <div>
+                <HeroComboPicker
+                    onChange={this.handleHeroComboNumberChange}
+                    heroComboNumber={this.state.heroComboNumber}
+                />
+
                 <ul>
                     {this.renderLineupCombinations()}
                 </ul>
