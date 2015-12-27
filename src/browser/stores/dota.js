@@ -1,6 +1,5 @@
 import Fluxxor from 'fluxxor';
 import {League} from '../constants/dota';
-import HeroCollection from './collections/hero';
 import LineupCollection from './collections/lineup';
 import MatchCollection from './collections/match';
 import PatchCollection from './collections/patch';
@@ -11,7 +10,6 @@ const DotaStore = Fluxxor.createStore({
             League.FETCH_SUCCEEDED, this.handleLeagueSuccess
         );
 
-        this.heroCollection = new HeroCollection(heroes);
         this.lineupCollection = new LineupCollection();
         this.patchCollection = new PatchCollection(patchToLeagues);
         this.matchCollection = new MatchCollection();
