@@ -114,6 +114,18 @@ select {
     display:inline-block;
     padding: 5px;
     vertical-align: middle;
+    position:relative;
+
+    .seq {
+        position:absolute;
+        top: 5px;
+        right: 5px;
+        background-color : $sidebarColor;
+        color: $secondaryTextColor;
+        font-size: .7em;
+        width:1.3em;
+        text-align: center;
+    }
 
     img.isBan{
         @include grayscale(100%);
@@ -122,7 +134,14 @@ select {
 
     img.isPick{
         border: 3px solid $textColor;
+
+        & + .seq{
+            top: 7px;
+            right: 7px;
+        }
     }
+
+
 }
 
 .main {
