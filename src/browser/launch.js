@@ -9,7 +9,6 @@ import HeroCache from './cache/hero';
 window.onload = function() {
     const stores = {
         DotaStore: new DotaStore({
-            heroes: window.heroes,
             patchToLeagues: window.patchToLeagues,
             tournamentsForCurrentPatch: window.tournamentsForCurrentPatch,
             currentPatch: window.currentPatch

@@ -5,7 +5,7 @@ import MatchCollection from './collections/match';
 import PatchCollection from './collections/patch';
 
 const DotaStore = Fluxxor.createStore({
-    initialize({heroes, patchToLeagues, tournamentsForCurrentPatch, currentPatch}) {
+    initialize({patchToLeagues, tournamentsForCurrentPatch, currentPatch}) {
         this.bindActions(
             League.FETCH_SUCCEEDED, this.handleLeagueSuccess
         );
