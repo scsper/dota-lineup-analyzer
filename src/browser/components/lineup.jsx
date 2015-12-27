@@ -8,7 +8,7 @@ const Lineup = React.createClass({
     },
 
     renderHeroes() {
-        return this.props.combo.lineup.map(heroId => <Hero key={heroId} heroId={heroId}/>);
+        return this.props.combo.lineup.map(heroId => <Hero key={heroId} hero={ { hero_id : heroId}}/>);
     },
 
     render() {

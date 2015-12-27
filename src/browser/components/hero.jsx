@@ -1,18 +1,21 @@
 import React from 'react';
 import HeroCache from '../cache/hero';
 import ImageUrls from '../constants/images';
+import classNames from 'classnames';
+
 
 const Hero = React.createClass({
     propTypes: {
-       heroId: React.PropTypes.string.isRequired
+       hero: React.PropTypes.object.isRequired
     },
 
     render() {
-        const {heroId} = this.props;
+        const {hero} = this.props;
+        const hasPickOrBanClass = classNames({ 'isBan' :  hero.is_pick === false}, {'isPick' : hero.is_pick === true});
 
         return (
             <li className={'hero'}>
-                <img src={ImageUrls[heroId]} />
+                <img className={hasPickOrBanClass} src={ImageUrls[hero.hero_id]} />
             </li>
         );
     }

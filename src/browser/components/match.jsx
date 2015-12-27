@@ -25,7 +25,8 @@ const Match = React.createClass({
     },
 
     renderHeroes(picks) {
-        return picks.map(hero => <Hero key={hero.hero_id} heroId={ '' + hero.hero_id}/>);
+        console.log(picks);
+        return picks.map(hero => <Hero key={hero.hero_id} hero={hero}/>);
     },
 
     mergePickAndBans(picks, bans) {
@@ -52,8 +53,8 @@ const Match = React.createClass({
     render() {
         const {match} = this.props;
         const {radiant, dire} = match;
-        const direWin = this.props.match.winner;
-        const radiantWin = !this.props.match.winner;
+        const direWin = (this.props.match.winner === 1) ;
+        const radiantWin = (this.props.match.winner === 2);
 
         return (
             <li  className={'match'}>
@@ -61,7 +62,7 @@ const Match = React.createClass({
                 <div className={classNames('radiant', 'pickContainer', { 'winner' : radiantWin})}>
                     <div className={'nameContainer'} >
                         <h3 className={'teamName'}>{radiant.name} </h3>
-                        <p> {'Radiant'} </p>
+                        <p> {'RADIANT'} </p>
                     </div>
                     <ul className={'lineup'}>
                         {this.renderHeroes(this.mergePickAndBans(radiant.picks, radiant.bans))}
@@ -70,7 +71,7 @@ const Match = React.createClass({
                 <div className={classNames('dire', 'pickContainer', { 'winner' : direWin})}>
                     <div className={'nameContainer'}>
                         <h3 className={'teamName'}>{dire.name}</h3>
-                        <p> {'Dire'} </p>
+                        <p> {'DIRE'} </p>
                     </div>
                     <ul className={'lineup'}>
                         {this.renderHeroes(this.mergePickAndBans(dire.picks, dire.bans))}
