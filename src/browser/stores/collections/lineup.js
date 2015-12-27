@@ -61,6 +61,7 @@ export default class LineupCollection {
         if (!lineup[start].hero_id) {
             throw new Error('the hero id for the following lineup is missing: ' + JSON.stringify(lineup, null, 2));
         }
+
         combinations.push(storedValues + lineup[start].hero_id);
 
         this._getCombinations(lineup, start + 1, storedValues + lineup[start].hero_id, combinations);

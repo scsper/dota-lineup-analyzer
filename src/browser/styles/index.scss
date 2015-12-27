@@ -5,7 +5,7 @@ $textColor: #333333;
 $secondaryTextColor: #FFFFFF;
 $highlightColor : #FFD452;
 //#E05151 pink
-// #75A3d1 light blue
+$activeColor: #75A3d1;
 $backgroundColor: #FFFFFF;
 
 $radiantColor : #63A46c; //green
@@ -95,10 +95,14 @@ select {
     align-items: center;
     margin: 1em 0;
 
-    .combo-count{
+    .combo-count {
         background: $highlightColor;
-        margin:0px;
+        margin: 0px;
         padding: 1em .75em;
+    }
+
+    .combo-count-active {
+        background: $activeColor;
     }
 
     .lineup {

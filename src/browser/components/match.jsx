@@ -58,7 +58,7 @@ const Match = React.createClass({
         return (
             <li  className={'match'}>
                 <h2>{`${radiant.name} vs. ${dire.name}`}</h2>
-                <div className={classNames('radiant', 'pickContainer', { 'winner' : radiantWin})}>
+                <div className={classNames('radiant', 'pickContainer', {'winner' : radiantWin})}>
                     <div className={'nameContainer'} >
                         <h3 className={'teamName'}>{radiant.name} </h3>
                         <p> {'RADIANT'} </p>
@@ -67,7 +67,7 @@ const Match = React.createClass({
                         {this.renderHeroes(this.mergePickAndBans(radiant.picks, radiant.bans))}
                     </ul>
                 </div>
-                <div className={classNames('dire', 'pickContainer', { 'winner' : direWin})}>
+                <div className={classNames('dire', 'pickContainer', {'winner' : direWin})}>
                     <div className={'nameContainer'}>
                         <h3 className={'teamName'}>{dire.name}</h3>
                         <p> {'DIRE'} </p>

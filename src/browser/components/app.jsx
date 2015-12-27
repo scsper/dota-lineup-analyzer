@@ -50,8 +50,16 @@ const App = React.createClass({
     },
 
     renderLineupCombinations() {
+        let activeComboId = this.state.activeCombo && this.state.activeCombo.id;
+
         return this.state.sortedCombinations.map(combo =>
-            <Lineup key={combo.id} combo={combo} onClick={this.handleLineupClick} />);
+            <Lineup
+                key={combo.id}
+                isActive={activeComboId === combo.id}
+                combo={combo}
+                onClick={this.handleLineupClick}
+            />
+        );
     },
 
     renderMatches() {
