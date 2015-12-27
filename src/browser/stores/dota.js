@@ -61,12 +61,13 @@ const DotaStore = Fluxxor.createStore({
             }
 
             let lineupWithHeroNames = combo.heroIds.map(heroId => _this.heroCollection.get(heroId));
+            let matches = combo.matches.map(match => _this.matchCollection.get(match));
 
             sortedCombinationsWithHeroNames.push({
                 id: combo.id,
                 lineup: lineupWithHeroNames,
                 count: combo.count,
-                matches: combo.matches
+                matches: matches
             });
         });
 
@@ -75,6 +76,10 @@ const DotaStore = Fluxxor.createStore({
 
     getPatchList() {
         return this.patchCollection.getList();
+    },
+
+    getMatches(matchIds) {
+        return matchIds.map(matchId => this.matchCollection.get(matchId));
     }
 });
 

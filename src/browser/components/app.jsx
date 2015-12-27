@@ -3,6 +3,7 @@ import Fluxxor from 'fluxxor';
 import DotaActions from '../actions';
 
 import Lineup from './lineup.jsx';
+import Match from './match.jsx';
 
 const StoreWatchMixin = Fluxxor.StoreWatchMixin;
 const FluxMixin = Fluxxor.FluxMixin(React);
@@ -27,14 +28,23 @@ const App = React.createClass({
         };
     },
 
-    renderLineupCombinations() {
-        let renderedLineups = [];
-
-        this.state.sortedCombinations.forEach(combo => {
-            renderedLineups.push(<Lineup key={combo.id} combo={combo} />);
+    handleLineupClick(combo, event) {
+        this.setState({
+            activeCombo: combo
         });
+    },
 
-        return renderedLineups;
+    renderLineupCombinations() {
+        return this.state.sortedCombinations.map(combo =>
+            <Lineup key={combo.id} combo={combo} onClick={this.handleLineupClick} />);
+    },
+
+    renderMatches() {
+        if (!this.state.activeCombo) {
+            return null;
+        }
+
+        return this.state.activeCombo.matches.map(match => <Match key={match.id} match={match} />);
     },
 
     render() {
@@ -43,8 +53,11 @@ const App = React.createClass({
                 <ul>
                     {this.renderLineupCombinations()}
                 </ul>
-            </div>
 
+                <ul>
+                    {this.renderMatches()}
+                </ul>
+            </div>
         );
     }
 });
