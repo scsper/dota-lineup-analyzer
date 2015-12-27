@@ -58,24 +58,24 @@ const Match = React.createClass({
         return (
             <li  className={'match'}>
                 <h2>{`${radiant.name} vs. ${dire.name}`}</h2>
-                    <div className={classNames('radiant', 'pickContainer', { 'winner' : radiantWin})}>
-                        <div className={'nameContainer'} >
-                            <h3 className={'teamName'}>{radiant.name} </h3>
-                            <p> {'Radiant'} </p>
-                        </div>
-                        <ul className={'lineup'}>
-                            {this.renderHeroes(radiant.picks.concat(radiant.bans))}
-                        </ul>
+                <div className={classNames('radiant', 'pickContainer', { 'winner' : radiantWin})}>
+                    <div className={'nameContainer'} >
+                        <h3 className={'teamName'}>{radiant.name} </h3>
+                        <p> {'Radiant'} </p>
                     </div>
-                    <div className={classNames('dire', 'pickContainer', { 'winner' : direWin})}>
-                        <div className={'nameContainer'}>
-                            <h3 className={'teamName'}>{dire.name}</h3>
-                            <p> {'Dire'} </p>
-                        </div>
-                        <ul className={'lineup'}>
-                            {this.renderHeroes(dire.picks.concat(dire.bans))}
-                        </ul>
+                    <ul className={'lineup'}>
+                        {this.renderHeroes(this.mergePickAndBans(radiant.picks, radiant.bans))}
+                    </ul>
+                </div>
+                <div className={classNames('dire', 'pickContainer', { 'winner' : direWin})}>
+                    <div className={'nameContainer'}>
+                        <h3 className={'teamName'}>{dire.name}</h3>
+                        <p> {'Dire'} </p>
                     </div>
+                    <ul className={'lineup'}>
+                        {this.renderHeroes(this.mergePickAndBans(dire.picks, dire.bans))}
+                    </ul>
+                </div>
             </li>
         );
     }
