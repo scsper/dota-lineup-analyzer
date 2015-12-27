@@ -48,19 +48,18 @@ const DotaStore = Fluxxor.createStore({
 
     getLineupCombinations(id, heroLength, leagueOrPatch) {
         let _this = this;
+
         let sortedCombinations = new LineupCollection();
         if (leagueOrPatch === "league") {
-            sortedCombinations = this.lineupCollection.getForLeague(id, heroLength)
-                .sort((a, b) => b.count - a.count);    
+            sortedCombinations = this.lineupCollection.getForLeague(id, heroLength);            
         }
         else if (leagueOrPatch === "patch") {
-            sortedCombinations = this.lineupCollection.getForPatch(id, heroLength)
-                .sort((a, b) => b.count - a.count);           
+            sortedCombinations = this.lineupCollection.getForPatch(id, heroLength)         
         }
         else {
             throw new Error('getLineupCombinations called with impromper argument (should have "league" or "patch")');
         }
-
+	sortedCombinations.sort((a, b) => b.count - a.count);    
 
         let sortedCombinationsWithHeroNames = [];
 
