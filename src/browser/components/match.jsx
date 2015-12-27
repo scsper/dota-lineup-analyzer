@@ -24,7 +24,6 @@ const Match = React.createClass({
     },
 
     renderHeroes(picks) {
-        console.log(picks);
         return picks.map(hero => <Hero key={hero.hero_id} heroId={ '' + hero.hero_id}/>);
     },
 

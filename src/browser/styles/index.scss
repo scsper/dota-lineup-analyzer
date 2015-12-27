@@ -1,0 +1,65 @@
+// Variables...import to separate file later
+
+$sidebarColor: #3D3C3A;
+$textColor: #3D3C3A;
+$secondaryTextColor: #FFFFFF;
+$highlightColor : #F8DC0B;
+
+//**************** Base & Layouts ****************
+
+body {
+    background: #FFFFFF;
+}
+
+ul {
+    list-style: none;
+    padding:0px;
+}
+
+.main-container{
+    display:flex;
+    flex-flow: row wrap;
+    align-items:stretch;
+}
+
+.main, .sidebar{
+    display:inline-block;
+    vertical-align: top;
+}
+
+.sidebar {
+    min-width:200px;
+    min-height:100vh;
+    padding:20px;
+}
+
+//**************** Module-level layouts & styling ****************
+.comboSearchSection {
+    background: $sidebarColor;
+    color: $secondaryTextColor;
+}
+
+.searchbar{
+    border-bottom: 1px solid $secondaryTextColor;
+    padding-bottom: 10px;
+}
+
+.main {
+    color: $textColor;
+}
+
+.lineupCombo {
+    display: flex;
+    margin: 1em 0;
+
+    .combo-count{
+        background: $highlightColor;
+        margin:0px;
+        padding: 1.5em .75em;
+    }
+
+    .lineup {
+        margin-left: 1em;
+    }
+}
+

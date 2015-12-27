@@ -64,20 +64,18 @@ const App = React.createClass({
 
     render() {
         return (
-            <div>
-                <HeroComboPicker
-                    onChange={this.handleHeroComboNumberChange}
-                    heroComboNumber={this.state.heroComboNumber}
-                />
-
-                <div className={'combo-results'} >
-                    <ul>
+            <div className={'main-container'}>
+                <div className={'comboSearchSection sidebar'}>
+                    <HeroComboPicker
+                        onChange={this.handleHeroComboNumberChange}
+                        heroComboNumber={this.state.heroComboNumber}
+                    />
+                    <ul className={'combo-results'} >
                         {this.renderLineupCombinations()}
                     </ul>
                 </div>
-
-                <div className={'match-results'} >
-                    <ul>
+                <div className={'main'}>
+                    <ul className={'match-results'}>
                         {this.renderMatches()}
                     </ul>
                 </div>
