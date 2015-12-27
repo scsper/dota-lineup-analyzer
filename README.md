@@ -23,7 +23,8 @@ Setup
 3. `nvm use 0.12.0`
 4. Add `. ~/.nvm/nvm.sh` to your ~/.profile (load nvm when you open a shell)
 5. Add `nvm use 0.12.0` to your ~/.profile (load the correct version of Node automatically when you open a shell)
-
+6. If you are running Ubuntu, then install nodejs-legacy: `sudo apt-get install nodejs-legacy`
+    a. [See this](http://stackoverflow.com/questions/21168141/can-not-install-packages-using-node-package-manager-in-ubuntu) for more info.
 
 Data that is saved
 ====================
