@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroCache from '../cache/hero';
 import Hero from './hero.jsx';
+import classNames from 'classnames';
 
 const Match = React.createClass({
     propTypes: {
@@ -27,14 +28,6 @@ const Match = React.createClass({
         return picks.map(hero => <Hero key={hero.hero_id} heroId={ '' + hero.hero_id}/>);
     },
 
-    getWinner() {
-        if (this.props.match.winner) {
-            return 'Dire won';
-        }
-
-        return 'Radiant won';
-    },
-
     mergePickAndBans(picks, bans) {
         // array.sort will sort them in place, so we have to clone the arrays first
         // we don't want to sort the arrays in place, because that will modify the reference of the store.
@@ -59,29 +52,30 @@ const Match = React.createClass({
     render() {
         const {match} = this.props;
         const {radiant, dire} = match;
+        const direWin = this.props.match.winner;
+        const radiantWin = !this.props.match.winner;
 
         return (
             <li  className={'match'}>
-                <h2>{`${radiant.name} (radiant) vs. ${dire.name} (dire)`}</h2>
-                <div>
-                    <h3>{`radiant picks:`}</h3>
-                    <ul className={'lineup'}>
-                        {this.renderHeroes(radiant.picks)}
-                    </ul>
-                    <h3>{`dire picks:`}</h3>
-                    <ul className={'lineup'}>
-                        {this.renderHeroes(dire.picks)}
-                    </ul>
-                    <h3>{`radiant bans:`}</h3>
-                    <ul className={'lineup'}>
-                        {this.renderHeroes(radiant.bans)}
-                    </ul>
-                    <h3>{`dire bans:`}</h3>
-                    <ul className={'lineup'}>
-                        {this.renderHeroes(dire.bans)}
-                    </ul>
-                </div>
-                <h4>{this.getWinner()}</h4>
+                <h2>{`${radiant.name} vs. ${dire.name}`}</h2>
+                    <div className={classNames('radiant', 'pickContainer', { 'winner' : radiantWin})}>
+                        <div className={'nameContainer'} >
+                            <h3 className={'teamName'}>{radiant.name} </h3>
+                            <p> {'Radiant'} </p>
+                        </div>
+                        <ul className={'lineup'}>
+                            {this.renderHeroes(radiant.picks.concat(radiant.bans))}
+                        </ul>
+                    </div>
+                    <div className={classNames('dire', 'pickContainer', { 'winner' : direWin})}>
+                        <div className={'nameContainer'}>
+                            <h3 className={'teamName'}>{dire.name}</h3>
+                            <p> {'Dire'} </p>
+                        </div>
+                        <ul className={'lineup'}>
+                            {this.renderHeroes(dire.picks.concat(dire.bans))}
+                        </ul>
+                    </div>
             </li>
         );
     }

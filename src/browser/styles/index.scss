@@ -16,6 +16,10 @@ ul {
     padding:0px;
 }
 
+select {
+    background: transparent;
+}
+
 .main-container{
     display:flex;
     flex-flow: row wrap;
@@ -42,20 +46,26 @@ ul {
 .searchbar{
     border-bottom: 1px solid $secondaryTextColor;
     padding-bottom: 10px;
+
+    select{
+        margin-left : 10px;
+    }
 }
 
 .main {
     color: $textColor;
+    padding:0 1em;
 }
 
 .lineupCombo {
     display: flex;
+    align-items: center;
     margin: 1em 0;
 
     .combo-count{
         background: $highlightColor;
         margin:0px;
-        padding: 1.5em .75em;
+        padding: 1em .75em;
     }
 
     .lineup {
@@ -63,3 +73,6 @@ ul {
     }
 }
 
+.hero {
+    display:inline-block;
+}

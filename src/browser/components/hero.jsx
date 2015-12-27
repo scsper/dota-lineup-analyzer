@@ -13,7 +13,6 @@ const Hero = React.createClass({
         return (
             <li className={'hero'}>
                 <img src={ImageUrls[heroId]} />
-                <span>{HeroCache.get(heroId)}</span>
             </li>
         );
     }
