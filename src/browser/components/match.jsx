@@ -35,6 +35,27 @@ const Match = React.createClass({
         return 'Radiant won';
     },
 
+    mergePickAndBans(picks, bans) {
+        // array.sort will sort them in place, so we have to clone the arrays first
+        // we don't want to sort the arrays in place, because that will modify the reference of the store.
+        let sortedPicks = picks.map(pick => pick).sort((a, b) => a.order - b.order);
+        let sortedBans = bans.map(ban => ban).sort((a, b) => a.order - b.order);
+
+        // dota draft order
+        return [
+            sortedBans[0],
+            sortedBans[1],
+            sortedPicks[0],
+            sortedPicks[1],
+            sortedBans[2],
+            sortedBans[3],
+            sortedPicks[2],
+            sortedPicks[3],
+            sortedBans[4],
+            sortedPicks[4]
+        ];
+    },
+
     render() {
         const {match} = this.props;
         const {radiant, dire} = match;

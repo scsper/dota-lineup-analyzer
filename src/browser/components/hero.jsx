@@ -8,7 +8,7 @@ const Hero = React.createClass({
     },
 
     render() {
-       const {heroId} = this.props;
+        const {heroId} = this.props;
 
         return (
             <li className={'hero'}>
