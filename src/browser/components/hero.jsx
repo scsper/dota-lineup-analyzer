@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroCache from '../cache/hero';
+import ImageUrls from '../constants/images';
 
 const Hero = React.createClass({
     propTypes: {
@@ -11,7 +12,8 @@ const Hero = React.createClass({
 
         return (
             <li className={'hero'}>
-             {HeroCache.get(heroId)}
+                <img src={ImageUrls[heroId]} />
+                <span>{HeroCache.get(heroId)}</span>
             </li>
         );
     }
