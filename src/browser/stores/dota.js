@@ -46,10 +46,20 @@ const DotaStore = Fluxxor.createStore({
         });
     },
 
-    getLineupCombinationsForLeague(leagueId, heroLength) {
+    getLineupCombinations(id, heroLength, leagueOrPatch) {
         let _this = this;
-        let sortedCombinations = this.lineupCollection.getForLeague(leagueId, heroLength)
-            .sort((a, b) => b.count - a.count);
+
+        let sortedCombinations = new LineupCollection();
+        if (leagueOrPatch === "league") {
+            sortedCombinations = this.lineupCollection.getForLeague(id, heroLength);            
+        }
+        else if (leagueOrPatch === "patch") {
+            sortedCombinations = this.lineupCollection.getForPatch(id, heroLength)         
+        }
+        else {
+            throw new Error('getLineupCombinations called with impromper argument (should have "league" or "patch")');
+        }
+	sortedCombinations.sort((a, b) => b.count - a.count);    
 
         let sortedCombinationsWithHeroNames = [];
 
@@ -69,6 +79,14 @@ const DotaStore = Fluxxor.createStore({
         });
 
         return sortedCombinationsWithHeroNames;
+    },
+
+    getLineupCombinationsForLeague(leagueId, heroLength) {
+        return this.getLineupCombinations(leagueId, heroLength, "league");
+    },
+
+    getLineupCombinationsForPatch(patchId, heroLength) {
+        return this.getLineupCombinations(patchId, heroLength, "patch");
     },
 
     getPatchList() {
