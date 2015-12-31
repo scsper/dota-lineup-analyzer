@@ -72,14 +72,19 @@ select {
 .combo-search-container {
     background: $sidebarColor;
     color: $secondaryTextColor;
+    box-shadow: 2px 0px 2px $sidebarColor;
 }
 
 .settings-container{
+    margin: 1em;
     padding : 1em;
-    background:$highlightColor;
+    background:$textColor;
     color : $secondaryTextColor;
+    box-shadow: 0px 0px 10px $sidebarColor;
+
     .settings-title{
         text-align: center;
+        margin:0px;
     }
 }
 
@@ -148,7 +153,7 @@ select {
     }
 
     .isPick{
-        box-shadow: 5px 5px 5px $textColor;
+        box-shadow: 5px 5px 10px $textColor;
         position: relative;
         top: -2px;
         left: -2px;
