@@ -18,7 +18,14 @@ const DotaStore = Fluxxor.createStore({
         this.patchIdsToLeagueIds = patchToLeagues;
         this.leagueIdsToLeagueNames = leagueIdsToLeagueNames;
         this.patchReleaseDates = {
-            '6.86': 1450252800 // December 16, 2015 at midnight PST
+            '6.85b': {
+                time: 1443164400, // September 25, 2015 at midnight PST
+                nextPatch: '6.86'
+            },
+            '6.86': {
+                time: 1450252800, // December 16, 2015 at midnight PST
+                nextPatch: ''
+            }
         };
 
         this._normalizeLeagues(tournamentsForCurrentPatch, currentPatch);
@@ -41,7 +48,7 @@ const DotaStore = Fluxxor.createStore({
             matches.forEach(match => {
                 // TODO: Check for the startTime being greater than the next patch.  If it is greater than the next
                 // patch, then we don't want to include it.
-                if (match.startTime < this.patchReleaseDates[patch]) {
+                if (!this._isMatchPlayedInPatch(match, patch)) {
                     return;
                 }
 
@@ -56,6 +63,27 @@ const DotaStore = Fluxxor.createStore({
                 this.matchCollection.add(match);
             });
         });
+    },
+
+    /**
+     * Returns whether the match was played within a certain patch time or not.
+     * Certain tournaments (especially online ones) span multiple patches.  So, we need to check on a match
+     * level whether or not it was played in a certain patch.
+     *
+     * @param {Object} match The match in question
+     * @param {String} patch The patch tested against
+     *
+     * @return {Boolean} TRUE if it was played in the patch, FALSE if not.
+     */
+    _isMatchPlayedInPatch(match, patch) {
+        let nextPatch = this.patchReleaseDates[patch].nextPatch;
+
+        if (nextPatch === '') {
+            return match.startTime > this.patchReleaseDates[patch].time;
+        }
+
+        return match.startTime > this.patchReleaseDates[patch].time &&
+            match.startTime < this.patchReleaseDates[nextPatch].time;
     },
 
     /**
