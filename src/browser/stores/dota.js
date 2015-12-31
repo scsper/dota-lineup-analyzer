@@ -38,6 +38,8 @@ const DotaStore = Fluxxor.createStore({
             let matches = tournaments[leagueId].matches;
 
             matches.forEach(match => {
+                // TODO: Check for the startTime being greater than the next patch.  If it is greater than the next
+                // patch, then we don't want to include it.
                 if (match.startTime < this.patchReleaseDates[patch]) {
                     return;
                 }
