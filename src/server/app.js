@@ -1,7 +1,8 @@
 import express from 'express';
 import {getLeagueMatches, getMatchDetails} from './api/index.js';
 import {getFromCache} from './middleware/get_from_cache.js';
-import leagueIdsToLeagueNames from './enums/league_ids_to_league_names';
+import leagueIdsToLeagueNames from './constants/league_ids_to_league_names';
+import patchIdsToLeagueIds from './constants/patch_ids_to_league_ids';
 import path from 'path';
 import 'babel-polyfill';
 
@@ -14,9 +15,7 @@ app.use(express.static(path.resolve(__dirname, '../public')));
 
 // TODO move this to a more appropriate place
 function getLeagueFromPatch(patch) {
-    let patchToLeagues = getFromCache('patch_to_leagues');
-    let leagueIds = patchToLeagues[patch];
-
+    let leagueIds = patchIdsToLeagueIds[patch];
     let tournaments = {};
 
     leagueIds.forEach(leagueId => {
@@ -29,13 +28,12 @@ function getLeagueFromPatch(patch) {
 
 app.get('/', (req, res) => {
     const heroes = getFromCache('heroes');
-    const patchToLeagues = getFromCache('patch_to_leagues');
     const currentPatch = '6.86';
     const tournaments = getLeagueFromPatch(currentPatch);
 
     res.render('index', {
         heroes: heroes,
-        patchToLeagues: patchToLeagues,
+        patchToLeagues: patchIdsToLeagueIds,
         tournaments: tournaments,
         currentPatch: currentPatch,
         leagueIdsToLeagueNames: leagueIdsToLeagueNames
