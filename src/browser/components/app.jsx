@@ -4,8 +4,7 @@ import DotaActions from '../actions';
 
 import Lineup from './lineup.jsx';
 import Match from './match.jsx';
-import HeroComboPicker from './hero_combo_picker.jsx';
-import PatchPicker from './patch_picker.jsx';
+import Picker from './picker.jsx';
 
 const StoreWatchMixin = Fluxxor.StoreWatchMixin;
 const FluxMixin = Fluxxor.FluxMixin(React);
@@ -85,19 +84,27 @@ const App = React.createClass({
     },
 
     render() {
+        const heroComboOptions = [1,2,3,4,5];
+        const heroComboOptionsName = "Number of heroes";
+        const patchOptionsName = "Patch";
+
         return (
             <div className={'main-container'}>
                 <div className={'comboSearchSection sidebar'}>
-                    <HeroComboPicker
-                        onChange={this.handleHeroComboNumberChange}
-                        heroComboNumber={this.state.heroComboNumber}
-                    />
-
-                    <PatchPicker
-                        patches={this.state.patches}
-                        onChange={this.handlePatchChange}
-                        activePatch={this.state.activePatch}
-                    />
+                    <div className={'searchOptions'}>
+                        <Picker
+                            options={heroComboOptions}
+                            name={heroComboOptionsName}
+                            onChange={this.handleHeroComboNumberChange}
+                            defaultOption={this.state.heroComboNumber}
+                        />
+                        <Picker
+                            options={this.state.patches}
+                            name={patchOptionsName}
+                            onChange={this.handlePatchChange}
+                            defaultOption={this.state.activePatch}
+                        />
+                    </div>
 
                     <ul className={'combo-results'} >
                         {this.renderLineupCombinations()}
