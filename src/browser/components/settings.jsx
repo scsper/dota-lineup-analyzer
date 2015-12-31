@@ -11,9 +11,10 @@ const Settings = React.createClass({
 
     render() {
         return (
-            <div className={'settings'}>
-                <label htmlFor='showBans'> show Bans </label>
+            <div className={'settings-container'}>
+                <h3 className={'settings-title'}> Settings </h3>
                 <input type='checkbox' name='showBans' onChange={this.checkboxChanged}/>
+                <label htmlFor='showBans'> show bans </label>
             </div>
         );
     }

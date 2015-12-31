@@ -138,7 +138,7 @@ const App = React.createClass({
 
         return (
             <div className={'main-container'}>
-                <div className={'combo-search-section sidebar'}>
+                <div className={'combo-search-container sidebar'}>
                     <div className={'search-options-container'}>
                         <Picker
                             options={heroComboOptions.map(option => {

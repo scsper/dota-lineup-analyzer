@@ -24,6 +24,7 @@ p, span, {
 ul {
     list-style: none;
     padding:0px;
+    margin:0px;
 }
 
 h2 {
@@ -40,7 +41,7 @@ select {
     background: transparent;
 }
 
-.main, .sidebar{
+.sidebar{
     display:inline-block;
 }
 
@@ -65,9 +66,21 @@ select {
 @import "animations";
 
 //**************** Module-level layouts & styling ****************
-.combo-search-section {
+// *-containers : usually are divs and spans that are for layout purposes
+// * : rest are specific class names for elements with semantic value
+
+.combo-search-container {
     background: $sidebarColor;
     color: $secondaryTextColor;
+}
+
+.settings-container{
+    padding : 1em;
+    background:$highlightColor;
+    color : $secondaryTextColor;
+    .settings-title{
+        text-align: center;
+    }
 }
 
 .search-options-container{
@@ -197,6 +210,8 @@ select {
         text-align: center;
     }
 }
+
+
 
 .match-results {
     padding: 1em;
