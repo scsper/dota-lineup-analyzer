@@ -1,0 +1,7303 @@
+{
+  "id": 4210,
+  "matches": [
+    {
+      "id": 2042534708,
+      "winner": 2,
+      "radiant": {
+        "id": 2672298,
+        "name": "Infamous -_^",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 50,
+            "team": 0,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 106,
+            "team": 0,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 51,
+            "team": 0,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 34,
+            "team": 0,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 86,
+            "team": 0,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 0,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 0,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 65,
+            "team": 0,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 31,
+            "team": 0,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 15,
+            "team": 0,
+            "order": 17
+          }
+        ]
+      },
+      "dire": {
+        "id": 2428289,
+        "name": "Elite Wolves - UNIT",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 27,
+            "team": 1,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 8,
+            "team": 1,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 102,
+            "team": 1,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 99,
+            "team": 1,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 74,
+            "team": 1,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 1,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 85,
+            "team": 1,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 1,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 46,
+            "team": 1,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 62,
+            "team": 1,
+            "order": 16
+          }
+        ]
+      }
+    },
+    {
+      "id": 2042493046,
+      "winner": 1,
+      "radiant": {
+        "id": 2428289,
+        "name": "Elite Wolves - UNIT",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 50,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 27,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 70,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 57,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 15,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 85,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 102,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 106,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 2672298,
+        "name": "Infamous -_^",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 100,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 74,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 19,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 111,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 61,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 8,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 12,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 65,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 2040255736,
+      "winner": 2,
+      "radiant": {
+        "id": 2428289,
+        "name": "Elite Wolves - UNIT",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 3,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 14,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 9,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 16,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 70,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 111,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 106,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 93,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 105,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 8,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 2634364,
+        "name": "EnemyGG",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 74,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 102,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 84,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 20,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 109,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 50,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 47,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 15,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 2040157946,
+      "winner": 2,
+      "radiant": {
+        "id": 2428289,
+        "name": "Elite Wolves - UNIT",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 3,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 19,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 22,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 68,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 44,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 111,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 8,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 85,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 20,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 2634364,
+        "name": "EnemyGG",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 74,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 102,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 30,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 70,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 84,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 50,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 47,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 12,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 2040077684,
+      "winner": 2,
+      "radiant": {
+        "id": 2672298,
+        "name": "Infamous -_^",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 72,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 91,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 30,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 65,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 15,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 111,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 8,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 99,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 48,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 2512249,
+        "name": "Digital Chaos",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 74,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 87,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 38,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 66,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 12,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 85,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 46,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 50,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 54,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 2040031687,
+      "winner": 2,
+      "radiant": {
+        "id": 2672298,
+        "name": "Infamous -_^",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 11,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 106,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 5,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 16,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 33,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 59,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 3,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 2512249,
+        "name": "Digital Chaos",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 111,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 74,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 38,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 70,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 62,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 85,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 60,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 88,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 61,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 2039941380,
+      "winner": 1,
+      "radiant": {
+        "id": 3,
+        "name": "compLexity Gaming",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 72,
+            "team": 0,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 100,
+            "team": 0,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 86,
+            "team": 0,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 46,
+            "team": 0,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 28,
+            "team": 0,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 14,
+            "team": 0,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 3,
+            "team": 0,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 0,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 107,
+            "team": 0,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 12,
+            "team": 0,
+            "order": 17
+          }
+        ]
+      },
+      "dire": {
+        "id": 1276923,
+        "name": "Leviathan'",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 68,
+            "team": 1,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 19,
+            "team": 1,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 25,
+            "team": 1,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 30,
+            "team": 1,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 1,
+            "team": 1,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 1,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 1,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 51,
+            "team": 1,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 47,
+            "team": 1,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 7,
+            "team": 1,
+            "order": 16
+          }
+        ]
+      }
+    },
+    {
+      "id": 2039883712,
+      "winner": 2,
+      "radiant": {
+        "id": 1276923,
+        "name": "Leviathan'",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 72,
+            "team": 0,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 74,
+            "team": 0,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 107,
+            "team": 0,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 86,
+            "team": 0,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 61,
+            "team": 0,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 0,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 50,
+            "team": 0,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 88,
+            "team": 0,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 0,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 0,
+            "order": 17
+          }
+        ]
+      },
+      "dire": {
+        "id": 3,
+        "name": "compLexity Gaming",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 39,
+            "team": 1,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 42,
+            "team": 1,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 68,
+            "team": 1,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 7,
+            "team": 1,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 77,
+            "team": 1,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 3,
+            "team": 1,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 14,
+            "team": 1,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 85,
+            "team": 1,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 31,
+            "team": 1,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 51,
+            "team": 1,
+            "order": 16
+          }
+        ]
+      }
+    },
+    {
+      "id": 2037552237,
+      "winner": 2,
+      "radiant": {
+        "id": 1276923,
+        "name": "Leviathan'",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 100,
+            "team": 0,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 7,
+            "team": 0,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 19,
+            "team": 0,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 91,
+            "team": 0,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 49,
+            "team": 0,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 106,
+            "team": 0,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 0,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 85,
+            "team": 0,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 46,
+            "team": 0,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 65,
+            "team": 0,
+            "order": 17
+          }
+        ]
+      },
+      "dire": {
+        "id": 2428289,
+        "name": "Elite Wolves - UNIT",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 50,
+            "team": 1,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 12,
+            "team": 1,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 39,
+            "team": 1,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 5,
+            "team": 1,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 77,
+            "team": 1,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 111,
+            "team": 1,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 74,
+            "team": 1,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 1,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 18,
+            "team": 1,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 17,
+            "team": 1,
+            "order": 16
+          }
+        ]
+      }
+    },
+    {
+      "id": 2037490047,
+      "winner": 2,
+      "radiant": {
+        "id": 2428289,
+        "name": "Elite Wolves - UNIT",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 50,
+            "team": 0,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 100,
+            "team": 0,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 20,
+            "team": 0,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 71,
+            "team": 0,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 49,
+            "team": 0,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 111,
+            "team": 0,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 3,
+            "team": 0,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 51,
+            "team": 0,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 41,
+            "team": 0,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 0,
+            "order": 17
+          }
+        ]
+      },
+      "dire": {
+        "id": 1276923,
+        "name": "Leviathan'",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 74,
+            "team": 1,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 72,
+            "team": 1,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 107,
+            "team": 1,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 14,
+            "team": 1,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 30,
+            "team": 1,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 106,
+            "team": 1,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 1,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 28,
+            "team": 1,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 15,
+            "team": 1,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 11,
+            "team": 1,
+            "order": 16
+          }
+        ]
+      }
+    },
+    {
+      "id": 2037389172,
+      "winner": 2,
+      "radiant": {
+        "id": 2634364,
+        "name": "EnemyGG",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 55,
+            "team": 0,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 60,
+            "team": 0,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 20,
+            "team": 0,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 106,
+            "team": 0,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 93,
+            "team": 0,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 0,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 74,
+            "team": 0,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 11,
+            "team": 0,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 21,
+            "team": 0,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 87,
+            "team": 0,
+            "order": 17
+          }
+        ]
+      },
+      "dire": {
+        "id": 2512249,
+        "name": "Digital Chaos",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 88,
+            "team": 1,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 30,
+            "team": 1,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 49,
+            "team": 1,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 48,
+            "team": 1,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 66,
+            "team": 1,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 111,
+            "team": 1,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 102,
+            "team": 1,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 109,
+            "team": 1,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 12,
+            "team": 1,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 70,
+            "team": 1,
+            "order": 16
+          }
+        ]
+      }
+    },
+    {
+      "id": 2037339784,
+      "winner": 2,
+      "radiant": {
+        "id": 2512249,
+        "name": "Digital Chaos",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 111,
+            "team": 0,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 29,
+            "team": 0,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 49,
+            "team": 0,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 27,
+            "team": 0,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 10,
+            "team": 0,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 107,
+            "team": 0,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 3,
+            "team": 0,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 70,
+            "team": 0,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 109,
+            "team": 0,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 46,
+            "team": 0,
+            "order": 17
+          }
+        ]
+      },
+      "dire": {
+        "id": 2634364,
+        "name": "EnemyGG",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 30,
+            "team": 1,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 102,
+            "team": 1,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 84,
+            "team": 1,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 106,
+            "team": 1,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 35,
+            "team": 1,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 74,
+            "team": 1,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 1,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 58,
+            "team": 1,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 11,
+            "team": 1,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 77,
+            "team": 1,
+            "order": 16
+          }
+        ]
+      }
+    },
+    {
+      "id": 2034987932,
+      "winner": 2,
+      "radiant": {
+        "id": 1276923,
+        "name": "Leviathan'",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 107,
+            "team": 0,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 69,
+            "team": 0,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 8,
+            "team": 0,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 50,
+            "team": 0,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 21,
+            "team": 0,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 111,
+            "team": 0,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 0,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 42,
+            "team": 0,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 71,
+            "team": 0,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 12,
+            "team": 0,
+            "order": 17
+          }
+        ]
+      },
+      "dire": {
+        "id": 2634364,
+        "name": "EnemyGG",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 30,
+            "team": 1,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 55,
+            "team": 1,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 60,
+            "team": 1,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 49,
+            "team": 1,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 70,
+            "team": 1,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 1,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 74,
+            "team": 1,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 31,
+            "team": 1,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 1,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 25,
+            "team": 1,
+            "order": 16
+          }
+        ]
+      }
+    },
+    {
+      "id": 2034927194,
+      "winner": 1,
+      "radiant": {
+        "id": 2634364,
+        "name": "EnemyGG",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 74,
+            "team": 0,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 30,
+            "team": 0,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 84,
+            "team": 0,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 102,
+            "team": 0,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 109,
+            "team": 0,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 0,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 0,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 0,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 25,
+            "team": 0,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 47,
+            "team": 0,
+            "order": 17
+          }
+        ]
+      },
+      "dire": {
+        "id": 1276923,
+        "name": "Leviathan'",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 100,
+            "team": 1,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 107,
+            "team": 1,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 14,
+            "team": 1,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 46,
+            "team": 1,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 8,
+            "team": 1,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 111,
+            "team": 1,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 1,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 7,
+            "team": 1,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 93,
+            "team": 1,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 70,
+            "team": 1,
+            "order": 16
+          }
+        ]
+      }
+    },
+    {
+      "id": 2034834217,
+      "winner": 1,
+      "radiant": {
+        "id": 3,
+        "name": "compLexity Gaming",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 91,
+            "team": 0,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 19,
+            "team": 0,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 64,
+            "team": 0,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 78,
+            "team": 0,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 84,
+            "team": 0,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 3,
+            "team": 0,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 111,
+            "team": 0,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 46,
+            "team": 0,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 47,
+            "team": 0,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 99,
+            "team": 0,
+            "order": 17
+          }
+        ]
+      },
+      "dire": {
+        "id": 2634364,
+        "name": "EnemyGG",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 50,
+            "team": 1,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 55,
+            "team": 1,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 100,
+            "team": 1,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 70,
+            "team": 1,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 25,
+            "team": 1,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 1,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 74,
+            "team": 1,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 1,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 102,
+            "team": 1,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 60,
+            "team": 1,
+            "order": 16
+          }
+        ]
+      }
+    },
+    {
+      "id": 2034793869,
+      "winner": 2,
+      "radiant": {
+        "id": 2634364,
+        "name": "EnemyGG",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 74,
+            "team": 0,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 71,
+            "team": 0,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 69,
+            "team": 0,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 93,
+            "team": 0,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 86,
+            "team": 0,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 0,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 0,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 25,
+            "team": 0,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 12,
+            "team": 0,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 15,
+            "team": 0,
+            "order": 17
+          }
+        ]
+      },
+      "dire": {
+        "id": 3,
+        "name": "compLexity Gaming",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 50,
+            "team": 1,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 55,
+            "team": 1,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 100,
+            "team": 1,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 46,
+            "team": 1,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 39,
+            "team": 1,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 3,
+            "team": 1,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 111,
+            "team": 1,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 106,
+            "team": 1,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 70,
+            "team": 1,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 68,
+            "team": 1,
+            "order": 16
+          }
+        ]
+      }
+    },
+    {
+      "id": 2021037281,
+      "winner": 1,
+      "radiant": {
+        "id": 1148284,
+        "name": "MVP Phoenix",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 91,
+            "team": 0,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 19,
+            "team": 0,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 55,
+            "team": 0,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 107,
+            "team": 0,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 106,
+            "team": 0,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 20,
+            "team": 0,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 3,
+            "team": 0,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 0,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 8,
+            "team": 0,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 21,
+            "team": 0,
+            "order": 17
+          }
+        ]
+      },
+      "dire": {
+        "id": 543897,
+        "name": "Gigabyte.Mineski",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 28,
+            "team": 1,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 39,
+            "team": 1,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 87,
+            "team": 1,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 85,
+            "team": 1,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 1,
+            "team": 1,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 74,
+            "team": 1,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 1,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 71,
+            "team": 1,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 99,
+            "team": 1,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 73,
+            "team": 1,
+            "order": 16
+          }
+        ]
+      }
+    },
+    {
+      "id": 2020957492,
+      "winner": 1,
+      "radiant": {
+        "id": 543897,
+        "name": "Gigabyte.Mineski",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 39,
+            "team": 0,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 28,
+            "team": 0,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 3,
+            "team": 0,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 50,
+            "team": 0,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 8,
+            "team": 0,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 74,
+            "team": 0,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 0,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 102,
+            "team": 0,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 19,
+            "team": 0,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 12,
+            "team": 0,
+            "order": 17
+          }
+        ]
+      },
+      "dire": {
+        "id": 1148284,
+        "name": "MVP Phoenix",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 99,
+            "team": 1,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 90,
+            "team": 1,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 23,
+            "team": 1,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 13,
+            "team": 1,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 10,
+            "team": 1,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 20,
+            "team": 1,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 1,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 46,
+            "team": 1,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 60,
+            "team": 1,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 1,
+            "team": 1,
+            "order": 16
+          }
+        ]
+      }
+    },
+    {
+      "id": 2020191582,
+      "winner": 1,
+      "radiant": {
+        "id": 3,
+        "name": "compLexity Gaming",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 55,
+            "team": 0,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 72,
+            "team": 0,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 71,
+            "team": 0,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 74,
+            "team": 0,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 86,
+            "team": 0,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 9,
+            "team": 0,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 3,
+            "team": 0,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 68,
+            "team": 0,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 106,
+            "team": 0,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 28,
+            "team": 0,
+            "order": 17
+          }
+        ]
+      },
+      "dire": {
+        "id": 2428289,
+        "name": "Elite Wolves - UNIT",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 39,
+            "team": 1,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 100,
+            "team": 1,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 50,
+            "team": 1,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 12,
+            "team": 1,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 7,
+            "team": 1,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 1,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 25,
+            "team": 1,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 46,
+            "team": 1,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 47,
+            "team": 1,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 87,
+            "team": 1,
+            "order": 16
+          }
+        ]
+      }
+    },
+    {
+      "id": 2020134417,
+      "winner": 2,
+      "radiant": {
+        "id": 2428289,
+        "name": "Elite Wolves - UNIT",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 68,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 100,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 25,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 51,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 67,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 85,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 61,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 28,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 3,
+        "name": "compLexity Gaming",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 72,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 50,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 62,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 46,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 71,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 9,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 3,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 47,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 89,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 2009427163,
+      "winner": 2,
+      "radiant": {
+        "id": 24,
+        "name": "Signature.Trust",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 39,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 7,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 8,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 30,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 97,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 28,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 102,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 11,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 49,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 543897,
+        "name": "Gigabyte.Mineski",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 20,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 87,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 38,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 92,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 47,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 107,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 50,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 61,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 2009332659,
+      "winner": 1,
+      "radiant": {},
+      "dire": {}
+    },
+    {
+      "id": 2009289355,
+      "winner": 1,
+      "radiant": {
+        "id": 543897,
+        "name": "Gigabyte.Mineski",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 100,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 39,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 20,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 102,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 84,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 109,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 8,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 71,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 1,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 24,
+        "name": "Signature.Trust",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 28,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 87,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 107,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 47,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 15,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 85,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 50,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 12,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 42,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 2009132878,
+      "winner": 1,
+      "radiant": {},
+      "dire": {}
+    },
+    {
+      "id": 2009097282,
+      "winner": 1,
+      "radiant": {
+        "id": 254140,
+        "name": "First Departure",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 50,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 109,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 20,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 97,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 65,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 3,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 28,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 22,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 106,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 87,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 543897,
+        "name": "Gigabyte.Mineski",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 100,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 68,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 21,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 42,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 7,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 107,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 85,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 74,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 2008928618,
+      "winner": 1,
+      "radiant": {
+        "id": 543897,
+        "name": "Gigabyte.Mineski",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 3,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 72,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 87,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 29,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 15,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 28,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 109,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 12,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 47,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 254140,
+        "name": "First Departure",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 107,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 50,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 55,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 8,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 78,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 21,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 106,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 11,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 2006583838,
+      "winner": 1,
+      "radiant": {
+        "id": 24,
+        "name": "Signature.Trust",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 3,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 60,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 50,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 59,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 25,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 28,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 12,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 68,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 6,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 254140,
+        "name": "First Departure",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 39,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 7,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 92,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 84,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 10,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 94,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 47,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 2006431984,
+      "winner": 2,
+      "radiant": {
+        "id": 254140,
+        "name": "First Departure",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 112,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 8,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 71,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 21,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 26,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 67,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 12,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 10,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 24,
+        "name": "Signature.Trust",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 28,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 39,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 3,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 31,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 15,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 85,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 50,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 47,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 51,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 2002216444,
+      "winner": 1,
+      "radiant": {
+        "id": 1148284,
+        "name": "MVP Phoenix",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 55,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 3,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 68,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 42,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 19,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 85,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 8,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 60,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 38,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 254140,
+        "name": "First Departure",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 11,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 112,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 106,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 102,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 26,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 46,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 44,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 2002061565,
+      "winner": 2,
+      "radiant": {
+        "id": 254140,
+        "name": "First Departure",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 7,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 112,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 47,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 25,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 1,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 11,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 50,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 3,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 46,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 1148284,
+        "name": "MVP Phoenix",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 100,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 69,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 72,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 87,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 73,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 85,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 8,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 59,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 1994662524,
+      "winner": 2,
+      "radiant": {
+        "id": 1148284,
+        "name": "MVP Phoenix",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 11,
+            "team": 0,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 71,
+            "team": 0,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 62,
+            "team": 0,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 72,
+            "team": 0,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 64,
+            "team": 0,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 0,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 0,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 60,
+            "team": 0,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 50,
+            "team": 0,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 7,
+            "team": 0,
+            "order": 17
+          }
+        ]
+      },
+      "dire": {
+        "id": 24,
+        "name": "Signature.Trust",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 8,
+            "team": 1,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 55,
+            "team": 1,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 112,
+            "team": 1,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 19,
+            "team": 1,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 86,
+            "team": 1,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 1,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 3,
+            "team": 1,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 1,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 87,
+            "team": 1,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 85,
+            "team": 1,
+            "order": 16
+          }
+        ]
+      }
+    },
+    {
+      "id": 1994541759,
+      "winner": 2,
+      "radiant": {
+        "id": 24,
+        "name": "Signature.Trust",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 28,
+            "team": 0,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 112,
+            "team": 0,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 8,
+            "team": 0,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 21,
+            "team": 0,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 30,
+            "team": 0,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 0,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 3,
+            "team": 0,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 71,
+            "team": 0,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 0,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 25,
+            "team": 0,
+            "order": 17
+          }
+        ]
+      },
+      "dire": {
+        "id": 1148284,
+        "name": "MVP Phoenix",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 91,
+            "team": 1,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 19,
+            "team": 1,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 87,
+            "team": 1,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 99,
+            "team": 1,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 74,
+            "team": 1,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 1,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 11,
+            "team": 1,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 1,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 1,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 60,
+            "team": 1,
+            "order": 16
+          }
+        ]
+      }
+    },
+    {
+      "id": 1987953814,
+      "winner": 1,
+      "radiant": {
+        "id": 1148284,
+        "name": "MVP Phoenix",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 3,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 55,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 68,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 39,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 42,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 87,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 60,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 92,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 350190,
+        "name": "Fnatic",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 69,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 72,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 21,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 86,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 75,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 106,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 11,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 50,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 73,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 8,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 1987847612,
+      "winner": 2,
+      "radiant": {
+        "id": 350190,
+        "name": "Fnatic",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 69,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 68,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 60,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 1,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 74,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 46,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 71,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 106,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 21,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 1148284,
+        "name": "MVP Phoenix",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 3,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 55,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 19,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 28,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 44,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 11,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 87,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 1978665269,
+      "winner": 2,
+      "radiant": {
+        "id": 24,
+        "name": "Signature.Trust",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 28,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 112,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 47,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 60,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 18,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 11,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 25,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 50,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 21,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 350190,
+        "name": "Fnatic",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 69,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 68,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 86,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 78,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 44,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 8,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 1,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 1978524377,
+      "winner": 2,
+      "radiant": {
+        "id": 350190,
+        "name": "Fnatic",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 112,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 72,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 7,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 87,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 46,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 60,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 3,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 31,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 24,
+        "name": "Signature.Trust",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 28,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 39,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 50,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 59,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 73,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 11,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 21,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 25,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 47,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 1977365118,
+      "winner": 2,
+      "radiant": {
+        "id": 2391764,
+        "name": "Team Bad English",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 100,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 19,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 112,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 8,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 71,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 47,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 3,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 21,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 1966890,
+        "name": "London Conspiracy Dota2",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 91,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 85,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 72,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 28,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 15,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 11,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 50,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 68,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 31,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 1977432888,
+      "winner": 1,
+      "radiant": {
+        "id": 1966890,
+        "name": "London Conspiracy Dota2",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 85,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 19,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 3,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 72,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 25,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 112,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 50,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 99,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 2391764,
+        "name": "Team Bad English",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 91,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 47,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 71,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 55,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 70,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 11,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 28,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 87,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 60,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 1977296293,
+      "winner": 2,
+      "radiant": {
+        "id": 2537636,
+        "name": "Elements Pro Gaming",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 106,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 87,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 21,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 102,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 96,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 50,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 15,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 55,
+        "name": "ARCADE eSport",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 100,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 28,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 20,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 8,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 47,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 11,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 59,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 60,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 51,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 1977204801,
+      "winner": 1,
+      "radiant": {
+        "id": 2537636,
+        "name": "Elements Pro Gaming",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 106,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 50,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 60,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 7,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 59,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 112,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 97,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 68,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 55,
+        "name": "ARCADE eSport",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 100,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 55,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 72,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 21,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 71,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 11,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 3,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 8,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 74,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 1977059438,
+      "winner": 1,
+      "radiant": {
+        "id": 55,
+        "name": "ARCADE eSport",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 11,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 100,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 72,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 30,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 7,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 19,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 12,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 68,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 2537636,
+        "name": "Elements Pro Gaming",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 91,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 60,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 81,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 74,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 51,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 50,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 112,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 8,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 106,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 61,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 1976598712,
+      "winner": 1,
+      "radiant": {
+        "id": 2413439,
+        "name": "Team SatuDuaTiga",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 11,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 3,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 50,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 7,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 2,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 68,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 112,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 24,
+        "name": "Signature.Trust",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 28,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 21,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 31,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 99,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 86,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 85,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 51,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 59,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 1976408278,
+      "winner": 2,
+      "radiant": {
+        "id": 24,
+        "name": "Signature.Trust",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 39,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 60,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 8,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 30,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 47,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 28,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 31,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 15,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 2413439,
+        "name": "Team SatuDuaTiga",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 69,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 3,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 25,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 51,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 68,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 11,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 42,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 86,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 1976212191,
+      "winner": 2,
+      "radiant": {
+        "id": 350190,
+        "name": "Fnatic",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 100,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 68,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 87,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 42,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 21,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 112,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 1,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 12,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 46,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 543897,
+        "name": "Gigabyte.Mineski",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 69,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 39,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 3,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 31,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 106,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 11,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 61,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 47,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 25,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 1976132158,
+      "winner": 2,
+      "radiant": {
+        "id": 543897,
+        "name": "Gigabyte.Mineski",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 28,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 39,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 72,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 7,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 20,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 47,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 85,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 71,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 93,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 350190,
+        "name": "Fnatic",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 100,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 68,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 87,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 11,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 42,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 112,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 60,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 8,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 3,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 1975285590,
+      "winner": 1,
+      "radiant": {
+        "id": 2391764,
+        "name": "Team Bad English",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 91,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 19,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 55,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 3,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 8,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 47,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 87,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 27,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 2293413,
+        "name": "Lemondogs.Dota2",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 100,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 71,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 21,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 72,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 50,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 11,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 73,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 112,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 28,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 106,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 1975355868,
+      "winner": 2,
+      "radiant": {
+        "id": 2293413,
+        "name": "Lemondogs.Dota2",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 100,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 28,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 3,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 15,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 19,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 73,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 112,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 12,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 21,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 2391764,
+        "name": "Team Bad English",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 69,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 31,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 8,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 87,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 47,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 11,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 68,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 50,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 1974509830,
+      "winner": 2,
+      "radiant": {
+        "id": 254140,
+        "name": "First Departure",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 39,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 112,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 85,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 25,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 70,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 28,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 61,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 1,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 106,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 350190,
+        "name": "Fnatic",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 68,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 7,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 72,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 87,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 21,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 8,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 71,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 56,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 1974383177,
+      "winner": 1,
+      "radiant": {
+        "id": 350190,
+        "name": "Fnatic",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 72,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 112,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 7,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 21,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 87,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 50,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 1,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 254140,
+        "name": "First Departure",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 100,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 25,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 79,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 103,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 8,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 68,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 28,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 61,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 11,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 75,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 1974374059,
+      "winner": 1,
+      "radiant": {},
+      "dire": {}
+    },
+    {
+      "id": 1973277364,
+      "winner": 2,
+      "radiant": {
+        "id": 2579635,
+        "name": "Goomba Gaming",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 39,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 30,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 7,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 3,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 72,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 50,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 19,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 28,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 55,
+        "name": "ARCADE eSport",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 91,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 60,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 106,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 31,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 47,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 11,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 112,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 61,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 68,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 59,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 1973374077,
+      "winner": 1,
+      "radiant": {
+        "id": 55,
+        "name": "ARCADE eSport",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 3,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 39,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 7,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 12,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 14,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 50,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 8,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 2579635,
+        "name": "Goomba Gaming",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 11,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 112,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 85,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 88,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 82,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 60,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 68,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 106,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 28,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 1972999288,
+      "winner": 2,
+      "radiant": {
+        "id": 2537636,
+        "name": "Elements Pro Gaming",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 112,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 11,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 28,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 50,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 59,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 1,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 106,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 18,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 59,
+        "name": "Kaipi",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 3,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 39,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 72,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 31,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 68,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 60,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 71,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 55,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 47,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 1973112556,
+      "winner": 2,
+      "radiant": {
+        "id": 59,
+        "name": "Kaipi",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 3,
+            "team": 0,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 11,
+            "team": 0,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 112,
+            "team": 0,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 28,
+            "team": 0,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 55,
+            "team": 0,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 60,
+            "team": 0,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 91,
+            "team": 0,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 21,
+            "team": 0,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 39,
+            "team": 0,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 47,
+            "team": 0,
+            "order": 16
+          }
+        ]
+      },
+      "dire": {
+        "id": 2537636,
+        "name": "Elements Pro Gaming",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 69,
+            "team": 1,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 85,
+            "team": 1,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 79,
+            "team": 1,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 52,
+            "team": 1,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 74,
+            "team": 1,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 50,
+            "team": 1,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 100,
+            "team": 1,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 72,
+            "team": 1,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 12,
+            "team": 1,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 8,
+            "team": 1,
+            "order": 17
+          }
+        ]
+      }
+    },
+    {
+      "id": 1973200167,
+      "winner": 1,
+      "radiant": {
+        "id": 2537636,
+        "name": "Elements Pro Gaming",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 91,
+            "team": 0,
+            "order": 4
+          },
+          {
+            "is_pick": true,
+            "hero_id": 100,
+            "team": 0,
+            "order": 7
+          },
+          {
+            "is_pick": true,
+            "hero_id": 74,
+            "team": 0,
+            "order": 13
+          },
+          {
+            "is_pick": true,
+            "hero_id": 81,
+            "team": 0,
+            "order": 15
+          },
+          {
+            "is_pick": true,
+            "hero_id": 47,
+            "team": 0,
+            "order": 19
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 50,
+            "team": 0,
+            "order": 0
+          },
+          {
+            "is_pick": false,
+            "hero_id": 69,
+            "team": 0,
+            "order": 2
+          },
+          {
+            "is_pick": false,
+            "hero_id": 68,
+            "team": 0,
+            "order": 8
+          },
+          {
+            "is_pick": false,
+            "hero_id": 112,
+            "team": 0,
+            "order": 10
+          },
+          {
+            "is_pick": false,
+            "hero_id": 61,
+            "team": 0,
+            "order": 17
+          }
+        ]
+      },
+      "dire": {
+        "id": 59,
+        "name": "Kaipi",
+        "picks": [
+          {
+            "is_pick": true,
+            "hero_id": 19,
+            "team": 1,
+            "order": 5
+          },
+          {
+            "is_pick": true,
+            "hero_id": 3,
+            "team": 1,
+            "order": 6
+          },
+          {
+            "is_pick": true,
+            "hero_id": 39,
+            "team": 1,
+            "order": 12
+          },
+          {
+            "is_pick": true,
+            "hero_id": 31,
+            "team": 1,
+            "order": 14
+          },
+          {
+            "is_pick": true,
+            "hero_id": 44,
+            "team": 1,
+            "order": 18
+          }
+        ],
+        "bans": [
+          {
+            "is_pick": false,
+            "hero_id": 60,
+            "team": 1,
+            "order": 1
+          },
+          {
+            "is_pick": false,
+            "hero_id": 11,
+            "team": 1,
+            "order": 3
+          },
+          {
+            "is_pick": false,
+            "hero_id": 59,
+            "team": 1,
+            "order": 9
+          },
+          {
+            "is_pick": false,
+            "hero_id": 85,
+            "team": 1,
+            "order": 11
+          },
+          {
+            "is_pick": false,
+            "hero_id": 101,
+            "team": 1,
+            "order": 16
+          }
+        ]
+      }
+    }
+  ]
+}
