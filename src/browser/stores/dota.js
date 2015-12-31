@@ -16,6 +16,9 @@ const DotaStore = Fluxxor.createStore({
         this.currentPatch = currentPatch;
         this.patchIdsToLeagueIds = patchToLeagues;
         this.leagueIdsToLeagueNames = leagueIdsToLeagueNames;
+        this.patchReleaseDates = {
+            '6.86': 1450252800 // December 16, 2015 at midnight PST
+        };
 
         this.handleLeagueSuccess(tournamentsForCurrentPatch, currentPatch);
     },
@@ -35,6 +38,12 @@ const DotaStore = Fluxxor.createStore({
             let matches = tournaments[leagueId].matches;
 
             matches.forEach(match => {
+                // TODO This isn't the best way to handle this.
+                // What we should do is calculate the previous patch based on the start time.
+                if (match.startTime < this.patchReleaseDates[patch]) {
+                    return;
+                }
+
                 if (match.radiant.picks) {
                     this.lineupCollection.add(match.radiant.picks, match.id, leagueId, patch);
                 }
