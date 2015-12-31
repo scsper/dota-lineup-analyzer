@@ -84,6 +84,9 @@ const DotaStore = Fluxxor.createStore({
                 count: combo.count,
                 matches: matches
             });
+
+            //debug winrate
+            //console.log(this.getWinrate(combo));
         });
 
         return sortedCombinationsWithHeroNames;
@@ -109,6 +112,38 @@ const DotaStore = Fluxxor.createStore({
         const leagueIds = this.patchIdsToLeagueIds[patchId];
 
         return leagueIds.map(id => this.leagueIdsToLeagueNames[id]);
+    },
+
+    getWinrate(combination) {   
+        let winCounter = 0;
+        let matchCounter = 0;
+
+        const matches = this.getMatches(combination.matches);
+
+        //just need id of one hero, if one hero is there then whole combo too
+        const targetHeroId = combination.heroIds[0];
+        
+        //tally up the wins
+        matches.forEach(match => {
+            matchCounter++;
+
+            //check if combo appears on radi or dire, assume radi
+            let radiOrDire = 1;
+            for(let i=0; i<match.dire.picks.length; i++) {
+                if(targetHeroId == match.dire.picks[i].hero_id) {
+                    radiOrDire = 2;
+                    break;
+                }
+            }
+
+            //if concordant team won, increment win counter
+            if(radiOrDire == match.winner) {
+                winCounter++;
+            }
+        });
+
+        //calculate winrate as #wins/#matches
+        return winCounter/matchCounter;
     }
 });
 
