@@ -6,7 +6,8 @@ import classNames from 'classnames';
 const Match = React.createClass({
     propTypes: {
         match: React.PropTypes.object.isRequired,
-        activeCombo : React.PropTypes.object.isRequired
+        activeCombo: React.PropTypes.object.isRequired,
+        showBans: React.PropTypes.bool.isRequired
     },
 
     getPickString(picks) {
@@ -25,28 +26,31 @@ const Match = React.createClass({
         return pickStr;
     },
 
-    renderHeroes(picks) {
-        return picks.map(hero => <Hero key={hero.hero_id} hero={hero} activeCombo={this.props.activeCombo}/>);
-    },
-
-    mergePickAndBans(picks, bans) {
+    renderHeroes(picks, bans) {
         // array.sort will sort them in place, so we have to clone the arrays first
         // we don't want to sort the arrays in place, because that will modify the reference of the store.
         let sortedPicks = picks.map(pick => pick).sort((a, b) => a.order - b.order);
         let sortedBans = bans.map(ban => ban).sort((a, b) => a.order - b.order);
+        let heroList;
 
+        heroList = this.props.showBans ? this.mergePickAndBans(sortedPicks, sortedBans) : picks;
+
+        return heroList.map(hero => <Hero key={hero.hero_id} hero={hero} activeCombo={this.props.activeCombo}/>);
+    },
+
+    mergePickAndBans(picks, bans) {
         // dota draft order
         return [
-            sortedBans[0],
-            sortedBans[1],
-            sortedPicks[0],
-            sortedPicks[1],
-            sortedBans[2],
-            sortedBans[3],
-            sortedPicks[2],
-            sortedPicks[3],
-            sortedBans[4],
-            sortedPicks[4]
+            bans[0],
+            bans[1],
+            picks[0],
+            picks[1],
+            bans[2],
+            bans[3],
+            picks[2],
+            picks[3],
+            bans[4],
+            picks[4]
         ];
     },
 
@@ -55,26 +59,27 @@ const Match = React.createClass({
         const {radiant, dire} = match;
         const direWin = (this.props.match.winner === 1) ;
         const radiantWin = (this.props.match.winner === 2);
+        let showBans = this.props.showBans;
 
         return (
-            <li  className={'match'}>
+            <li className={classNames('match',  {'showBans' : showBans})}>
                 <h2>{`${radiant.name} vs. ${dire.name}`}</h2>
-                <div className={classNames('radiant', 'pickContainer', {'winner' : radiantWin})}>
-                    <div className={'nameContainer'} >
+                <div className={classNames('radiant', 'pick-container', {'winner' : radiantWin})}>
+                    <div className={'teamname-container'} >
                         <h3 className={'teamName'}>{radiant.name} </h3>
                         <p> {'RADIANT'} </p>
                     </div>
                     <ul className={'lineup'}>
-                        {this.renderHeroes(this.mergePickAndBans(radiant.picks, radiant.bans))}
+                        {this.renderHeroes(radiant.picks, radiant.bans)}
                     </ul>
                 </div>
-                <div className={classNames('dire', 'pickContainer', {'winner' : direWin})}>
-                    <div className={'nameContainer'}>
+                <div className={classNames('dire', 'pick-container', {'winner' : direWin})}>
+                    <div className={'teamname-container'}>
                         <h3 className={'teamName'}>{dire.name}</h3>
                         <p> {'DIRE'} </p>
                     </div>
                     <ul className={'lineup'}>
-                        {this.renderHeroes(this.mergePickAndBans(dire.picks, dire.bans))}
+                        {this.renderHeroes(dire.picks, dire.bans)}
                     </ul>
                 </div>
             </li>

@@ -24,6 +24,7 @@ p, span, {
 ul {
     list-style: none;
     padding:0px;
+    margin:0px;
 }
 
 h2 {
@@ -40,7 +41,7 @@ select {
     background: transparent;
 }
 
-.main, .sidebar{
+.sidebar{
     display:inline-block;
 }
 
@@ -65,12 +66,24 @@ select {
 @import "animations";
 
 //**************** Module-level layouts & styling ****************
-.comboSearchSection {
+// *-containers : usually are divs and spans that are for layout purposes
+// * : rest are specific class names for elements with semantic value
+
+.combo-search-container {
     background: $sidebarColor;
     color: $secondaryTextColor;
 }
 
-.searchOptions{
+.settings-container{
+    padding : 1em;
+    background:$highlightColor;
+    color : $secondaryTextColor;
+    .settings-title{
+        text-align: center;
+    }
+}
+
+.search-options-container{
     border-bottom: 1px solid $secondaryTextColor;
     padding-bottom: 10px;
     font-size: .9em;
@@ -140,7 +153,6 @@ select {
         top: -2px;
         left: -2px;
         width: 105%;
-        @include animation('addHeroPick .5s');
 
         & + .seq{
             top: 7px;
@@ -151,17 +163,17 @@ select {
 
 .main {
     color: $textColor;
-    padding:0 1em;
 
     h2 {
         padding: .5em;
         margin: 0px;
         border-bottom: 1px solid $textColor;
     }
+
 }
 
 
-.pickContainer {
+.pick-container {
     background-color: $backgroundColor;
     padding: 1em 1em 1em 0;
 
@@ -188,15 +200,28 @@ select {
         }
     }
 
-    .nameContainer, .lineup {
+    .teamname-container, .lineup {
         display: inline-block;
         vertical-align: middle;
     }
 
-    .nameContainer {
+    .teamname-container {
         width:100px;
         text-align: center;
     }
+}
 
+
+
+.match-results {
+    padding: 1em;
+}
+
+.match{
+    &.showBans{
+        .isPick{
+            @include animation('addHeroPick .5s');
+        }
+    }
 }
 

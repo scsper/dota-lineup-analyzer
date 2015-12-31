@@ -5,6 +5,7 @@ import DotaActions from '../actions';
 import Lineup from './lineup.jsx';
 import Match from './match.jsx';
 import Picker from './picker.jsx';
+import Settings from './settings.jsx';
 
 const StoreWatchMixin = Fluxxor.StoreWatchMixin;
 const FluxMixin = Fluxxor.FluxMixin(React);
@@ -20,7 +21,8 @@ const App = React.createClass({
             activeCombo: null,
             heroComboNumber: DEFAULT_HERO_COMBO_NUMBER,
             activePatch: window.currentPatch, // not sure if I want to access window from here
-            activeLeagueId: null
+            activeLeagueId: null,
+            settings: { showBans : false}
         };
     },
 
@@ -88,6 +90,18 @@ const App = React.createClass({
         });
     },
 
+    handleSettingsChange(options){
+        let settings = this.state.settings;
+
+        if (options.hasOwnProperty('showBans')){
+            settings.showBans = options.showBans;
+        }
+
+        this.setState({
+            settings : settings
+        });
+    },
+
     renderLineupCombinations() {
         let activeComboId = this.state.activeCombo && this.state.activeCombo.id;
 
@@ -112,7 +126,8 @@ const App = React.createClass({
                 key={match.id}
                 match={match}
                 activeCombo={this.state.activeCombo}
-            />
+                showBans={this.state.settings.showBans}
+             />
         );
     },
 
@@ -123,8 +138,8 @@ const App = React.createClass({
 
         return (
             <div className={'main-container'}>
-                <div className={'comboSearchSection sidebar'}>
-                    <div className={'searchOptions'}>
+                <div className={'combo-search-container sidebar'}>
+                    <div className={'search-options-container'}>
                         <Picker
                             options={heroComboOptions.map(option => {
                                 return {value: option, displayName: option};
@@ -162,6 +177,8 @@ const App = React.createClass({
                     </ul>
                 </div>
                 <div className={'main'}>
+                    <Settings onChange={this.handleSettingsChange}
+                    />
                     <ul className={'match-results'}>
                         {this.renderMatches()}
                     </ul>
