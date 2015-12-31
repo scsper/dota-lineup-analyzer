@@ -5,7 +5,8 @@ import classNames from 'classnames';
 
 const Match = React.createClass({
     propTypes: {
-        match: React.PropTypes.object.isRequired
+        match: React.PropTypes.object.isRequired,
+        activeCombo : React.PropTypes.object.isRequired
     },
 
     getPickString(picks) {
@@ -25,7 +26,7 @@ const Match = React.createClass({
     },
 
     renderHeroes(picks) {
-        return picks.map(hero => <Hero key={hero.hero_id} hero={hero}/>);
+        return picks.map(hero => <Hero key={hero.hero_id} hero={hero} activeCombo={this.props.activeCombo}/>);
     },
 
     mergePickAndBans(picks, bans) {

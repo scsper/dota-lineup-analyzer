@@ -93,9 +93,10 @@ const App = React.createClass({
         return this.state.sortedCombinations.map(combo =>
             <Lineup
                 key={combo.id}
-                isActive={activeComboId === combo.id}
+                isSelected={activeComboId === combo.id}
                 combo={combo}
                 onClick={this.handleLineupClick}
+                activeCombo={this.state.activeCombo}
             />
         );
     },
@@ -105,7 +106,12 @@ const App = React.createClass({
             return null;
         }
 
-        return this.state.activeCombo.matches.map(match => <Match key={match.id} match={match} />);
+        return this.state.activeCombo.matches.map(match =>
+            <Match
+            key={match.id}
+            match={match}
+            activeCombo={this.state.activeCombo} /
+        >);
     },
 
     render() {

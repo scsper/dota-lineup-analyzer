@@ -6,7 +6,17 @@ import classNames from 'classnames';
 
 const Hero = React.createClass({
     propTypes: {
-       hero: React.PropTypes.object.isRequired
+       hero: React.PropTypes.object.isRequired,
+       activeCombo : React.PropTypes.object
+    },
+
+    isHeroInActiveCombo() {
+        let isFound = false;
+        if(this.props.activeCombo && this.props.activeCombo.lineup ){
+            const activeLineup = this.props.activeCombo.lineup;
+            isFound = (activeLineup.indexOf(this.props.hero.hero_id.toString()) > -1);
+        }
+        return isFound;
     },
 
     renderOrder(order) {
@@ -18,10 +28,14 @@ const Hero = React.createClass({
 
     render() {
         const {hero} = this.props;
-        const hasPickOrBanClass = classNames({ 'isBan' :  hero.is_pick === false}, {'isPick' : hero.is_pick === true});
+
+        const stateClass = classNames(
+            { 'isBan' :  hero.is_pick === false},
+            {'isPick' : hero.is_pick === true},
+            {'isSelected' : this.isHeroInActiveCombo()});
         return (
             <li className={'hero'}>
-                <img className={hasPickOrBanClass} src={ImageUrls[hero.hero_id]} />
+                <img className={stateClass} src={ImageUrls[hero.hero_id]} />
                 {this.renderOrder(hero.order)}
             </li>
         );

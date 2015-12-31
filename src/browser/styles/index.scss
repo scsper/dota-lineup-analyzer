@@ -3,10 +3,10 @@
 $sidebarColor: #333333;
 $textColor: #333333;
 $secondaryTextColor: #FFFFFF;
-$highlightColor : #FFD452;
+$highlightColor :#75A3d1 ;
 //#E05151 pink
-$activeColor: #75A3d1;
-$backgroundColor: #FFFFFF;
+$activeColor: #FFD452; //blue
+$backgroundColor: #EEEEEE;
 
 $radiantColor : #63A46c; //green
 $direColor : #D9411e; //red
@@ -80,6 +80,10 @@ select {
     margin-left : 25%;
 }
 
+.isSelected {
+    border : 1px solid $activeColor;
+}
+
 //**************** Module-level layouts & styling ****************
 .comboSearchSection {
     background: $sidebarColor;
@@ -113,8 +117,11 @@ select {
         padding: 1em .75em;
     }
 
-    .combo-count-active {
-        background: $activeColor;
+    &.selected {
+        .combo-count {
+            background: $activeColor;
+            color:$textColor;
+        }
     }
 
     .lineup {
@@ -150,6 +157,10 @@ select {
         & + .seq{
             top: 7px;
             right: 7px;
+        }
+
+        &.isSelected{
+            border: 3px solid $activeColor;
         }
     }
 
