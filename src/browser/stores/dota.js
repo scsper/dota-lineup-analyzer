@@ -7,7 +7,8 @@ import PatchCollection from './collections/patch';
 const DotaStore = Fluxxor.createStore({
     initialize({patchToLeagues, tournamentsForCurrentPatch, currentPatch, leagueIdsToLeagueNames}) {
         this.bindActions(
-            League.FETCH_SUCCEEDED, this.handleLeagueSuccess
+            League.FETCH_SUCCEEDED, this.handleLeagueSuccess,
+            League.FETCH_EXISTS, this.handleLeagueExists
         );
 
         this.lineupCollection = new LineupCollection();
@@ -20,11 +21,11 @@ const DotaStore = Fluxxor.createStore({
             '6.86': 1450252800 // December 16, 2015 at midnight PST
         };
 
-        this.handleLeagueSuccess(tournamentsForCurrentPatch, currentPatch);
+        this._normalizeLeagues(tournamentsForCurrentPatch, currentPatch);
     },
 
     /**
-     * @param {Object} tournaments An object with the form:
+     * @param {Object} leagues An object with the form:
      * {
      *   <leagueId>: {
      *     id: <leagueId>
@@ -33,9 +34,9 @@ const DotaStore = Fluxxor.createStore({
      * }
      * @param {String} patch The patch id, e.g. '6.85b'
      */
-    handleLeagueSuccess(tournaments, patch) {
-        Object.keys(tournaments).forEach(leagueId => {
-            let matches = tournaments[leagueId].matches;
+    _normalizeLeagues(leagues, patch) {
+        Object.keys(leagues).forEach(leagueId => {
+            const matches = leagues[leagueId].matches;
 
             matches.forEach(match => {
                 // TODO: Check for the startTime being greater than the next patch.  If it is greater than the next
@@ -55,6 +56,21 @@ const DotaStore = Fluxxor.createStore({
                 this.matchCollection.add(match);
             });
         });
+    },
+
+    /**
+     * @see _normalizeLeagues
+     */
+    handleLeagueSuccess({leagues, patch}) {
+        if (!this.hasLineupsForPatch(patch)) {
+            this._normalizeLeagues(leagues, patch);
+        }
+
+        this.emit('change');
+    },
+
+    handleLeagueExists() {
+        this.emit('change');
     },
 
     getLineupCombinations(id, heroLength, displayType) {
@@ -109,6 +125,10 @@ const DotaStore = Fluxxor.createStore({
         const leagueIds = this.patchIdsToLeagueIds[patchId];
 
         return leagueIds.map(id => this.leagueIdsToLeagueNames[id]);
+    },
+
+    hasLineupsForPatch(patchId) {
+        return this.lineupCollection.hasLineupsForPatch(patchId);
     }
 });
 

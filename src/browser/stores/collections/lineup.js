@@ -102,4 +102,8 @@ export default class LineupCollection {
 
         return combinationsToReturn;
     }
+
+    hasLineupsForPatch(patch) {
+        return this.lineupCombinationsByPatch.hasOwnProperty(patch);
+    }
 }

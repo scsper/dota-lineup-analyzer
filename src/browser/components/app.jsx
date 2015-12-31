@@ -57,12 +57,13 @@ const App = React.createClass({
     handlePatchChange(event) {
         let activePatch = event.target.value;
 
+        this.getFlux().actions.getLeague(activePatch);
+
         this.setState({
             activePatch,
-            sortedCombinations: this.getFlux().store('DotaStore').getLineupCombinationsForPatch(
-                activePatch, this.state.heroComboNumber),
-            leagues: this.getFlux().store('DotaStore').getLeagues(activePatch),
-            activeLeagueId: null
+            activeCombo: null,
+            activeLeagueId: null,
+            leagues: this.getFlux().store('DotaStore').getLeagues(activePatch)
         });
     },
 
@@ -108,10 +109,11 @@ const App = React.createClass({
 
         return this.state.activeCombo.matches.map(match =>
             <Match
-            key={match.id}
-            match={match}
-            activeCombo={this.state.activeCombo} /
-        >);
+                key={match.id}
+                match={match}
+                activeCombo={this.state.activeCombo}
+            />
+        );
     },
 
     render() {

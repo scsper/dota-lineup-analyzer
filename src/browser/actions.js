@@ -6,9 +6,16 @@ import {League} from './constants/dota';
 
 const DotaActions = {
     getLeague(patch) {
-        getLeagueService(patch).then(response => {
-            this.dispatch(League.FETCH_SUCCEEDED, response, patch);
-        });
+        if (this.flux.stores.DotaStore.hasLineupsForPatch(patch)) {
+            this.dispatch(League.FETCH_EXISTS);
+        } else {
+            getLeagueService(patch).then(response => {
+                this.dispatch(League.FETCH_SUCCEEDED, {
+                    leagues: response,
+                    patch: patch
+                });
+            });
+        }
     }
 };
 
