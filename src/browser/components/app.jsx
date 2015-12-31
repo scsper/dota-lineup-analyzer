@@ -59,14 +59,14 @@ const App = React.createClass({
     handlePatchChange(event) {
         let activePatch = event.target.value;
 
-        this.getFlux().actions.getLeague(activePatch);
-
         this.setState({
             activePatch,
             activeCombo: null,
             activeLeagueId: null,
             leagues: this.getFlux().store('DotaStore').getLeagues(activePatch)
         });
+
+        this.getFlux().actions.getLeague(activePatch);
     },
 
     handleLeagueChange(event) {
