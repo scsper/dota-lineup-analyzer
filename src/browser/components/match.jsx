@@ -53,8 +53,9 @@ const Match = React.createClass({
     render() {
         const {match} = this.props;
         const {radiant, dire} = match;
-        const direWin = (this.props.match.winner === 1) ;
-        const radiantWin = (this.props.match.winner === 2);
+        const radiantWin = (this.props.match.winner === 1);
+        const direWin = (this.props.match.winner === 2) ;
+        
 
         return (
             <li  className={'match'}>
