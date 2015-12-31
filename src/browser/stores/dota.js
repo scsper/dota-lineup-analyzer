@@ -38,8 +38,6 @@ const DotaStore = Fluxxor.createStore({
             let matches = tournaments[leagueId].matches;
 
             matches.forEach(match => {
-                // TODO This isn't the best way to handle this.
-                // What we should do is calculate the previous patch based on the start time.
                 if (match.startTime < this.patchReleaseDates[patch]) {
                     return;
                 }
