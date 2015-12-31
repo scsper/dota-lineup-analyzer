@@ -1,5 +1,5 @@
 import Fluxxor from 'fluxxor';
-import {League} from '../constants/dota';
+import {League, DisplayTypes} from '../constants/dota';
 import LineupCollection from './collections/lineup';
 import MatchCollection from './collections/match';
 import PatchCollection from './collections/patch';
@@ -46,13 +46,13 @@ const DotaStore = Fluxxor.createStore({
         });
     },
 
-    getLineupCombinations(id, heroLength, leagueOrPatch) {
+    getLineupCombinations(id, heroLength, displayType) {
         let sortedCombinationsWithHeroNames = [];
         let sortedCombinations = new LineupCollection();
 
-        if (leagueOrPatch === "league") {
+        if (displayType === DisplayTypes.LEAGUE) {
             sortedCombinations = this.lineupCollection.getForLeague(id, heroLength);
-        } else if (leagueOrPatch === "patch") {
+        } else if (displayType === DisplayTypes.PATCH) {
             sortedCombinations = this.lineupCollection.getForPatch(id, heroLength);
         } else {
             throw new Error('getLineupCombinations called with impromper argument (should have "league" or "patch")');
@@ -79,11 +79,11 @@ const DotaStore = Fluxxor.createStore({
     },
 
     getLineupCombinationsForLeague(leagueId, heroLength) {
-        return this.getLineupCombinations(leagueId, heroLength, "league");
+        return this.getLineupCombinations(leagueId, heroLength, DisplayTypes.LEAGUE);
     },
 
     getLineupCombinationsForPatch(patchId, heroLength) {
-        return this.getLineupCombinations(patchId, heroLength, "patch");
+        return this.getLineupCombinations(patchId, heroLength, DisplayTypes.PATCH);
     },
 
     getPatchList() {

@@ -2,4 +2,9 @@ const League = {
     FETCH_SUCCEEDED: 'FETCH_SUCCEEDED'
 };
 
-export {League};
+const DisplayTypes = {
+    LEAGUE: 'LEAGUE',
+    PATCH: 'PATCH'
+};
+
+export {League, DisplayTypes};
