@@ -1,0 +1,59 @@
+//This mixin assumes that variables.scss is included already
+
+/**** Base Vendor Mixins ****/
+
+// Converts the keyframes of animations into vendor-prefixed ones
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+// Converts the animations into vendor-prefixed ones
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+/********* Animations *********/
+// Used to add a fade-in background of the radiant color
+@include keyframes(addRadiantColor) {
+    0% {background-color: transparent;}
+    75% {background-color: $radiantGradient;}
+}
+
+// Used to add a fade-in background of the dire color
+@include keyframes(addDireColor) {
+    0% {background-color: transparent;}
+    75% {background-color: $direGradient;}
+}
+
+@include keyframes(addHeroPick){
+    from{
+        box-shadow:none;
+        top: 0px;
+        left: 0px;
+        width:100%;
+    }
+    to {
+        box-shadow: 5px 5px 5px $textColor;
+        top: -2px;
+        left: -2px;
+        width: 105%;
+    }
+}
