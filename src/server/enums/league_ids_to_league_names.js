@@ -9,6 +9,11 @@ export default {
         cacheName: 'the_summit_4',
         displayName: 'The Summit 4'
     },
+    3877: {
+        id: 3877,
+        cacheName: 'radiant_and_dire_cup_2015',
+        displayName: 'Radiant and Dire Cup 2015'
+    },
     4088: {
         id: 4088,
         cacheName: 'wca_2015',
