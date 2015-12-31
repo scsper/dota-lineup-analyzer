@@ -65,12 +65,12 @@ select {
 @import "animations";
 
 //**************** Module-level layouts & styling ****************
-.comboSearchSection {
+.combo-search-section {
     background: $sidebarColor;
     color: $secondaryTextColor;
 }
 
-.searchOptions{
+.search-options-container{
     border-bottom: 1px solid $secondaryTextColor;
     padding-bottom: 10px;
     font-size: .9em;
@@ -150,7 +150,6 @@ select {
 
 .main {
     color: $textColor;
-    padding:0 1em;
 
     h2 {
         padding: .5em;
@@ -161,7 +160,7 @@ select {
 }
 
 
-.pickContainer {
+.pick-container {
     background-color: $backgroundColor;
     padding: 1em 1em 1em 0;
 
@@ -188,15 +187,19 @@ select {
         }
     }
 
-    .nameContainer, .lineup {
+    .teamname-container, .lineup {
         display: inline-block;
         vertical-align: middle;
     }
 
-    .nameContainer {
+    .teamname-container {
         width:100px;
         text-align: center;
     }
+}
+
+.match-results {
+    padding: 1em;
 }
 
 .match{
