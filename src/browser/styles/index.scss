@@ -26,6 +26,12 @@ $bodyFont : 'Lato', sans-serif;
 
 //**************** Base & Layouts ****************
 
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
     background: $backgroundColor;
 }
@@ -58,20 +64,23 @@ select {
 }
 
 .main-container{
-    display:flex;
-    flex-flow: row wrap;
-    align-items:stretch;
 }
 
 .main, .sidebar{
     display:inline-block;
-    vertical-align: top;
 }
 
 .sidebar {
-    min-width:200px;
-    min-height:100vh;
+    width:25%;
     padding:20px;
+    height:100vh;
+    position:fixed;
+    top:0px;
+    overflow : auto;
+}
+
+.main {
+    margin-left : 25%;
 }
 
 //**************** Module-level layouts & styling ****************
