@@ -16,6 +16,9 @@ var Match = function (matchId, players) {
     this.dire = null;
 
     this.players = players;
+
+    this.startTime = -1;
+
     this.retries = 0;
 
     this._getMatchDetails();
@@ -26,7 +29,8 @@ Match.prototype.serialize = function() {
         id: this.id,
         winner: this.winner,
         radiant: this.radiant,
-        dire: this.dire
+        dire: this.dire,
+        startTime: this.startTime
     };
 };
 
@@ -37,6 +41,7 @@ Match.prototype._getMatchDetails = function () {
         const result = response.body.result;
         let pickBans;
 
+        this.startTime = result.start_time;
         this.winner = this._getWinner(result);
 
         /**
