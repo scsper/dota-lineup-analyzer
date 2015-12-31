@@ -5,6 +5,7 @@ import DotaActions from '../actions';
 import Lineup from './lineup.jsx';
 import Match from './match.jsx';
 import HeroComboPicker from './hero_combo_picker.jsx';
+import PatchPicker from './patch_picker.jsx';
 
 const StoreWatchMixin = Fluxxor.StoreWatchMixin;
 const FluxMixin = Fluxxor.FluxMixin(React);
@@ -19,6 +20,7 @@ const App = React.createClass({
         return {
             activeCombo: null,
             heroComboNumber: DEFAULT_HERO_COMBO_NUMBER,
+            activePatch: window.currentPatch // not sure if I want to access window from here
         };
     },
 
@@ -26,10 +28,11 @@ const App = React.createClass({
         let flux = this.getFlux();
         let dotaStore = flux.store('DotaStore');
         let heroComboNumber = this.state && this.state.heroComboNumber || DEFAULT_HERO_COMBO_NUMBER;
+        let activePatch = this.state && this.state.activePatch || window.currentPatch;
 
         return {
             patches: dotaStore.getPatchList(),
-            sortedCombinations: dotaStore.getLineupCombinationsForLeague(4088, heroComboNumber)
+            sortedCombinations: dotaStore.getLineupCombinationsForPatch(activePatch, heroComboNumber)
         };
     },
 
@@ -45,7 +48,18 @@ const App = React.createClass({
         // we want to get a new set of combinations every time the combo number is changed.
         this.setState({
             heroComboNumber,
-            sortedCombinations: this.getFlux().store('DotaStore').getLineupCombinationsForLeague(4088, heroComboNumber)
+            sortedCombinations: this.getFlux().store('DotaStore').getLineupCombinationsForPatch(
+                this.state.activePatch, heroComboNumber)
+        });
+    },
+
+    handlePatchChange(event) {
+        let activePatch = event.target.value;
+
+        this.setState({
+            activePatch,
+            sortedCombinations: this.getFlux().store('DotaStore').getLineupCombinationsForPatch(
+                activePatch, this.state.heroComboNumber)
         });
     },
 
@@ -78,6 +92,13 @@ const App = React.createClass({
                         onChange={this.handleHeroComboNumberChange}
                         heroComboNumber={this.state.heroComboNumber}
                     />
+
+                    <PatchPicker
+                        patches={this.state.patches}
+                        onChange={this.handlePatchChange}
+                        activePatch={this.state.activePatch}
+                    />
+
                     <ul className={'combo-results'} >
                         {this.renderLineupCombinations()}
                     </ul>
