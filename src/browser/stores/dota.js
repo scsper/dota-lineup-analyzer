@@ -5,7 +5,7 @@ import MatchCollection from './collections/match';
 import PatchCollection from './collections/patch';
 
 const DotaStore = Fluxxor.createStore({
-    initialize({patchToLeagues, tournamentsForCurrentPatch, currentPatch}) {
+    initialize({patchToLeagues, tournamentsForCurrentPatch, currentPatch, leagueIdsToLeagueNames}) {
         this.bindActions(
             League.FETCH_SUCCEEDED, this.handleLeagueSuccess
         );
@@ -14,6 +14,8 @@ const DotaStore = Fluxxor.createStore({
         this.patchCollection = new PatchCollection(patchToLeagues);
         this.matchCollection = new MatchCollection();
         this.currentPatch = currentPatch;
+        this.patchIdsToLeagueIds = patchToLeagues;
+        this.leagueIdsToLeagueNames = leagueIdsToLeagueNames;
 
         this.handleLeagueSuccess(tournamentsForCurrentPatch, currentPatch);
     },
@@ -92,6 +94,12 @@ const DotaStore = Fluxxor.createStore({
 
     getMatches(matchIds) {
         return matchIds.map(matchId => this.matchCollection.get(matchId));
+    },
+
+    getLeagues(patchId) {
+        const leagueIds = this.patchIdsToLeagueIds[patchId];
+
+        return leagueIds.map(id => this.leagueIdsToLeagueNames[id]);
     }
 });
 

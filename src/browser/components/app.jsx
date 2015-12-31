@@ -19,7 +19,8 @@ const App = React.createClass({
         return {
             activeCombo: null,
             heroComboNumber: DEFAULT_HERO_COMBO_NUMBER,
-            activePatch: window.currentPatch // not sure if I want to access window from here
+            activePatch: window.currentPatch, // not sure if I want to access window from here
+            activeLeagueId: null
         };
     },
 
@@ -31,7 +32,8 @@ const App = React.createClass({
 
         return {
             patches: dotaStore.getPatchList(),
-            sortedCombinations: dotaStore.getLineupCombinationsForPatch(activePatch, heroComboNumber)
+            sortedCombinations: dotaStore.getLineupCombinationsForPatch(activePatch, heroComboNumber),
+            leagues: dotaStore.getLeagues(activePatch)
         };
     },
 
@@ -58,7 +60,30 @@ const App = React.createClass({
         this.setState({
             activePatch,
             sortedCombinations: this.getFlux().store('DotaStore').getLineupCombinationsForPatch(
-                activePatch, this.state.heroComboNumber)
+                activePatch, this.state.heroComboNumber),
+            leagues: this.getFlux().store('DotaStore').getLeagues(activePatch),
+            activeLeagueId: null
+        });
+    },
+
+    handleLeagueChange(event) {
+        const dotaStore = this.getFlux().store('DotaStore');
+        let activeLeagueId = event.target.value;
+        let sortedCombinations;
+
+        if (activeLeagueId !== 'none') {
+            // the user selected a specific league
+            sortedCombinations = dotaStore.getLineupCombinationsForLeague(activeLeagueId, this.state.heroComboNumber);
+        } else {
+            // the user chose to deselect all leagues.
+            activeLeagueId = null;
+            sortedCombinations = dotaStore.getLineupCombinationsForPatch(this.state.activePatch,
+                this.state.heroComboNumber);
+        }
+
+        this.setState({
+            activeLeagueId,
+            sortedCombinations
         });
     },
 
@@ -93,16 +118,34 @@ const App = React.createClass({
                 <div className={'comboSearchSection sidebar'}>
                     <div className={'searchOptions'}>
                         <Picker
-                            options={heroComboOptions}
+                            options={heroComboOptions.map(option => {
+                                return {value: option, displayName: option};
+                            })}
                             name={heroComboOptionsName}
                             onChange={this.handleHeroComboNumberChange}
                             defaultOption={this.state.heroComboNumber}
                         />
+
                         <Picker
-                            options={this.state.patches}
+                            options={this.state.patches.map(patch => {
+                                return {value: patch, displayName: patch};
+                            })}
                             name={patchOptionsName}
                             onChange={this.handlePatchChange}
                             defaultOption={this.state.activePatch}
+                        />
+
+                        <Picker
+                            options={this.state.leagues.map(league => {
+                                return {
+                                    value: league.id,
+                                    displayName: league.displayName
+                                };
+                            })}
+                            name={'League'}
+                            onChange={this.handleLeagueChange}
+                            defaultOption={this.state.activeLeagueId}
+                            renderNone={true}
                         />
                     </div>
 

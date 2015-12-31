@@ -11,7 +11,8 @@ window.onload = function() {
         DotaStore: new DotaStore({
             patchToLeagues: window.patchToLeagues,
             tournamentsForCurrentPatch: window.tournamentsForCurrentPatch,
-            currentPatch: window.currentPatch
+            currentPatch: window.currentPatch,
+            leagueIdsToLeagueNames: window.leagueIdsToLeagueNames
         })
     };
 

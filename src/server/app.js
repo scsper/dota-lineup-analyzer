@@ -1,7 +1,7 @@
 import express from 'express';
 import {getLeagueMatches, getMatchDetails} from './api/index.js';
 import {getFromCache} from './middleware/get_from_cache.js';
-import leagueMapper from './enums/league_ids_to_league_names';
+import leagueIdsToLeagueNames from './enums/league_ids_to_league_names';
 import path from 'path';
 import 'babel-polyfill';
 
@@ -20,7 +20,7 @@ function getLeagueFromPatch(patch) {
     let tournaments = {};
 
     leagueIds.forEach(leagueId => {
-        let leagueName = leagueMapper[leagueId];
+        let leagueName = leagueIdsToLeagueNames[leagueId].cacheName;
         tournaments[leagueId] = getFromCache(leagueName);
     });
 
@@ -37,7 +37,8 @@ app.get('/', (req, res) => {
         heroes: heroes,
         patchToLeagues: patchToLeagues,
         tournaments: tournaments,
-        currentPatch: currentPatch
+        currentPatch: currentPatch,
+        leagueIdsToLeagueNames: leagueIdsToLeagueNames
     });
 });
 
