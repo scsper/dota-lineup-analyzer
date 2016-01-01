@@ -3,6 +3,10 @@ import HeroCache from '../cache/hero';
 import Hero from './hero.jsx';
 import classNames from 'classnames';
 import teamNames from '../constants/team_names';
+// ideally this would live in a common directory that shared code between browser and server
+// however, this is the ONLY case where we share code right now, so I chose to
+// not over-engineer this.
+import Winner from '../../server/constants/winner';
 
 const Match = React.createClass({
     propTypes: {
@@ -45,8 +49,8 @@ const Match = React.createClass({
     render() {
         const {match, leagueIdsToLeagueNames} = this.props;
         const {radiant, dire, leagueId} = match;
-        const radiantWin = (this.props.match.winner === 1) ;
-        const direWin = (this.props.match.winner === 2);
+        const radiantWin = (this.props.match.winner === Winner.RADIANT) ;
+        const direWin = (this.props.match.winner === Winner.DIRE);
         let showBans = this.props.showBans;
 
         return (

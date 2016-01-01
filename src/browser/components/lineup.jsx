@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from './hero.jsx';
 import classNames from 'classnames';
+import Winner from '../../server/constants/winner';
 
 const Lineup = React.createClass({
     propTypes: {
@@ -20,13 +21,13 @@ const Lineup = React.createClass({
         let winCounter = 0; // tally up the wins
 
         combination.matches.forEach(match => {
-            let comboFactionId = 0
+            let comboFactionId = Winner.UNKNOWN;
 
             // check if combo appears on radi or dire
             if (match.radiant.picks.some(pick => targetHeroId === pick.hero_id)) {
-                comboFactionId = 1;
+                comboFactionId = Winner.RADIANT;
             } else {
-                comboFactionId = 2;
+                comboFactionId = Winner.DIRE;
             }
 
             // if concordant team won, increment win counter
