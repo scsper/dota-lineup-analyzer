@@ -9,4 +9,6 @@ var gulp = require('gulp');
 
 gulp.task('default', ['webpack', 'babel:server','sass', 'server']);
 
-gulp.task('heroku', ['webpack', 'babel:server','sass', ]);
+gulp.task('heroku', ['webpack', 'babel:server','sass']);
+
+
