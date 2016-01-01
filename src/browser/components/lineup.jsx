@@ -14,6 +14,30 @@ const Lineup = React.createClass({
         return this.props.combo.lineup.map(heroId => <Hero key={heroId} hero={ { hero_id : heroId}} activeCombo={this.props.activeCombo}/>);
     },
 
+    getWinrate(combination) {
+        // just need id of one hero, if one hero is there then whole combo too
+        const targetHeroId = combination.lineup[0];
+        let winCounter = 0; // tally up the wins
+
+        combination.matches.forEach(match => {
+            let comboFactionId = 0
+
+            // check if combo appears on radi or dire
+            if (match.radiant.picks.some(pick => targetHeroId === pick.hero_id)) {
+                comboFactionId = 1;
+            } else {
+                comboFactionId = 2;
+            }
+
+            // if concordant team won, increment win counter
+            if (comboFactionId === match.winner) {
+                winCounter++;
+            }
+        });
+
+        return Math.round((winCounter / combination.matches.length) * 100);
+    },
+
     render() {
         const {combo, isSelected} = this.props;
 
@@ -23,6 +47,7 @@ const Lineup = React.createClass({
                 <ul className={'lineup'}>
                     {this.renderHeroes()}
                 </ul>
+                <p>Win rate: {this.getWinrate(combo)}%</p>
             </li>
         );
     }

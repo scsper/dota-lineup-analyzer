@@ -159,31 +159,6 @@ const DotaStore = Fluxxor.createStore({
         return this.leagueIdsToLeagueNames;
     },
 
-    getWinrate(combination) {
-        // just need id of one hero, if one hero is there then whole combo too
-        const targetHeroId = combination.heroIds[0];
-        const matches = this.getMatches(combination.matches);
-        let winCounter = 0; // tally up the wins
-
-        matches.forEach(match => {
-            let comboFactionId = 0
-
-            // check if combo appears on radi or dire
-            if (match.radiant.picks.some(pick => targetHeroId === pick.hero_id)) {
-                comboFactionId = 1;
-            } else {
-                comboFactionId = 2;
-            }
-
-            // if concordant team won, increment win counter
-            if (comboFactionId === match.winner) {
-                winCounter++;
-            }
-        });
-
-        return winCounter / matches.length;
-    },
-
     hasLineupsForPatch(patchId) {
         return this.lineupCollection.hasLineupsForPatch(patchId);
     }
