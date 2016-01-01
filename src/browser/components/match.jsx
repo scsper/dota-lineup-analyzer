@@ -10,22 +10,6 @@ const Match = React.createClass({
         showBans: React.PropTypes.bool.isRequired
     },
 
-    getPickString(picks) {
-        let pickStr = '[';
-
-        picks.forEach((pick, index) => {
-            pickStr += HeroCache.get(pick.hero_id);
-
-            if (index !== 4) {
-                pickStr += ', ';
-            }
-        });
-
-        pickStr += ']'
-
-        return pickStr;
-    },
-
     renderHeroes(picks, bans) {
         // array.sort will sort them in place, so we have to clone the arrays first
         // we don't want to sort the arrays in place, because that will modify the reference of the store.
