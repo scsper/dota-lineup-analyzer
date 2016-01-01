@@ -2,6 +2,7 @@ import React from 'react';
 import HeroCache from '../cache/hero';
 import Hero from './hero.jsx';
 import classNames from 'classnames';
+import teamNames from '../constants/team_names';
 
 const Match = React.createClass({
     propTypes: {
@@ -37,6 +38,10 @@ const Match = React.createClass({
         ];
     },
 
+    getTeamName(faction) {
+        return teamNames[faction.id] || faction.name;
+    },
+
     render() {
         const {match, leagueIdsToLeagueNames} = this.props;
         const {radiant, dire, leagueId} = match;
@@ -46,11 +51,11 @@ const Match = React.createClass({
 
         return (
             <li className={classNames('match',  {'showBans' : showBans})}>
-                <h2>{`${radiant.name} vs. ${dire.name}`}</h2>
+                <h2>{`${this.getTeamName(radiant)} vs. ${this.getTeamName(dire)}`}</h2>
                 <h3>{`League: ${leagueIdsToLeagueNames[leagueId].displayName}`}</h3>
                 <div className={classNames('radiant', 'pick-container', {'winner' : radiantWin})}>
                     <div className={'teamname-container'} >
-                        <h3 className={'teamName'}>{radiant.name} </h3>
+                        <h3 className={'teamName'}>{this.getTeamName(radiant)} </h3>
                         <p> {'RADIANT'} </p>
                     </div>
                     <ul className={'lineup'}>
@@ -59,7 +64,7 @@ const Match = React.createClass({
                 </div>
                 <div className={classNames('dire', 'pick-container', {'winner' : direWin})}>
                     <div className={'teamname-container'}>
-                        <h3 className={'teamName'}>{dire.name}</h3>
+                        <h3 className={'teamName'}>{this.getTeamName(dire)}</h3>
                         <p> {'DIRE'} </p>
                     </div>
                     <ul className={'lineup'}>
