@@ -3,7 +3,7 @@ var webpack = require('webpack');
 var gutil = require('gulp-util');
 
 gulp.task('webpack', function(callback) {
-    webpack({
+   return webpack({
         entry: './src/browser/launch.js',
         output: {
             path: 'public',
