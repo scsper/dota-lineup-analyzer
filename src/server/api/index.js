@@ -1,9 +1,9 @@
 import request from 'superagent';
 const API_KEY = process.env.DOTA2_API_KEY;
-const BASE_URL = "https://api.steampowered.com/IDOTA2Match_570";
-const MATCH_HISTORY_URL = BASE_URL + "/GetMatchHistory/V001/?key=" + API_KEY;
-const MATCH_DETAILS_URL = BASE_URL + "/GetMatchDetails/V001/?key=" + API_KEY;
-const PLAYER_STATS_URL =  BASE_URL + '/GetTournamentPlayerStats/v1/?key=' + API_KEY;
+const BASE_URL = 'https://api.steampowered.com/IDOTA2Match_570';
+const MATCH_HISTORY_URL = BASE_URL + '/GetMatchHistory/V001/?key=' + API_KEY;
+const MATCH_DETAILS_URL = BASE_URL + '/GetMatchDetails/V001/?key=' + API_KEY;
+const PLAYER_STATS_URL = BASE_URL + '/GetTournamentPlayerStats/v1/?key=' + API_KEY;
 
 /**
  * Wrapper method for the GetMatchHistory API
@@ -18,11 +18,11 @@ function getMatches(url, startingMatchId, matchesRequested) {
     var requestUrl = url;
 
     if (matchesRequested) {
-        requestUrl += "&matches_requested=" + matchesRequested;
+        requestUrl += '&matches_requested=' + matchesRequested;
     }
 
     if (startingMatchId) {
-        requestUrl += "&start_at_match_id=" + startingMatchId;
+        requestUrl += '&start_at_match_id=' + startingMatchId;
     }
 
     return makeRequest('GET', requestUrl);
@@ -60,7 +60,7 @@ function makeRequest(method, url) {
  * @return {Promise} Unresolved promise that will contain the data for this API
  */
 export function getLeagueMatches(leagueId, startingMatchId, matchesRequested) {
-    const url = MATCH_HISTORY_URL + "&league_id=" + leagueId;
+    const url = MATCH_HISTORY_URL + '&league_id=' + leagueId;
 
     return getMatches(url, startingMatchId, matchesRequested);
 }
@@ -76,7 +76,7 @@ export function getLeagueMatches(leagueId, startingMatchId, matchesRequested) {
  * @return {Promise} Unresolved promise that will contain the data for this API
  */
 export function getPlayerMatches(playerId, startingMatchId, matchesRequested) {
-    const url = MATCH_HISTORY_URL + "&account_id=" + playerId;
+    const url = MATCH_HISTORY_URL + '&account_id=' + playerId;
 
     return getMatches(url, startingMatchId, matchesRequested);
 }
@@ -90,7 +90,7 @@ export function getPlayerMatches(playerId, startingMatchId, matchesRequested) {
  * @return {Promise} Unresolved promise that will contain the data for this API.
  */
 export function getMatchDetails(matchId) {
-    var url = MATCH_DETAILS_URL + "&match_id=" + matchId;
+    var url = MATCH_DETAILS_URL + '&match_id=' + matchId;
 
     return makeRequest('GET', url);
 }
@@ -101,7 +101,7 @@ export function getMatchDetails(matchId) {
  * @return {Promise} Unresolved promise that will contain the data for this API.
  */
 export function getHeroes() {
-    var url = "https://api.steampowered.com/IEconDOTA2_570/GetHeroes/v001/?key=" + API_KEY + "&language=en_us";
+    var url = 'https://api.steampowered.com/IEconDOTA2_570/GetHeroes/v001/?key=' + API_KEY + '&language=en_us';
 
     return makeRequest('GET', url);
 }

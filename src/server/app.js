@@ -20,6 +20,7 @@ function getLeagueFromPatch(patch) {
 
     leagueIds.forEach(leagueId => {
         let leagueName = leagueIdsToLeagueNames[leagueId].cacheName;
+
         tournaments[leagueId] = getFromCache(leagueName);
     });
 
@@ -53,8 +54,9 @@ app.get('/matches', (req, res) => {
     getLeagueMatches(leagueId).then(response => {
         try {
             const jsonResponse = JSON.parse(response.text);
+
             res.send(jsonResponse);
-        } catch(e) {
+        } catch (e) {
             res.send({
                 error: 'ERROR: Failed to parse JSON given by dota2 API.'
             });

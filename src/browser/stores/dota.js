@@ -17,6 +17,8 @@ const DotaStore = Fluxxor.createStore({
         this.currentPatch = currentPatch;
         this.patchIdsToLeagueIds = patchToLeagues;
         this.leagueIdsToLeagueNames = leagueIdsToLeagueNames;
+
+        /* eslint-disable quote-props */
         this.patchReleaseDates = {
             '6.85b': {
                 time: 1443164400, // September 25, 2015 at midnight PST
@@ -27,6 +29,7 @@ const DotaStore = Fluxxor.createStore({
                 nextPatch: ''
             }
         };
+        /* eslint-enable quote-props */
 
         this._normalizeLeagues(tournamentsForCurrentPatch, currentPatch);
     },

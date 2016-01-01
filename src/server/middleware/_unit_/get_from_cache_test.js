@@ -1,4 +1,5 @@
-/* global describe, it */
+/* global describe, it, mockery, expect, context */
+/* eslint-disable no-unused-expressions */
 var getFromCache = require('../get_from_cache.js');
 
 describe('./get_from_cache', function() {
@@ -6,7 +7,7 @@ describe('./get_from_cache', function() {
         // mockery uses paths from the caller, not the test.
         mockery.registerMock('../cache/the_international_2014.json', require('./cache_fixture.js'));
 
-        var tournament = getFromCache('the_international_2014');
+        const tournament = getFromCache('the_international_2014');
 
         expect(tournament).to.be.an.object;
         expect(tournament.id).to.equal(600);
@@ -14,7 +15,7 @@ describe('./get_from_cache', function() {
 
     context('when the tournament does not exist', function() {
         it('returns null', function() {
-            var tournament = getFromCache('does_not_exist');
+            const tournament = getFromCache('does_not_exist');
 
             expect(tournament).to.be.null;
         });

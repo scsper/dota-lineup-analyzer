@@ -4,7 +4,8 @@
 export function getFromCache(tournamentName) {
     try {
         // accessing this from compiled/
-        var tournament = require('../../src/server/cache/' + tournamentName + '.json');
+        const tournament = require('../../src/server/cache/' + tournamentName + '.json');
+
         return tournament;
     } catch (e) {
         // we don't want to throw if the tournament is not in the cache

@@ -9,7 +9,7 @@ import Team from './team';
  * @param {Number} matchId The id of the match we want to retrieve
  * @param {Array} players <INSERT_DOCUMENTATION_HERE>
  */
-var Match = function (matchId, players) {
+var Match = function(matchId, players) {
     this.id = matchId;
     this.winner = Winner.UNKNOWN;
     this.radiant = null;
@@ -34,7 +34,7 @@ Match.prototype.serialize = function() {
     };
 };
 
-Match.prototype._getMatchDetails = function () {
+Match.prototype._getMatchDetails = function() {
     const MAX_RETRIES = 3;
 
     getMatchDetails(this.id).then(response => {
@@ -64,7 +64,11 @@ Match.prototype._getMatchDetails = function () {
         // this should be moved to the api layer.
         // but, until i get time to write a proper api layer,
         // it's too messy to move in.
-        console.log(`Error fetching match ${this.id}: status code: ${error.statusCode} message: ${error.statusMessage}`);
+
+        /* eslint-disable no-console */
+        console.log(`Error fetching match ${this.id}:
+            status code: ${error.statusCode} message: ${error.statusMessage}`);
+        /* eslint-enable no-console */
 
         if (this.retries < MAX_RETRIES) {
             this.retries++;
@@ -75,15 +79,15 @@ Match.prototype._getMatchDetails = function () {
     });
 };
 
-Match.prototype._getWinner = function (result) {
+Match.prototype._getWinner = function(result) {
     if (result.radiant_win) {
         return Winner.RADIANT;
-    } else {
-        return Winner.DIRE;
     }
+
+    return Winner.DIRE;
 };
 
-Match.prototype._getPicksAndBans = function (players, picksAndBans) {
+Match.prototype._getPicksAndBans = function(players, picksAndBans) {
     // radiant picks are the first five players
     let radiantHeroId = players[0].hero_id;
     let radiantTeamId = _.filter(picksAndBans, { hero_id: radiantHeroId })[0].team;

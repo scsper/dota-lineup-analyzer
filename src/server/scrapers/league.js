@@ -6,7 +6,7 @@ import Match from './match.js';
  *
  * @param {Number} leagueId The id of the league we want to retrieve.
  */
-var League = function (leagueId) {
+var League = function(leagueId) {
     this.id = leagueId;
     this.matches = [];
     this.totalMatches = -1;
@@ -28,7 +28,7 @@ var League = function (leagueId) {
     });
 };
 
-League.prototype.isDoneUpdating = function () {
+League.prototype.isDoneUpdating = function() {
     let updatedMatches = 0;
 
     // make sure that we have completed the request to get all of the matches
@@ -39,22 +39,29 @@ League.prototype.isDoneUpdating = function () {
                 if (match.radiant && match.dire) {
                     updatedMatches++;
                 } else {
+                    /* eslint-disable no-console */
                     console.log(match.id);
+                    /* eslint-enable no-console */
                 }
             });
         }
     }
 
     if (updatedMatches === this.totalMatches) {
+        /* eslint-disable no-console */
         console.log('completed ' + updatedMatches + ' out of ' + this.totalMatches);
+        /* eslint-enable no-console */
+
         return true;
     }
 
+    /* eslint-disable no-console */
     console.log('completed ' + updatedMatches + ' out of ' + this.totalMatches);
+    /* eslint-enable no-console */
     return false;
 };
 
-League.prototype.serialize = function () {
+League.prototype.serialize = function() {
     let matches = [];
 
     this.matches.forEach(match => {
