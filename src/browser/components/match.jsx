@@ -31,9 +31,7 @@ const Match = React.createClass({
         // we don't want to sort the arrays in place, because that will modify the reference of the store.
         let sortedPicks = picks.map(pick => pick).sort((a, b) => a.order - b.order);
         let sortedBans = bans.map(ban => ban).sort((a, b) => a.order - b.order);
-        let heroList;
-
-        heroList = this.props.showBans ? this.mergePickAndBans(sortedPicks, sortedBans) : picks;
+        let heroList = this.props.showBans ? this.mergePickAndBans(sortedPicks, sortedBans) : sortedPicks;
 
         return heroList.map(hero => <Hero key={hero.hero_id} hero={hero} activeCombo={this.props.activeCombo}/>);
     },

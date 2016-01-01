@@ -90,6 +90,9 @@ export default class LineupCollection {
         Object.keys(lineupCombinations).forEach(key => {
             let heroIds = key.split(DELIMTER);
 
+            // a heroId should be an int, not a string.
+            heroIds = heroIds.map(heroId => parseInt(heroId, 10));
+
             if (heroIds.length === heroLength) {
                 combinationsToReturn.push({
                     id: key,

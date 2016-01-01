@@ -14,7 +14,7 @@ const Hero = React.createClass({
         let isFound = false;
         if(this.props.activeCombo && this.props.activeCombo.lineup ){
             const activeLineup = this.props.activeCombo.lineup;
-            isFound = (activeLineup.indexOf(this.props.hero.hero_id.toString()) > -1);
+            isFound = (activeLineup.indexOf(this.props.hero.hero_id) > -1);
         }
         return isFound;
     },
