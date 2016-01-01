@@ -22,7 +22,7 @@ const App = React.createClass({
             heroComboNumber: DEFAULT_HERO_COMBO_NUMBER,
             activePatch: window.currentPatch, // not sure if I want to access window from here
             activeLeagueId: null,
-            settings: { showBans : false}
+            settings: {showBans : false}
         };
     },
 
@@ -35,7 +35,8 @@ const App = React.createClass({
         return {
             patches: dotaStore.getPatchList(),
             sortedCombinations: dotaStore.getLineupCombinationsForPatch(activePatch, heroComboNumber),
-            leagues: dotaStore.getLeagues(activePatch)
+            leagues: dotaStore.getLeagues(activePatch),
+            leagueIdsToLeagueNames: dotaStore.getAllLeagues()
         };
     },
 
@@ -127,6 +128,7 @@ const App = React.createClass({
                 match={match}
                 activeCombo={this.state.activeCombo}
                 showBans={this.state.settings.showBans}
+                leagueIdsToLeagueNames={this.state.leagueIdsToLeagueNames}
              />
         );
     },

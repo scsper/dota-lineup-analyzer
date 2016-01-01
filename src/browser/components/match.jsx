@@ -7,7 +7,8 @@ const Match = React.createClass({
     propTypes: {
         match: React.PropTypes.object.isRequired,
         activeCombo: React.PropTypes.object.isRequired,
-        showBans: React.PropTypes.bool.isRequired
+        showBans: React.PropTypes.bool.isRequired,
+        leagueIdsToLeagueNames: React.PropTypes.object.isRequired
     },
 
     renderHeroes(picks, bans) {
@@ -37,8 +38,8 @@ const Match = React.createClass({
     },
 
     render() {
-        const {match} = this.props;
-        const {radiant, dire} = match;
+        const {match, leagueIdsToLeagueNames} = this.props;
+        const {radiant, dire, leagueId} = match;
         const radiantWin = (this.props.match.winner === 1) ;
         const direWin = (this.props.match.winner === 2);
         let showBans = this.props.showBans;
@@ -46,6 +47,7 @@ const Match = React.createClass({
         return (
             <li className={classNames('match',  {'showBans' : showBans})}>
                 <h2>{`${radiant.name} vs. ${dire.name}`}</h2>
+                <h3>{`League: ${leagueIdsToLeagueNames[leagueId].displayName}`}</h3>
                 <div className={classNames('radiant', 'pick-container', {'winner' : radiantWin})}>
                     <div className={'teamname-container'} >
                         <h3 className={'teamName'}>{radiant.name} </h3>

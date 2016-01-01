@@ -27,8 +27,11 @@ export default class MatchCollection {
         this.matches = {};
     }
 
-    add(match) {
+    add(match, leagueId) {
         this.matches[match.id] = match;
+
+        // TODO propagate the leagueId via the backend instead of doing it client-side
+        this.matches[match.id].leagueId = leagueId;
     }
 
     get(matchId) {
