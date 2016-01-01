@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var path = require('path');
 var webpack = require('webpack');
 var gutil = require('gulp-util');
 
@@ -7,10 +6,9 @@ gulp.task('webpack', function(callback) {
    return webpack({
         entry: './src/browser/launch.js',
         output: {
-            path: path.join(__dirname, 'public'),
+            path: 'public',
             filename: 'bundle.js',
-            sourceMapFilename: '[file].map',
-            publicPath: '/public/'
+            sourceMapFilename: '[file].map'
         },
         devtool: 'source-map',
         module: {
