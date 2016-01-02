@@ -58,12 +58,9 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-util": "^3.0.7",
     "isparta": "^4.0.0",
-<<<<<<< HEAD
     "jade": "^1.11.0",
     "jsx-loader": "^0.13.2",
     "karma": "^0.13.15",
-=======
->>>>>>> Spelling error in npm scripts
     "jade": "^1.11.0",
     "jsx-loader": "^0.13.2",
     "karma": "^0.13.15",
