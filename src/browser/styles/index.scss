@@ -38,7 +38,8 @@ h3 {
 }
 
 select {
-    background: transparent;
+    background: $sidebarColor;
+    border-radius: 3px;
 }
 
 .sidebar{
